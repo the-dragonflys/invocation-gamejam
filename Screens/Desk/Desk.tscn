@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dobuewv7nyada"]
+
+[ext_resource type="Texture2D" uid="uid://cv68inpd0g48a" path="res://Screens/Desk/Desk.png" id="1_rbvdl"]
+[ext_resource type="Script" uid="uid://d1egs8yhw0vcg" path="res://Screens/Desk/camera_2d.gd" id="2_n6b4a"]
+
+[sub_resource type="GDScript" id="GDScript_vsru3"]
+script/source = "extends Sprite2D
+
+"
+
+[node name="Desk" type="Node2D" unique_id=1257678287]
+
+[node name="ArtDesk" type="Sprite2D" parent="." unique_id=1853096812]
+texture = ExtResource("1_rbvdl")
+script = SubResource("GDScript_vsru3")
+
+[node name="Camera2D" type="Camera2D" parent="ArtDesk" unique_id=1898599858]
+script = ExtResource("2_n6b4a")
