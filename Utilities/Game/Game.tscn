@@ -1,3 +1,11 @@
 [gd_scene format=3 uid="uid://btn3kkai86jcn"]
 
+[ext_resource type="Script" uid="uid://c4huvcp56jmph" path="res://Utilities/Game/GameManager.gd" id="1_7ipda"]
+
 [node name="Game" type="Node" unique_id=1248509455]
+script = ExtResource("1_7ipda")
+
+[node name="CutsceneTimer" type="Timer" parent="." unique_id=768445134]
+wait_time = 20.0
+
+[connection signal="timeout" from="CutsceneTimer" to="." method="_on_cutscene_timer_timeout"]
