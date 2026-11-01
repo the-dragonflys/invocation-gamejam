@@ -11,8 +11,9 @@ var energy : int
 var action_queue : ActionQueue
 var state : States.Types
 
-@abstract
-func use_item(target: Fighter,item: Item) -> void
+#use item will not not be abstract anymore
+func use_item(target: Fighter,item: Item) -> void:
+	pass
 
 @abstract
 func attack(target: Fighter) -> void
@@ -22,9 +23,6 @@ func change_life(target: Fighter) -> void
 
 @abstract
 func change_defense(target: Fighter) -> void
-
-@abstract
-func change_damage(target: Fighter) -> void
 
 @abstract
 func change_state(target: Fighter) -> void
