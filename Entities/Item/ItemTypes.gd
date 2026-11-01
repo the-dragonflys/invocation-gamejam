@@ -17,14 +17,9 @@ enum Types { #Enum para os tipos de items
 	DOUBLE_DEBUFF = 11,
 }
 
-#import dos enums para tipos buffs, debuffs e states
-const x = preload("res://Utilities/FighterStates/Buffs.gd") #x == Buffs enum
-const y = preload("res://Utilities/FighterStates/Debuffs.gd") #y == Debuffs enum
-const z = preload("res://Utilities/FighterStates/States.gd") #z == States enum
-
 #propriedades da classe ItemType
 var ty: Types;
-var buff: x.Buffs;
-var debuff: y.Debuffs;
-var second_debuff: y.Debuffs;
-var state_set: z.States;
+var buff: Effects.Buffs;
+var debuff: Effects.Debuffs;
+var second_debuff: Effects.Debuffs;
+var state_set: States.Types;

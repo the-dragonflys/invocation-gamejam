@@ -2,30 +2,30 @@
 class_name Fighter extends Node2D #Classe abstrata Fighter
 
 #Importa a classe StatChange e o enum states
-const States = preload("res://Utilities/FighterStates/States.gd") 
-const Status = preload("res://Utilities/FighterStates/StatChange.gd")
+#const States = preload("res://Utilities/FighterStates/States.gd") 
+#const Status = preload("res://Utilities/FighterStates/StatChange.gd")
 
 # define as propriedades da classe Fighter e seus tipos
 var life : int;
 var damage : int;
 var defense : int;
-var stat_change: Status;
-var state: States;
+var stat_change: ChangeStats;
+var state: States.Types;
 
 @abstract
-func use_item(Fighter, Item) -> void
+func use_item(target: Fighter,item: Item) -> void
 
 @abstract
-func attack(Fighter) -> void
+func attack(target: Fighter) -> void
 
 @abstract
-func change_life(Fighter) -> void
+func change_life(target: Fighter) -> void
 
 @abstract
-func change_defense(Fighter) -> void
+func change_defense(target: Fighter) -> void
 
 @abstract
-func change_damage(Fighter) -> void
+func change_damage(target: Fighter) -> void
 
 @abstract
-func change_state(Fighter) -> void
+func change_state(target: Fighter) -> void

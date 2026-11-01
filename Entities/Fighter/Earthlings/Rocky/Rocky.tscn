@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b66lu6rjj7q6w"]
+
+[ext_resource type="Script" uid="uid://dthciyo6lkxag" path="res://Entities/Fighter/Earthlings/Rocky/Rocky.gd" id="1_twp3b"]
+
+[node name="Rocky" type="Node2D" unique_id=192204277]
+script = ExtResource("1_twp3b")
