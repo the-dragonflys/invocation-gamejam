@@ -5,7 +5,6 @@ var ally : Fighter
 var enemy : Fighter
 
 var curr_one : Fighter
-
 var TurnManager : TurnQueue
 
 func _init(al : Fighter, en : Fighter) -> void:

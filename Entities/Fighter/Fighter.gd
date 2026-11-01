@@ -2,12 +2,14 @@
 class_name Fighter extends Node2D #Classe abstrata Fighter
 
 # define as propriedades da classe Fighter e seus tipos
-var life : int;
-var damage : int;
-var defense : int;
-var initiative : int;
-var stat_change: ChangeStats;
-var state: States.Types;
+var life : int
+var strength : int
+var defense : int
+var initiative : int
+var energy : int
+
+var action_queue : ActionQueue
+var state : States.Types
 
 @abstract
 func use_item(target: Fighter,item: Item) -> void
