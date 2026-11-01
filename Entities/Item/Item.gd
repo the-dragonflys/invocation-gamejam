@@ -19,6 +19,7 @@ enum Types { #Enum para os tipos de items
 #propriedades da classe Item
 var item_name: String
 var item_typ: Types
+var description : String
 var actions : Array
 var cost : int
 
