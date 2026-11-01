@@ -1,6 +1,6 @@
 extends Node
 
-enum Buffs {
+enum Buffs { #Enum que definem os tipos de Buffs
 	DAMAGE_BUFF = 0, 
 	DEFENSE_BUFF = 1, 
 	HEAL = 2, 
