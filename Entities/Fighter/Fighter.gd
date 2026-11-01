@@ -15,6 +15,13 @@ var state : States.Types
 func use_item(target: Fighter,item: Item) -> void:
 	pass
 
+func can_act() -> bool : return action_queue.is_there_actions_left()
+
+func _realize_action() -> Action:
+	var ret : Action
+	ret = action_queue.get_action()
+	return ret
+
 @abstract
 func attack(target: Fighter) -> void
 
