@@ -9,7 +9,6 @@ var initiative : int
 var energy : int
 
 var action_queue : ActionQueue
-var stat_change : ChangeStats
 var state : States.Types
 
 @abstract
