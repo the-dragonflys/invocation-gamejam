@@ -22,16 +22,16 @@ func _realize_action() -> Action:
 	ret = action_queue.get_action()
 	return ret
 
-@abstract
-func attack(target: Fighter) -> void
+func attack(target: Fighter) -> void:
+	pass
 
-@abstract
-func change_life(target: Fighter) -> void
+func change_life(target: Fighter) -> void:
+	pass
 
-@abstract
-func change_defense(target: Fighter) -> void
+func change_defense(target: Fighter) -> void:
+	pass
 
-@abstract
-func change_state(target: Fighter) -> void
+func change_state(target: Fighter) -> void:
+	pass
 
 func is_Alive() -> bool : return life > 0
