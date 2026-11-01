@@ -1,4 +1,4 @@
-extends Fighter
+class_name Rocky extends Fighter
 
 func use_item(Fighter, Item) -> void:
 	pass
