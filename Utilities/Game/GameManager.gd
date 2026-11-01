@@ -1,11 +1,16 @@
 extends Node
 
+var import_screen : PackedScene
+var curr_screen : Node2D
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	import_screen = load("res://Utilities/CutscenePlayer/CutscenePlayer.tscn")
+	curr_screen = import_screen.instantiate()
+	add_child(curr_screen)
+	$CutsceneTimer.start()
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _on_cutscene_timer_timeout() -> void:
+	remove_child(curr_screen)
+	import_screen = load("res://Screens/Desk/Desk.tscn")
+	curr_screen = import_screen.instantiate()
+	add_child(curr_screen)

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="invocation-gamejam"
-run/main_scene="uid://dobuewv7nyada"
+run/main_scene="uid://btn3kkai86jcn"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
