@@ -24,6 +24,14 @@ window/size/borderless=true
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[file_customization]
+
+folder_colors={
+"res://Entities/": "red",
+"res://Screens/": "green",
+"res://Utilities/": "blue"
+}
+
 [input]
 
 ui_left={
