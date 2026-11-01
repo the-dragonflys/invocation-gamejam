@@ -1,0 +1,16 @@
+extends Node
+
+enum Types {
+	ATTACK = 0, 
+	CONTROL = 1, 
+	BUFF = 2, 
+	DEBUFF = 3, 
+	HEAL = 4,
+	ATTACK_WBUFF = 5,
+	ATTACK_WSTUN = 6, 
+	ATTACK_WDEBUFF = 7, 
+	ATTACK_WHEAL = 8,
+	CONTROL_WSTATE = 9, 
+	BUFF_WSTATE = 10, 
+	DOUBLE_DEBUFF = 11,
+	}
