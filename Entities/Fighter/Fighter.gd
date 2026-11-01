@@ -31,7 +31,7 @@ func change_life(modifier : int) -> void:
 func change_defense(target: Fighter) -> void:
 	pass
 
-func change_state(target: Fighter) -> void:
-	pass
+func change_state(new_state : States.Types) -> void:
+	state = new_state
 
 func is_Alive() -> bool : return life > 0
