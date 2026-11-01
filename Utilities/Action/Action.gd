@@ -6,7 +6,8 @@ enum Types{
 	SELF_DEBUFF=0,
 	ENEMY_DEBUFF=1,
 	BUFF=2,
-	ATTACK=3
+	ATTACK=3,
+	SELF_ATTACK=4
 }
 
 enum Stats{

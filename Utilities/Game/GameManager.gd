@@ -3,6 +3,7 @@ extends Node
 var import_screen : PackedScene
 var curr_screen : Node2D
 var cutscene_ended : bool
+var manager : RoundManager
 
 func _ready() -> void:
 	import_screen = load("res://Utilities/CutscenePlayer/CutscenePlayer.tscn")
@@ -24,3 +25,4 @@ func _input(event: InputEvent) -> void:
 		$CutsceneTimer.timeout.emit()
 		$CutsceneTimer.stop()
 		cutscene_ended = true
+		manager = RoundManager.new()
