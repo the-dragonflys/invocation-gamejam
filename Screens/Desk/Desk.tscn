@@ -2,18 +2,27 @@
 
 [ext_resource type="Texture2D" uid="uid://b4jo0egpejln3" path="res://Screens/Desk/Desk.png" id="1_rbvdl"]
 [ext_resource type="Script" uid="uid://d1egs8yhw0vcg" path="res://Screens/Desk/camera_2d.gd" id="2_n6b4a"]
+[ext_resource type="Script" uid="uid://bqtbt6is8hi7i" path="res://Screens/Desk/background.gd" id="2_vsru3"]
 
-[sub_resource type="GDScript" id="GDScript_vsru3"]
-script/source = "extends Sprite2D
-
-"
+[sub_resource type="SpriteFrames" id="SpriteFrames_yf5fn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_rbvdl")
+}],
+"loop": 1,
+"name": &"starting",
+"speed": 5.0
+}]
 
 [node name="Desk" type="Node2D" unique_id=1257678287]
 
-[node name="Background" type="Sprite2D" parent="." unique_id=1853096812]
+[node name="Background" type="AnimatedSprite2D" parent="." unique_id=518720088]
 position = Vector2(960, 1620)
-texture = ExtResource("1_rbvdl")
-script = SubResource("GDScript_vsru3")
+sprite_frames = SubResource("SpriteFrames_yf5fn")
+animation = &"starting"
+autoplay = "starting"
+script = ExtResource("2_vsru3")
 
 [node name="Camera2D" type="Camera2D" parent="Background" unique_id=1898599858]
 position = Vector2(-960, -1620)
