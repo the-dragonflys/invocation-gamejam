@@ -22,5 +22,11 @@ var item_typ: Types
 var actions : Array
 var cost : int
 
-@abstract
-func interact() -> void
+func check_IsThereActions() -> bool:
+	return not actions.is_empty()
+
+func get_action() -> Action:
+	var ret : Action
+	ret = actions.front()
+	actions.pop_front()
+	return ret
