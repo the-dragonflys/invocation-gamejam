@@ -1,5 +1,7 @@
 extends Node
 
+class_name ItemType
+
 enum Types {
 	ATTACK = 0, 
 	CONTROL = 1, 
@@ -13,4 +15,14 @@ enum Types {
 	CONTROL_WSTATE = 9, 
 	BUFF_WSTATE = 10, 
 	DOUBLE_DEBUFF = 11,
-	}
+}
+
+const x = preload("res://Utilities/FighterStates/Buffs.gd") #x == Buffs enum
+const y = preload("res://Utilities/FighterStates/Debuffs.gd") #y == Debuffs enum
+const z = preload("res://Utilities/FighterStates/States.gd") #z == States enum
+
+var ty: Types;
+var buff: x.Buffs;
+var debuff: y.Debuffs;
+var second_debuff: y.Debuffs;
+var state_set: z.States;
