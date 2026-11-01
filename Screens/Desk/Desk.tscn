@@ -1,18 +1,61 @@
 [gd_scene format=3 uid="uid://dobuewv7nyada"]
 
-[ext_resource type="Texture2D" uid="uid://b4jo0egpejln3" path="res://Screens/Desk/Desk.png" id="1_rbvdl"]
+[ext_resource type="Texture2D" uid="uid://cjsrrlj2tbawf" path="res://Screens/Desk/Animations/Default/0_.png" id="1_k7bhy"]
+[ext_resource type="Texture2D" uid="uid://skubybsiqvgh" path="res://Screens/Desk/Animations/Default/10_.png" id="2_bcxvh"]
 [ext_resource type="Script" uid="uid://d1egs8yhw0vcg" path="res://Screens/Desk/camera_2d.gd" id="2_n6b4a"]
 [ext_resource type="Script" uid="uid://bqtbt6is8hi7i" path="res://Screens/Desk/background.gd" id="2_vsru3"]
+[ext_resource type="Texture2D" uid="uid://bpd4ioe7i3hjj" path="res://Screens/Desk/Animations/Default/20_.png" id="3_unumf"]
+[ext_resource type="Texture2D" uid="uid://yr4euv5p3etu" path="res://Screens/Desk/Animations/Default/30_.png" id="4_ql0fa"]
+[ext_resource type="Texture2D" uid="uid://dyco5fryw7fs" path="res://Screens/Desk/Animations/Default/40_.png" id="5_pvmk7"]
+[ext_resource type="Texture2D" uid="uid://du76cpo46pm1i" path="res://Screens/Desk/Animations/Default/50_.png" id="6_2euvh"]
+[ext_resource type="Texture2D" uid="uid://uk20kn8yrn3g" path="res://Screens/Desk/Animations/Default/60_.png" id="7_fx147"]
+[ext_resource type="Texture2D" uid="uid://oadjonqnhgr3" path="res://Screens/Desk/Animations/Default/70_.png" id="8_inlv8"]
+[ext_resource type="Texture2D" uid="uid://bn4gf5grhcjkr" path="res://Screens/Desk/Animations/Default/80_.png" id="9_35o4q"]
+[ext_resource type="Texture2D" uid="uid://67cghhehx2u4" path="res://Screens/Desk/Animations/Default/90_.png" id="10_l6woq"]
+[ext_resource type="Texture2D" uid="uid://qicf05a76us4" path="res://Screens/Desk/Animations/Default/100_.png" id="11_ve7fg"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yf5fn"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_rbvdl")
+"texture": ExtResource("1_k7bhy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_k7bhy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_bcxvh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_unumf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ql0fa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pvmk7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2euvh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_fx147")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_inlv8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_35o4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_l6woq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ve7fg")
 }],
-"loop": 1,
-"name": &"starting",
-"speed": 5.0
+"loop": 0,
+"name": &"Default",
+"speed": 6.0
 }]
 
 [node name="Desk" type="Node2D" unique_id=1257678287]
@@ -20,8 +63,8 @@ animations = [{
 [node name="Background" type="AnimatedSprite2D" parent="." unique_id=518720088]
 position = Vector2(960, 1620)
 sprite_frames = SubResource("SpriteFrames_yf5fn")
-animation = &"starting"
-autoplay = "starting"
+animation = &"Default"
+autoplay = "Default"
 script = ExtResource("2_vsru3")
 
 [node name="Camera2D" type="Camera2D" parent="Background" unique_id=1898599858]

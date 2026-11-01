@@ -2,11 +2,11 @@
 class_name Fighter extends Node2D #Classe abstrata Fighter
 
 # define as propriedades da classe Fighter e seus tipos
-var life : int
-var strength : int
-var defense : int
-var initiative : int
-var energy : int
+var life : int # max 50
+var strength : int # 0-100 ⇒ as a percentage
+var defense : int  # 0-100 ⇒ as a percentage
+var initiative : int # 0 or 1 
+var energy : int # 5
 
 var action_queue : ActionQueue
 var state : States.Types

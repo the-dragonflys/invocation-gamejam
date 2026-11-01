@@ -12,10 +12,12 @@ func _ready() -> void:
 	$CutsceneTimer.start()
 
 func _on_cutscene_timer_timeout() -> void:
-	remove_child(curr_screen)
-	import_screen = load("res://Screens/Desk/Desk.tscn")
-	curr_screen = import_screen.instantiate()
-	add_child(curr_screen)
+	if (not cutscene_ended):
+		cutscene_ended = true
+		remove_child(curr_screen)
+		import_screen = load("res://Screens/Desk/Desk.tscn")
+		curr_screen = import_screen.instantiate()
+		add_child(curr_screen)
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_escape") and not cutscene_ended:

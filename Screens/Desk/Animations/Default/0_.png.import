@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4jo0egpejln3"
-path="res://.godot/imported/Desk.png-75bb9a80f9755d5bade8b5b5a35d04e4.ctex"
+uid="uid://cjsrrlj2tbawf"
+path="res://.godot/imported/0_.png-1994d02b0c689ac4c21fec578393e592.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Screens/Desk/Desk.png"
-dest_files=["res://.godot/imported/Desk.png-75bb9a80f9755d5bade8b5b5a35d04e4.ctex"]
+source_file="res://Screens/Desk/Animations/Default/0_.png"
+dest_files=["res://.godot/imported/0_.png-1994d02b0c689ac4c21fec578393e592.ctex"]
 
 [params]
 

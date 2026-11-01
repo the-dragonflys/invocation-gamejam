@@ -14,6 +14,9 @@ func _init(al : Fighter, en : Fighter) -> void:
 func round_start() -> void:
 	TurnManager.generate_queue(ally, enemy)
 
-func gameloop() -> void:
-	if (TurnManager.anyone_left()):
-		curr_one = TurnManager.get_whos_turn()
+func _turn_execution() -> void:
+	# [ 1 ] Get 
+	pass
+	#while (TurnManager.anyone_left()):
+		#curr_one = TurnManager.get_whos_turn()
+		
