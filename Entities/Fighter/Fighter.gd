@@ -22,10 +22,10 @@ func _realize_action() -> Action:
 	ret = action_queue.get_action()
 	return ret
 
-func attack(target: Fighter) -> void:
+func attack(act : Action, target: Fighter) -> void:
 	pass
 
-func change_life(target: Fighter) -> void:
+func change_life(modifier : int) -> void:
 	pass
 
 func change_defense(target: Fighter) -> void:

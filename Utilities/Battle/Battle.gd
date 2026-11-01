@@ -30,13 +30,15 @@ func _turn_execution() -> void:
 func run_actions(acting : Fighter, target: Fighter) -> void:
 	while acting.can_act():
 		var curr : Action = acting._realize_action()
-		match curr.Types:
+		match curr.type:
 			Action.Types.SELF_DEBUFF:
-				pass
+				BattleUtils.use_debuff(curr, acting)
 			Action.Types.ENEMY_DEBUFF:
-				pass #create function for the buff and debuff
+				BattleUtils.use_debuff(curr, target)
 			Action.Types.BUFF:
-				pass
+				BattleUtils.use_buff(curr, acting)
 			Action.Types.ATTACK:
-				pass
+				acting.attack(curr, target)
+			Action.Types.SELF_ATTACK:
+				acting.change_life(curr.modifier)
 	pass
