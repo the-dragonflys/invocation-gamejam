@@ -5,6 +5,7 @@ class_name Fighter extends Node2D #Classe abstrata Fighter
 var life : int;
 var damage : int;
 var defense : int;
+var initiative : int;
 var stat_change: ChangeStats;
 var state: States.Types;
 
