@@ -3,8 +3,8 @@ class_name Fighter extends Node2D #Classe abstrata Fighter
 
 # define as propriedades da classe Fighter e seus tipos
 var life : int # max 50
-var strength : int # 0-100 ⇒ as a percentage
-var defense : int  # 0-100 ⇒ as a percentage
+var strength : int # 0-200 ⇒ as a percentage
+var defense : int  # 0-200 ⇒ as a percentage
 var initiative : int # 0 or 1 
 var energy : int # 5
 
@@ -16,6 +16,8 @@ var action_queue : ActionQueue
 var state : States.Types
 var active_buff : Action
 var active_debuff : Action
+
+# RESETS
 func reset_initiative() -> void:
 	initiative = 5
 func reset_buffs() -> void:
@@ -26,14 +28,13 @@ func reset_buffs() -> void:
 func reset_state() -> void:
 	state = States.Types.IDLE
 
-#use item will not not be abstract anymore
+# OPERATORS
 func use_item(item: Item) -> void:
 	while item.check_IsThereActions():
 		var aux : Action
 		aux = item.get_action()
 		action_queue._add_action(aux)
 	initiative -= item.cost
-
 func _realize_action() -> Action:
 	var ret : Action
 	ret = action_queue.get_action()
@@ -41,24 +42,22 @@ func _realize_action() -> Action:
 
 # INTERACTIONS
 func attack(act : Action, target: Fighter) -> void:
-	var attack_value : int
-	#need to create the attack logic
+	var attack_value : float
+	var percentage : float
+	percentage = strength / target.defense
 	
-	target.change_life(attack_value)
+	attack_value = act.modifier * percentage
+	target.change_life(floor(attack_value))
 	
 # UNARY OPERATOR
 func self_attack(act : Action) -> void: 
 	change_life(act.modifier)
-func self_debuff(act : Action) -> void:
+func self_buff_debuff(act : Action) -> void:
 	match act.stats:
 		Action.Stats.STRENGTH:
 			change_strength(act.modifier)
 		Action.Stats.DEFENSE:
 			change_defense(act.modifier)
-		Action.Stats.INITIATIVE:
-			pass
-func self_buff(act : Action) -> void:
-	pass
 
 # MODIFIERS
 func change_life(modifier : int) -> void:
