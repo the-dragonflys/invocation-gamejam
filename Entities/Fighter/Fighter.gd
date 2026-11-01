@@ -23,7 +23,7 @@ func change_life(Fighter) -> void
 func change_defense(Fighter) -> void
 
 @abstract
-func change_attack(Fighter) -> void
+func change_damage(Fighter) -> void
 
 @abstract
 func change_state(Fighter) -> void
