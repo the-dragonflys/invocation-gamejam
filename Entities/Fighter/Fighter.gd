@@ -26,3 +26,5 @@ func change_defense(target: Fighter) -> void
 
 @abstract
 func change_state(target: Fighter) -> void
+
+func is_Alive() -> bool : return life > 0
