@@ -7,4 +7,4 @@ func _init() -> void:
 	item_typ = Types.ATTACK
 	description = "An improvised electric gun that stuns the enemy."
 	actions = [action]
-	cost = 2
+	cost = 3
