@@ -2,6 +2,9 @@ extends Node
 class_name Action
 
 #will use the order of this enum to sort the ActionQueue
+## [b]Enum que define os tipos de ação.[/b][br][br]
+## São eles:[br]
+## [color=lightgreen]SELF_DEBUFF[br]ENEMY_DEBUFF[br]BUFF[br]ATTACK[/color] 
 enum Types{ 
 	SELF_DEBUFF=0,
 	ENEMY_DEBUFF=1,
@@ -9,6 +12,9 @@ enum Types{
 	ATTACK=3
 }
 
+## [b]Enum que define qual atributo será afetado na ação.[/b][br][br]
+## São eles:[br]
+## [color=lightgreen]NONE[br]LIFE[br]STRENGTH[br]DEFENSE[br]INITIATIVE[br]STATE[/color]
 enum Stats{
 	NONE=0,
 	LIFE=1,
