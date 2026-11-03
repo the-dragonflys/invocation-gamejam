@@ -1,14 +1,13 @@
 [gd_scene format=3 uid="uid://m6tebe7upsfj"]
 
-[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_nnh0g"]
-file = "res://Assets/Cutscene/cutscene_game_ntsc.ogv"
+[ext_resource type="VideoStream" uid="uid://bwkyvpjpg4ivl" path="res://Assets/Cutscene/cutscene_game_ntsc.ogv" id="1_0rv75"]
 
 [node name="CutscenePlayer" type="Node2D" unique_id=1091462041]
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1181357598]
 offset_right = 854.0
 offset_bottom = 480.0
-stream = SubResource("VideoStreamTheora_nnh0g")
+stream = ExtResource("1_0rv75")
 autoplay = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=352802100]

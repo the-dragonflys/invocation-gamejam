@@ -19,6 +19,7 @@ func _on_cutscene_timer_timeout() -> void:
 		import_screen = load("res://Screens/Desk/Desk.tscn")
 		curr_screen = import_screen.instantiate()
 		add_child(curr_screen)
+		$Soundtrack.play()
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_escape") and not cutscene_ended:
