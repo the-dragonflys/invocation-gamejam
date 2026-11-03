@@ -1,4 +1,4 @@
-extends Node
+extends Resource
 class_name Action
 
 #will use the order of this enum to sort the ActionQueue
@@ -25,10 +25,10 @@ enum Stats{
 	STATE=5,
 }
 
-var type : Types
-var modifier : int
-var stats : Stats
-var stateChange : States.Types
+@export var type : Types
+@export var modifier : int
+@export var stats : Stats
+@export var stateChange : States.Types
 
 func _init(t : Types, value : int, s : Stats = Stats.NONE,
 		   sChange : States.Types = States.Types.IDLE):

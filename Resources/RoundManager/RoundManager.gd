@@ -1,6 +1,4 @@
 extends Resource
 class_name RoundManager
 
-func _init() -> void:
-	pass
-	
+var battle_controller : Battle

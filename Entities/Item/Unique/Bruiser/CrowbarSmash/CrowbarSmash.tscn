@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c7i2jx08c6gob"]
+
+[ext_resource type="Script" uid="uid://jbcv1f8i6e4a" path="res://Resources/Item/Unique/Bruiser/CrowbarSmash.gd" id="1_or61t"]
+
+[node name="CrowbarSmash" type="Node2D" unique_id=668678940]
+script = ExtResource("1_or61t")

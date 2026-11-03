@@ -19,14 +19,11 @@ var active_buff : Action
 var active_debuff : Action
 
 var specific_deck : Array[Item] = []	# deck of unique items
-var default_deck : Array[Item] = []   	# deck of default items
 
 func setup() -> void:
 	life = max_life
 	strength = ori_strength
 	defense = ori_defense
-	
-	#still need to define default_deck
 
 # RESETS
 func _reset_initiative() -> void:

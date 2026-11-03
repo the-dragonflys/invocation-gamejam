@@ -3,11 +3,9 @@ extends Node
 var import_screen : PackedScene
 var curr_screen : Node2D
 var cutscene_ended : bool
-var manager : RoundManager
+var manager : RoundManager = RoundManager.new()
 
 func _ready() -> void:
-	manager = RoundManager.new()
-	
 	import_screen = load("res://Screens/CutscenePlayer/CutscenePlayer.tscn")
 	curr_screen = import_screen.instantiate()
 	
