@@ -1,6 +1,9 @@
 @abstract
 class_name Item extends Node2D #Classe abstrata para Items
 
+## [b]Enum que define o tipo do item[/b][br][br]
+## São eles:[br]
+## [color=lightgreen]ATTACK[br]CONTROL[br]BUFF[br]DEBUFF[br]HEAL[/color]
 enum Types { #Enum para os tipos de items
 	ATTACK = 0, 
 	CONTROL = 1, 

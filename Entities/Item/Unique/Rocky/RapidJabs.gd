@@ -1,0 +1,10 @@
+class_name RapidJabs extends Item
+
+var act_jabs = Action.new(Action.Types.ATTACK, 6, Action.Stats.LIFE)
+
+func _init() -> void:
+	item_name = "Socos Rápidos"
+	item_typ = Types.ATTACK
+	description = "Sequência de socos rápidos para dano consistente."
+	actions = [act_jabs]
+	cost = 2
