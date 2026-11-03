@@ -1,4 +1,4 @@
-extends Node
+extends Object
 class_name ActionQueue
 
 var action_queue : Array

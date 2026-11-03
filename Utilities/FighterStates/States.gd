@@ -1,4 +1,4 @@
-extends Node
+extends Object
 class_name States
 
 ## [b]Enum que define o estado de um personagem ou da consequência de uma ação.[/b][br][br]

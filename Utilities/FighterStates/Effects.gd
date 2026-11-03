@@ -1,4 +1,4 @@
-extends Node
+extends Object
 class_name Effects
 
 enum Buffs { #Enum que definem os tipos de Buffs
