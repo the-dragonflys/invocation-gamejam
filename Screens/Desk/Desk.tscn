@@ -88,5 +88,5 @@ position_smoothing_enabled = true
 script = ExtResource("2_n6b4a")
 
 [node name="CosmicEntity" parent="." unique_id=546302893 instance=ExtResource("14_bcxvh")]
-position = Vector2(191.99998, 224)
+position = Vector2(192, 192)
 scale = Vector2(0.8, 0.8)
