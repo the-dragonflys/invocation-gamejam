@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://bn4gf5grhcjkr" path="res://Screens/Desk/Animations/Default/80_.png" id="9_35o4q"]
 [ext_resource type="Texture2D" uid="uid://67cghhehx2u4" path="res://Screens/Desk/Animations/Default/90_.png" id="10_l6woq"]
 [ext_resource type="Texture2D" uid="uid://qicf05a76us4" path="res://Screens/Desk/Animations/Default/100_.png" id="11_ve7fg"]
+[ext_resource type="PackedScene" uid="uid://bgp4af684snmh" path="res://Entities/CosmicEntity/CosmicEntity.tscn" id="14_bcxvh"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yf5fn"]
 animations = [{
@@ -56,6 +57,14 @@ animations = [{
 "loop": 0,
 "name": &"Default",
 "speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_ve7fg")
+}],
+"loop": 1,
+"name": &"to_use",
+"speed": 5.0
 }]
 
 [node name="Desk" type="Node2D" unique_id=1257678287]
@@ -63,7 +72,7 @@ animations = [{
 [node name="Background" type="AnimatedSprite2D" parent="." unique_id=518720088]
 position = Vector2(960, 1620)
 sprite_frames = SubResource("SpriteFrames_yf5fn")
-animation = &"Default"
+animation = &"to_use"
 autoplay = "Default"
 script = ExtResource("2_vsru3")
 
@@ -77,3 +86,7 @@ limit_bottom = 3240
 limit_smoothed = true
 position_smoothing_enabled = true
 script = ExtResource("2_n6b4a")
+
+[node name="CosmicEntity" parent="." unique_id=546302893 instance=ExtResource("14_bcxvh")]
+position = Vector2(191.99998, 224)
+scale = Vector2(0.8, 0.8)
