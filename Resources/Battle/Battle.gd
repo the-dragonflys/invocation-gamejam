@@ -1,11 +1,9 @@
-extends Object
 class_name Battle
 
 var ally : Fighter
 var enemy : Fighter
 
-var curr_one : Fighter
-var TurnManager : TurnQueue
+var TurnManager : TurnQueue = TurnQueue.new()
 
 func _init(al : Fighter, en : Fighter) -> void:
 	ally = al

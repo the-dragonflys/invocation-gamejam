@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://4m17q22qudus"]
 
+[ext_resource type="Script" uid="uid://dstb4pgeosak8" path="res://Resources/Fighter/Tank/Tank.gd" id="1_h0ncu"]
+
 [node name="HopperTank" type="Node2D" unique_id=1832246876]
+script = ExtResource("1_h0ncu")
+nome = "Robert"

@@ -1,10 +1,6 @@
-extends Object
 class_name TurnQueue
 
-var turn_queue : Array
-
-func _init() -> void:
-	turn_queue = []
+var turn_queue : Array[Fighter] = []
 
 func generate_queue(ally : Fighter, enemy : Fighter) -> void:
 	turn_queue.append(ally)

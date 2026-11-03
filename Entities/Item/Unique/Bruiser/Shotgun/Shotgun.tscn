@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bwwo71eymhuta"]
+
+[ext_resource type="Script" uid="uid://ers7ny73ryj" path="res://Entities/Item/Unique/Bruiser/Shotgun/Shotgun.gd" id="1_3e5wm"]
+
+[node name="Shotgun" type="Node2D" unique_id=1255012381]
+script = ExtResource("1_3e5wm")

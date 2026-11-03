@@ -1,31 +1,42 @@
-@abstract
-class_name Fighter extends Node2D #Classe abstrata Fighter
+class_name Fighter extends Resource #Classe abstrata Fighter
+
+@export var nome : String
+@export var max_life : int # this will be used on the init
+@export var ori_strength : int # this is the original strength
+@export var ori_defense : int
+@export var char_ref : PackedScene
 
 # define as propriedades da classe Fighter e seus tipos
 var life : int # max 50
 var strength : int # 0-200 ⇒ as a percentage
 var defense : int  # 0-200 ⇒ as a percentage
-var initiative : int # 0 or 1 
-var energy : int # 5
+var initiative : int = 1 	# 0 or 1 
+var energy : int = 5	# 5
 
-var max_life : int # this will be used on the init
-var ori_strength : int # this is the original strength
-var ori_defense : int
-
-var action_queue : ActionQueue
-var state : States.Types
+var action_queue : ActionQueue = ActionQueue.new()
+var state : States.Types = States.Types.IDLE
 var active_buff : Action
 var active_debuff : Action
 
+var specific_deck : Array[Item] = []	# deck of unique items
+var default_deck : Array[Item] = []   	# deck of default items
+
+func setup() -> void:
+	life = max_life
+	strength = ori_strength
+	defense = ori_defense
+	
+	#still need to define default_deck
+
 # RESETS
-func reset_initiative() -> void:
+func _reset_initiative() -> void:
 	initiative = 5
-func reset_buffs() -> void:
+func _reset_buffs() -> void:
 	active_buff.free()
 	active_debuff.free()
 	strength = ori_strength
 	defense = ori_defense
-func reset_state() -> void:
+func _reset_state() -> void: 
 	state = States.Types.IDLE
 
 # OPERATORS
@@ -61,34 +72,17 @@ func self_buff_debuff(act : Action) -> void:
 
 # MODIFIERS
 func change_life(modifier : int) -> void:
-	var check : int = life + modifier
-	if (check >= max_life): life = max_life
-	else: life = check
+	life = clampi(life + modifier, 0, max_life)
 func change_strength(modifier : int ) -> void:
-	var check : int = strength + modifier
-	if check >= 100:
-		strength = 100
-	elif check < 0:
-		strength = 0
-	else:
-		strength = check
+	strength = clampi(strength + modifier, 0, 200)
 func change_defense(modifier : int) -> void:
-	var check : int = defense + modifier
-	if check >= 100:
-		defense = 100
-	elif check < 0:
-		defense = 0
-	else:
-		defense = check
+	defense = clampi(defense + modifier, 0, 200)
 func change_state(new_state : States.Types) -> void:
 	state = new_state
 func change_initiative() -> void:
-	if initiative == 1:
-		initiative = 0
-	else:
-		initiative = 1
+	initiative = 0 if initiative == 1 else 1
 
 # CHECKERS
-func is_Alive() -> bool : return life > 0
+func is_alive() -> bool : return life > 0
 func can_act() -> bool: 
 	return action_queue.is_there_actions_left()

@@ -1,10 +1,7 @@
-extends Object
+extends Node
 class_name ActionQueue
 
-var action_queue : Array
-
-func _init() -> void:
-	action_queue = []
+var action_queue : Array[Action] = []
 
 func _add_action(a : Action) -> void:
 	action_queue.push_back(a)

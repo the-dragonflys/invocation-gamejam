@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://sc8qtw22mc5d"]
 
+[ext_resource type="Script" uid="uid://dltbrsiyp3e32" path="res://Resources/Fighter/Mage/Mage.gd" id="1_gj84b"]
+
 [node name="TeslaMage" type="Node2D" unique_id=321488268]
+script = ExtResource("1_gj84b")
+nome = "Tesla"

@@ -29,6 +29,7 @@ window/stretch/aspect="expand"
 folder_colors={
 "res://Assets/": "yellow",
 "res://Entities/": "red",
+"res://Resources/": "pink",
 "res://Screens/": "green",
 "res://Utilities/": "blue"
 }

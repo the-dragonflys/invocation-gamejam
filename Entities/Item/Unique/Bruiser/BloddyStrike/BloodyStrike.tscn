@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dmpi1js6y66xn"]
+
+[ext_resource type="Script" uid="uid://c3363ct3ved1r" path="res://Entities/Item/Unique/Bruiser/BloddyStrike/BloodyStrike.gd" id="1_v62hu"]
+
+[node name="BloodyStrike" type="Node2D" unique_id=1588727419]
+script = ExtResource("1_v62hu")

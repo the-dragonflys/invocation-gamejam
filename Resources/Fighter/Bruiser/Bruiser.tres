@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Fighter" format=3 uid="uid://q207r6w6ybuu"]
+
+[ext_resource type="Script" uid="uid://c8q8rfhqfqhsk" path="res://Resources/Fighter/Fighter.gd" id="1_kl4q6"]
+
+[resource]
+script = ExtResource("1_kl4q6")
+metadata/_custom_type_script = "uid://c8q8rfhqfqhsk"
