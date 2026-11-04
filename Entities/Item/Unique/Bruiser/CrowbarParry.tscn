@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://cpw68l0elw3h6"]
 
-[ext_resource type="Script" path="res://Entities/Item/Unique/Bruiser/CrowbarParry/CrowbarParry.gd" id="1_u8vl3"]
+[ext_resource type="Script" uid="uid://px0u678w0ohn" path="res://Resources/Item/Unique/Bruiser/CrowbarParry.gd" id="1_p5n6b"]
 
-[node name="CrowbarParry" type="Node2D" unique_id=987755]
-script = ExtResource("1_u8vl3")
+[node name="CrowbarParry" type="Control" unique_id=185247047]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_p5n6b")
 item_ref = null

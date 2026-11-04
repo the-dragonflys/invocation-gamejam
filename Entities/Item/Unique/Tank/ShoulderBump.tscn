@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://mu5kwli3re52" path="res://Resources/Item/Unique/Tank/ShoulderBump.gd" id="1_b0ejd"]
 
-[node name="ShoulderBump" type="Node2D" unique_id=756751218]
+[node name="ShoulderBump" type="Control" unique_id=1609136133]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_b0ejd")
-item_ref = null

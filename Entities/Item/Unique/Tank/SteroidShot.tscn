@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://w7se0a24qxq8" path="res://Resources/Item/Unique/Tank/SteroidShot.gd" id="1_2ipf3"]
 
-[node name="SteroidShot" type="Node2D" unique_id=1278124920]
+[node name="SteroidShot" type="Control" unique_id=743550439]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_2ipf3")
-item_ref = null

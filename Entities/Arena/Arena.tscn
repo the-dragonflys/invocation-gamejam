@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" uid="uid://b5rowimta1g5f" path="res://Entities/Arena/Arena.gd" id="1_5e8a1"]
 
-[node name="Arena" type="Node2D" unique_id=635133051]
+[node name="Arena" type="Control" unique_id=693090021]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_5e8a1")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=969008777]

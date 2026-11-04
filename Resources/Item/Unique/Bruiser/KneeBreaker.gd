@@ -5,6 +5,7 @@ var act_stun = Action.new(Action.Types.ENEMY_DEBUFF, 0, Action.Stats.STATE, Stat
 var act_slow = Action.new(Action.Types.ENEMY_DEBUFF, -1, Action.Stats.INITIATIVE)
 
 func _init() -> void:
+	item_ref = preload("res://Entities/Item/Unique/Bruiser/KneeBreaker.tscn")
 	item_name = "Quebra joelhos"
 	item_typ = Types.DEBUFF
 	description = "Quebra as pernas do inimigo, fazendo-o perder 1 turno e atacar por último no seguinte."

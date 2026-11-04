@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://e8xbsusqyh8l" path="res://Resources/Item/Unique/Mage/TeslaCoil.gd" id="1_cykmx"]
 
-[node name="TeslaCoil" type="Node2D" unique_id=1114146203]
+[node name="TeslaCoil" type="Control" unique_id=1749074724]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_cykmx")
-item_ref = null

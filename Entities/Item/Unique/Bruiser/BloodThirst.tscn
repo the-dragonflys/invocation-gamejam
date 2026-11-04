@@ -2,6 +2,10 @@
 
 [ext_resource type="Script" uid="uid://bo7gfjdyup1vg" path="res://Resources/Item/Unique/Bruiser/BloodThirst.gd" id="1_0mw3j"]
 
-[node name="BloodThirst" type="Node2D" unique_id=1219699845]
+[node name="BloodThirst" type="Control" unique_id=817624474]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_0mw3j")
 item_ref = null
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=836621872]

@@ -17,7 +17,7 @@ var item_typ: Types
 var description : String
 var actions : Array[Action] = []
 var cost : int
-@export var item_ref : PackedScene
+var item_ref : PackedScene
 
 func check_IsThereActions() -> bool:
 	return not actions.is_empty()

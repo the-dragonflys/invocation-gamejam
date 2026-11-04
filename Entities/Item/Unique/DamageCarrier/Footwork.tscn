@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dvgjsessjvfab" path="res://Resources/Item/Unique/DamageCarry/Footwork.gd" id="1_ij551"]
 
-[node name="Footwork" type="Node2D" unique_id=490208950]
+[node name="Footwork" type="Control" unique_id=1087567270]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_ij551")
-item_ref = null

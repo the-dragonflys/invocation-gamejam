@@ -3,6 +3,7 @@ class_name ElectricPin extends Item
 var action = Action.new(Action.Types.ENEMY_DEBUFF, -20, Action.Stats.STRENGTH)
 
 func _init() -> void:
+	item_ref = preload("res://Entities/Item/Unique/Mage/ElectricPin.tscn")
 	item_name = "Pino elétrico"
 	item_typ = Types.DEBUFF
 	description = """Dispara um pino elétrico que perfura o inimigo. 

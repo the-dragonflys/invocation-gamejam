@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3f7mcw5olvqn"
-path="res://.godot/imported/open.png-2b00821290ff2fc52c6f04913372bc66.ctex"
+uid="uid://bsbn3gvpbmwks"
+path="res://.godot/imported/Fechado.png-0666d6751ce91b8e7758794503dee34a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/Briefcase/Animations/Open/open.png"
-dest_files=["res://.godot/imported/open.png-2b00821290ff2fc52c6f04913372bc66.ctex"]
+source_file="res://Entities/Briefcase/Animations/Fechado.png"
+dest_files=["res://.godot/imported/Fechado.png-0666d6751ce91b8e7758794503dee34a.ctex"]
 
 [params]
 

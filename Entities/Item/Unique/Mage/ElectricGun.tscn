@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dhklpkek35g04" path="res://Resources/Item/Unique/Mage/ElectricGun.gd" id="1_ht8g8"]
 
-[node name="ElectricGun" type="Node2D" unique_id=14073351]
+[node name="ElectricGun" type="Control" unique_id=810274546]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_ht8g8")
-item_ref = null

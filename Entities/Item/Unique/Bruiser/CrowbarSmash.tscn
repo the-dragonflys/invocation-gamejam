@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://jbcv1f8i6e4a" path="res://Resources/Item/Unique/Bruiser/CrowbarSmash.gd" id="1_or61t"]
 
-[node name="CrowbarSmash" type="Node2D" unique_id=668678940]
+[node name="CrowbarSmash" type="Control" unique_id=1187182424]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_or61t")
 item_ref = null

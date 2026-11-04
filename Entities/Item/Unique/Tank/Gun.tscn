@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cu0m7uaqcdmin" path="res://Resources/Item/Unique/Tank/Gun.gd" id="1_51psl"]
 
-[node name="Gun" type="Node2D" unique_id=1515376094]
+[node name="Gun" type="Control" unique_id=795340715]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_51psl")
-item_ref = null

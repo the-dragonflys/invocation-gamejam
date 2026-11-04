@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dhyfb613y7jsk" path="res://Resources/Item/Unique/Tank/ToxicSyringe.gd" id="1_7osxb"]
 
-[node name="ToxicSyringe" type="Node2D" unique_id=799313445]
+[node name="ToxicSyringe" type="Control" unique_id=243818204]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_7osxb")
-item_ref = null

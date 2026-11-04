@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c3363ct3ved1r" path="res://Resources/Item/Unique/Bruiser/BloodyStrike.gd" id="1_v62hu"]
 
-[node name="BloodyStrike" type="Node2D" unique_id=1588727419]
+[node name="BloodyStrike" type="Control" unique_id=1009111003]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_v62hu")
-item_ref = null

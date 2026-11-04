@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpped0qpt0bc"
-path="res://.godot/imported/closed.png-b6c720805396400aaa0b4d0c5b0b03d5.ctex"
+uid="uid://bmljktj52b1uf"
+path="res://.godot/imported/Aberta Direita.png-5169b94eb978fa2e0dba0bfba06db164.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/Briefcase/Animations/Closed/closed.png"
-dest_files=["res://.godot/imported/closed.png-b6c720805396400aaa0b4d0c5b0b03d5.ctex"]
+source_file="res://Entities/Briefcase/Animations/Aberta Direita.png"
+dest_files=["res://.godot/imported/Aberta Direita.png-5169b94eb978fa2e0dba0bfba06db164.ctex"]
 
 [params]
 

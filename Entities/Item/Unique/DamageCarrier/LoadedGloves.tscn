@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://coc4navwqwsbc" path="res://Resources/Item/Unique/DamageCarry/LoadedGloves.gd" id="1_lfpjy"]
 
-[node name="LoadedGloves" type="Node2D" unique_id=2110325597]
+[node name="LoadedGloves" type="Control" unique_id=1943345578]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_lfpjy")
-item_ref = null
