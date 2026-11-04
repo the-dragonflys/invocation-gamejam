@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="FighterResource" format=3 uid="uid://d2dhj4351t0bj"]
+
+[ext_resource type="Script" uid="uid://c8q8rfhqfqhsk" path="res://Resources/Fighter/FighterResource.gd" id="1_pmnwp"]
+[ext_resource type="Script" uid="uid://io4h5owvawpb" path="res://Resources/Item/Item.gd" id="2_k4h5r"]
+[ext_resource type="Script" uid="uid://co8p6gbj7jshe" path="res://Resources/Item/Unique/DamageCarry/CounterHook.gd" id="3_gqdvn"]
+[ext_resource type="Script" uid="uid://dvgjsessjvfab" path="res://Resources/Item/Unique/DamageCarry/Footwork.gd" id="4_1x2yj"]
+[ext_resource type="Script" uid="uid://coc4navwqwsbc" path="res://Resources/Item/Unique/DamageCarry/LoadedGloves.gd" id="5_86bso"]
+[ext_resource type="Script" uid="uid://cr2kwvjkjy8qj" path="res://Resources/Item/Unique/DamageCarry/MoraleUpperCut.gd" id="6_bpf82"]
+[ext_resource type="Script" uid="uid://cucpuofoack7r" path="res://Resources/Item/Unique/DamageCarry/RapidJabs.gd" id="7_1bfd7"]
+[ext_resource type="Script" uid="uid://c132wlg5433xj" path="res://Resources/Item/Unique/DamageCarry/Resilience.gd" id="8_1bkqq"]
+
+[sub_resource type="Resource" id="Resource_f1syj"]
+script = ExtResource("3_gqdvn")
+metadata/_custom_type_script = "uid://co8p6gbj7jshe"
+
+[sub_resource type="Resource" id="Resource_7osxb"]
+script = ExtResource("4_1x2yj")
+metadata/_custom_type_script = "uid://dvgjsessjvfab"
+
+[sub_resource type="Resource" id="Resource_b8mr4"]
+script = ExtResource("5_86bso")
+metadata/_custom_type_script = "uid://coc4navwqwsbc"
+
+[sub_resource type="Resource" id="Resource_1w1t4"]
+script = ExtResource("6_bpf82")
+metadata/_custom_type_script = "uid://cr2kwvjkjy8qj"
+
+[sub_resource type="Resource" id="Resource_0eami"]
+script = ExtResource("7_1bfd7")
+metadata/_custom_type_script = "uid://cucpuofoack7r"
+
+[sub_resource type="Resource" id="Resource_kb8vu"]
+script = ExtResource("8_1bkqq")
+metadata/_custom_type_script = "uid://c132wlg5433xj"
+
+[resource]
+script = ExtResource("1_pmnwp")
+max_life = 35
+ori_strength = 130
+ori_defense = 70
+specific_deck = Array[ExtResource("2_k4h5r")]([SubResource("Resource_f1syj"), SubResource("Resource_7osxb"), SubResource("Resource_b8mr4"), SubResource("Resource_1w1t4"), SubResource("Resource_0eami"), SubResource("Resource_kb8vu")])
+metadata/_custom_type_script = "uid://c8q8rfhqfqhsk"

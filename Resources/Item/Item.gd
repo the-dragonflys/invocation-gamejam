@@ -12,11 +12,12 @@ enum Types { #Enum para os tipos de items
 }
 
 #propriedades da classe Item
-@export var item_name: String
-@export var item_typ: Types
+var item_name: String
+var item_typ: Types
 var description : String
 var actions : Array[Action] = []
-@export var cost : int
+var cost : int
+@export var item_ref : PackedScene
 
 func check_IsThereActions() -> bool:
 	return not actions.is_empty()

@@ -4,4 +4,3 @@
 
 [node name="BloodyStrike" type="Node2D" unique_id=1588727419]
 script = ExtResource("1_v62hu")
-item_name = "Golpe Sangrento"

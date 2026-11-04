@@ -1,10 +1,8 @@
-class_name Fighter extends Resource #Classe abstrata Fighter
+extends Node2D
+class_name Fighter
 
 @export var nome : String
-@export var max_life : int # this will be used on the init
-@export var ori_strength : int # this is the original strength
-@export var ori_defense : int
-@export var char_ref : PackedScene
+@export var base : FighterResource
 
 # define as propriedades da classe Fighter e seus tipos
 var life : int # max 50
@@ -18,12 +16,10 @@ var state : States.Types = States.Types.IDLE
 var active_buff : Action
 var active_debuff : Action
 
-var specific_deck : Array[Item] = []	# deck of unique items
-
 func setup() -> void:
-	life = max_life
-	strength = ori_strength
-	defense = ori_defense
+	life = base.max_life
+	strength = base.ori_strength
+	defense = base.ori_defense
 
 # RESETS
 func _reset_initiative() -> void:
@@ -31,8 +27,8 @@ func _reset_initiative() -> void:
 func _reset_buffs() -> void:
 	active_buff.free()
 	active_debuff.free()
-	strength = ori_strength
-	defense = ori_defense
+	strength = base.ori_strength
+	defense = base.ori_defense
 func _reset_state() -> void: 
 	state = States.Types.IDLE
 
@@ -69,7 +65,7 @@ func self_buff_debuff(act : Action) -> void:
 
 # MODIFIERS
 func change_life(modifier : int) -> void:
-	life = clampi(life + modifier, 0, max_life)
+	life = clampi(life + modifier, 0, base.max_life)
 func change_strength(modifier : int ) -> void:
 	strength = clampi(strength + modifier, 0, 200)
 func change_defense(modifier : int) -> void:
