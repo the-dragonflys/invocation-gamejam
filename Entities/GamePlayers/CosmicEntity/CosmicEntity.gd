@@ -7,7 +7,7 @@ var soundPlaying : bool = false
 var curr_idx : int = 0
 
 func _setup() -> void:
-	curr_fighter = Team.get(curr_idx)
+	pass
 
 func _on_sound_timer_timeout() -> void:
 	if not soundPlaying:

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dc3l0y88wy625"
-path="res://.godot/imported/Arena e monitor.png-898649f61880cc74836858390fc38830.ctex"
+uid="uid://b2024c6bicc7p"
+path="res://.godot/imported/humano.png-bec6f0f0c7f6e24c59a8c61304b60c5d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/Arena/Sprites/Arena e monitor.png"
-dest_files=["res://.godot/imported/Arena e monitor.png-898649f61880cc74836858390fc38830.ctex"]
+source_file="res://Entities/Arena&Monitor/Sprites/humano.png"
+dest_files=["res://.godot/imported/humano.png-bec6f0f0c7f6e24c59a8c61304b60c5d.ctex"]
 
 [params]
 

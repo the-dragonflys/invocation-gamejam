@@ -11,26 +11,24 @@ var life : int # max 50
 var strength : int # 0-200 ⇒ as a percentage
 var defense : int  # 0-200 ⇒ as a percentage
 var initiative : int = 1 	# 0 or 1 
-	# 5
 
 var action_queue : ActionQueue = ActionQueue.new()
 var state : States.Types = States.Types.IDLE
 var active_buff : Action
 var active_debuff : Action
 
-func setup() -> void:
+func _init() -> void:
 	life = base.max_life
 	strength = base.ori_strength
 	defense = base.ori_defense
 
 # RESETS
-func _reset_initiative() -> void:
-	initiative = 5
 func _reset_buffs() -> void:
 	active_buff.free()
 	active_debuff.free()
 	strength = base.ori_strength
 	defense = base.ori_defense
+	initiative = 1
 func _reset_state() -> void: 
 	state = States.Types.IDLE
 
@@ -40,7 +38,6 @@ func use_item(item: Item) -> void:
 		var aux : Action
 		aux = item.get_action()
 		action_queue._add_action(aux)
-	initiative -= item.cost
 func _realize_action() -> Action:
 	var ret : Action
 	ret = action_queue.get_action()
@@ -78,7 +75,7 @@ func change_initiative() -> void:
 	initiative = 0 if initiative == 1 else 1
 
 # CHECKERS
-func check_died() -> void :
+func check_died() -> void:
 	if life == 0:
 		died.emit()
 func can_act() -> bool: 
