@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dqbrsmn1ulb1l"]
+
+[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_gq6r3"]
+file = "res://Assets/Cutscene/cutscene_game_ntsc.ogv"
+
+[node name="EndScreen" type="Node2D" unique_id=1350613281]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=821266626]
+offset_right = 854.0
+offset_bottom = 480.0
+stream = SubResource("VideoStreamTheora_gq6r3")
+autoplay = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1430798290]
+anchor_mode = 0
+zoom = Vector2(2.25, 2.25)
+limit_enabled = false

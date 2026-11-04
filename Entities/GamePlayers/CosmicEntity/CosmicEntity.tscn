@@ -184,6 +184,7 @@
 [ext_resource type="Texture2D" uid="uid://4drb2f6qg2fl" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0180.png" id="181_p3sat"]
 [ext_resource type="Texture2D" uid="uid://b86tnfa3xoo4e" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0181.png" id="182_mkmfy"]
 [ext_resource type="Texture2D" uid="uid://opup2n6gecfm" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0182.png" id="183_l0ho2"]
+[ext_resource type="AudioStream" uid="uid://d2pevkeyfm5sk" path="res://Assets/CosmicEntitySound/876443__eardeer__raptureofthedeep.wav" id="185_sigrw"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yf5fn"]
 animations = [{
@@ -757,3 +758,13 @@ autoplay = "default"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=436264285]
 anchor_mode = 0
+
+[node name="CosmicEntitySound" type="AudioStreamPlayer" parent="." unique_id=459033745]
+stream = ExtResource("185_sigrw")
+
+[node name="SoundTimer" type="Timer" parent="CosmicEntitySound" unique_id=779919724]
+wait_time = 5.0
+autostart = true
+
+[connection signal="finished" from="CosmicEntitySound" to="." method="_on_cosmic_entity_sound_finished"]
+[connection signal="timeout" from="CosmicEntitySound/SoundTimer" to="." method="_on_sound_timer_timeout"]
