@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://cnxndn5kosa0t"]
 
+[ext_resource type="Script" uid="uid://dhyfb613y7jsk" path="res://Resources/Item/Unique/Tank/ToxicSyringe.gd" id="1_7osxb"]
+
 [node name="ToxicSyringe" type="Node2D" unique_id=799313445]
+script = ExtResource("1_7osxb")
+item_ref = null

@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://cfh3u2c4dfp10"]
 
+[ext_resource type="Script" uid="uid://e8xbsusqyh8l" path="res://Resources/Item/Unique/Mage/TeslaCoil.gd" id="1_cykmx"]
+
 [node name="TeslaCoil" type="Node2D" unique_id=1114146203]
+script = ExtResource("1_cykmx")
+item_ref = null

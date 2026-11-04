@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://c1rx1o2umt4kk"]
 
+[ext_resource type="Script" uid="uid://mu5kwli3re52" path="res://Resources/Item/Unique/Tank/ShoulderBump.gd" id="1_b0ejd"]
+
 [node name="ShoulderBump" type="Node2D" unique_id=756751218]
+script = ExtResource("1_b0ejd")
+item_ref = null

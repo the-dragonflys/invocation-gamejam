@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cpw68l0elw3h6"]
 
-[ext_resource type="Script" uid="uid://y64j6kl2wiu" path="res://Entities/Item/Unique/Bruiser/CrowbarParry/CrowbarParry.gd" id="1_u8vl3"]
+[ext_resource type="Script" path="res://Entities/Item/Unique/Bruiser/CrowbarParry/CrowbarParry.gd" id="1_u8vl3"]
 
 [node name="CrowbarParry" type="Node2D" unique_id=987755]
 script = ExtResource("1_u8vl3")
+item_ref = null

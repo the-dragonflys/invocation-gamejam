@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cpxw0m25np0up"]
 
-[ext_resource type="Script" uid="uid://be4evxcnowle3" path="res://Entities/Item/Unique/Bruiser/KneeBreaker/KneeBreaker.gd" id="1_nvug1"]
+[ext_resource type="Script" path="res://Entities/Item/Unique/Bruiser/KneeBreaker/KneeBreaker.gd" id="1_nvug1"]
 
 [node name="KneeBreaker" type="Node2D" unique_id=1934622766]
 script = ExtResource("1_nvug1")
+item_ref = null

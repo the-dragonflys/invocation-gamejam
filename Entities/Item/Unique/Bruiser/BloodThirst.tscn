@@ -4,6 +4,4 @@
 
 [node name="BloodThirst" type="Node2D" unique_id=1219699845]
 script = ExtResource("1_0mw3j")
-item_name = "Sede de Sangue"
-item_typ = 4
-description = "Bebe o próprio sangue para recuperar vitalidade e manter a agressividade."
+item_ref = null

@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://4m17q22qudus"]
 
-[ext_resource type="Script" uid="uid://dstb4pgeosak8" path="res://Resources/Fighter/Tank/Tank.gd" id="1_h0ncu"]
+[ext_resource type="Script" uid="uid://b8rfgt70u2bs4" path="res://Entities/Fighter/Earthlings/HopperTank/HopperTank.gd" id="1_h0ncu"]
+[ext_resource type="Resource" uid="uid://ffvo6rwh5dow" path="res://Resources/Fighter/Classes/Tank.tres" id="2_tnsng"]
 
 [node name="HopperTank" type="Node2D" unique_id=1832246876]
 script = ExtResource("1_h0ncu")
-nome = "Robert"
+nome = "Hop"
+base = ExtResource("2_tnsng")

@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://b8ibgke7v8ws2"]
 
+[ext_resource type="Script" uid="uid://dvgjsessjvfab" path="res://Resources/Item/Unique/DamageCarry/Footwork.gd" id="1_ij551"]
+
 [node name="Footwork" type="Node2D" unique_id=490208950]
+script = ExtResource("1_ij551")
+item_ref = null

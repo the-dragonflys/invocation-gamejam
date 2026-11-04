@@ -4,3 +4,4 @@
 
 [node name="CrowbarSmash" type="Node2D" unique_id=668678940]
 script = ExtResource("1_or61t")
+item_ref = null

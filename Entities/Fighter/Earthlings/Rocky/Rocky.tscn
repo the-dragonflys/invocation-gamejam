@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://b66lu6rjj7q6w"]
 
-[ext_resource type="Script" uid="uid://dthciyo6lkxag" path="res://Resources/Fighter/DamageCarry/DamageCarry.gd" id="1_twp3b"]
+[ext_resource type="Script" uid="uid://djk46kjrf6kna" path="res://Entities/Fighter/Earthlings/Rocky/Rocky.gd" id="1_twp3b"]
+[ext_resource type="Resource" uid="uid://d2dhj4351t0bj" path="res://Resources/Fighter/Classes/DamageCarry.tres" id="2_a5278"]
 
 [node name="Rocky" type="Node2D" unique_id=192204277]
 script = ExtResource("1_twp3b")
-nome = "Rocky"
+nome = "Rock"
+base = ExtResource("2_a5278")

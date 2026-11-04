@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://saendbvmw440"]
 
+[ext_resource type="Script" uid="uid://coc4navwqwsbc" path="res://Resources/Item/Unique/DamageCarry/LoadedGloves.gd" id="1_lfpjy"]
+
 [node name="LoadedGloves" type="Node2D" unique_id=2110325597]
+script = ExtResource("1_lfpjy")
+item_ref = null
