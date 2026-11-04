@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://5a5w1y4cyur4"]
+
+[ext_resource type="Script" uid="uid://dukwluq6sgsjq" path="res://Resources/Item/Default/Debuff/AshesBottle.gd" id="1_fybgs"]
+
+[node name="AshesBottle" type="Node2D" unique_id=449190726]
+script = ExtResource("1_fybgs")

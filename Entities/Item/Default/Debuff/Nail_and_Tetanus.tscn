@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c43ycdtcsoru"]
+
+[ext_resource type="Script" uid="uid://brdaskvvp2moo" path="res://Resources/Item/Default/Debuff/Nail_and_Tetanus.gd" id="1_nlkao"]
+
+[node name="NailAndTetanus" type="Node2D" unique_id=1388231800]
+script = ExtResource("1_nlkao")
