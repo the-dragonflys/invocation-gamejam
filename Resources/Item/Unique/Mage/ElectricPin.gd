@@ -1,6 +1,6 @@
 class_name ElectricPin extends Item
 
-var action = Action.new(Action.Types.ENEMY_DEBUFF, -3, Action.Stats.STRENGTH)
+var action = Action.new(Action.Types.ENEMY_DEBUFF, -20, Action.Stats.STRENGTH)
 
 func _init() -> void:
 	item_name = "Pino elétrico"

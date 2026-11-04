@@ -1,6 +1,6 @@
 class_name RapidJabs extends Item
 
-var act_jabs = Action.new(Action.Types.ATTACK, 6, Action.Stats.LIFE)
+var act_jabs = Action.new(Action.Types.ATTACK, 7, Action.Stats.LIFE)
 
 func _init() -> void:
 	item_name = "Socos Rápidos"

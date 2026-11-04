@@ -1,6 +1,6 @@
 class_name Footwork extends Item
 
-var act_dmg_buff = Action.new(Action.Types.BUFF, 4, Action.Stats.STRENGTH)
+var act_dmg_buff = Action.new(Action.Types.BUFF, 15, Action.Stats.STRENGTH)
 
 
 func _init() -> void:

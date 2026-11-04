@@ -1,6 +1,6 @@
 class_name SteroidShot extends Item
 
-var act_steroid = Action.new(Action.Types.BUFF, 4, Action.Stats.DEFENSE)
+var act_steroid = Action.new(Action.Types.BUFF, 25, Action.Stats.DEFENSE)
 
 func _init() -> void:
 	item_name = "Dose de Anabolizante"

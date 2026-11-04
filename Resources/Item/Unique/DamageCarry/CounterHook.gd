@@ -1,6 +1,6 @@
 class_name CounterHook extends Item
 
-var act_counter_dmg = Action.new(Action.Types.ATTACK, 4, Action.Stats.LIFE)
+var act_counter_dmg = Action.new(Action.Types.ATTACK, 3, Action.Stats.LIFE)
 var act_counter_stun = Action.new(Action.Types.ENEMY_DEBUFF, 0, Action.Stats.STATE, States.Types.STUNNED)
 
 func _init() -> void:

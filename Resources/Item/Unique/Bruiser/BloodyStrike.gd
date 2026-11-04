@@ -2,7 +2,7 @@ class_name BloodyStrike extends Item
 
 # Causa dano e intimida o inimigo (reduzindo a força dele ou aumentando a própria)
 var act_strike = Action.new(Action.Types.ATTACK, 5, Action.Stats.LIFE)
-var act_intimidate = Action.new(Action.Types.ENEMY_DEBUFF, -2, Action.Stats.STRENGTH)
+var act_intimidate = Action.new(Action.Types.ENEMY_DEBUFF, -10, Action.Stats.STRENGTH)
 
 func _init() -> void:
 	item_name = "Golpe Sangrento"
