@@ -1,6 +1,25 @@
 [gd_scene format=3 uid="uid://blhjfsvh483q1"]
 
 [ext_resource type="Script" uid="uid://bh1hatmsxuhnl" path="res://Entities/ControllerBottons/ControllerButtons.gd" id="1_jy06l"]
+[ext_resource type="Texture2D" uid="uid://c3axtd8ray7f3" path="res://Entities/ControllerBottons/Animations/Idle/Nd Pressionado.png" id="2_tb76x"]
+[ext_resource type="Texture2D" uid="uid://e4cc611aolmk" path="res://Entities/ControllerBottons/Animations/Idle/Lixo.png" id="3_mmbvf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_tb76x")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(252, 141.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yf5fn"]
+size = Vector2(254, 132)
 
 [node name="ControllerButtons" type="Control" unique_id=1268034392]
 layout_mode = 3
@@ -10,3 +29,30 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_jy06l")
+
+[node name="Buttons" type="AnimatedSprite2D" parent="." unique_id=1708127491]
+position = Vector2(61, 0)
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+animation = &"Idle"
+autoplay = "Idle"
+centered = false
+offset = Vector2(0, 560)
+
+[node name="Confirm" type="Area2D" parent="Buttons" unique_id=1617698215]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/Confirm" unique_id=299377353]
+position = Vector2(315, 833.25)
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="Skip" type="Area2D" parent="Buttons" unique_id=1085979111]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/Skip" unique_id=2044169174]
+position = Vector2(316, 692)
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Trash" type="Sprite2D" parent="." unique_id=177223495]
+texture = ExtResource("3_mmbvf")
+centered = false
+
+[connection signal="input_event" from="Buttons/Confirm" to="." method="_on_confirm_input_event"]
+[connection signal="input_event" from="Buttons/Skip" to="." method="_on_skip_input_event"]
