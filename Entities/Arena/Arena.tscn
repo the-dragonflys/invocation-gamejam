@@ -5,7 +5,9 @@
 [ext_resource type="Texture2D" uid="uid://b2024c6bicc7p" path="res://Entities/Arena/Sprites/humano.png" id="3_twi15"]
 [ext_resource type="Texture2D" uid="uid://c7advl5vcj6vo" path="res://Entities/Arena/Sprites/Alien.png" id="4_5gko3"]
 
-[node name="Arena" type="Node2D" unique_id=1875668927 node_paths=PackedStringArray("fighters_in_scene")]
+[node name="Arena" type="Control" unique_id=2024477554 node_paths=PackedStringArray("fighters_in_scene")]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_5e8a1")
 fighters_in_scene = [NodePath("Fighters/ally"), NodePath("Fighters/enemy")]
 
