@@ -3,10 +3,17 @@
 [ext_resource type="Script" uid="uid://b5rowimta1g5f" path="res://Entities/Arena/Arena.gd" id="1_5e8a1"]
 [ext_resource type="Texture2D" uid="uid://dubupb8ng3837" path="res://icon.svg" id="2_0ltms"]
 
-[node name="Arena" type="Control" unique_id=693090021]
+[node name="Arena" type="Control" unique_id=693090021 node_paths=PackedStringArray("fighters_in_scene")]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_5e8a1")
+fighters_in_scene = [NodePath("Fighters/ally"), NodePath("Fighters/enemy")]
 
 [node name="Background" type="Sprite2D" parent="." unique_id=969008777]
 texture = ExtResource("2_0ltms")
+
+[node name="Fighters" type="Node2D" parent="." unique_id=628425345]
+
+[node name="ally" type="Node2D" parent="Fighters" unique_id=1470077402]
+
+[node name="enemy" type="Node2D" parent="Fighters" unique_id=1169900833]

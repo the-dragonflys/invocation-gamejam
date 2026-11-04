@@ -3,12 +3,16 @@ class_name Arena
 
 var ally : Fighter
 var enemy : Fighter
+@export var fighters_in_scene : Array[Node2D]
 
 var TurnManager : TurnQueue = TurnQueue.new()
 
 func _set_fighters(al : Fighter, en : Fighter) -> void:
 	ally = al
 	enemy = en
+	
+	fighters_in_scene[0] = ally.fighter_ref.instantiate()
+	fighters_in_scene[1] = enemy.fighter_ref.instantiate()
 
 func round_start() -> void:
 	TurnManager.generate_queue(ally, enemy)

@@ -20,7 +20,7 @@ animations = [{
 "speed": 1.0
 }]
 
-[node name="Briefcase" type="Control" unique_id=907388579]
+[node name="Briefcase" type="Control" unique_id=907388579 node_paths=PackedStringArray("slots")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -28,6 +28,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_d3i6c")
+slots = [NodePath("Items/Control1"), NodePath("Items/Control2"), NodePath("Items/Control3"), NodePath("Items/Control4"), NodePath("Items/Control5"), NodePath("Items/Control6")]
 
 [node name="Briefcase" type="AnimatedSprite2D" parent="." unique_id=1999400932]
 sprite_frames = SubResource("SpriteFrames_g4v7s")
@@ -35,50 +36,47 @@ animation = &"Open"
 autoplay = "Open"
 centered = false
 
-[node name="Slots" type="Node" parent="." unique_id=1465625243]
+[node name="Items" type="Control" parent="." unique_id=1900835304]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="Control1" type="Control" parent="Slots" unique_id=877065823]
-layout_mode = 3
+[node name="Control1" type="Control" parent="Items" unique_id=877065823]
 anchors_preset = 0
 offset_left = 909.0
 offset_top = 429.0
 offset_right = 1048.0
 offset_bottom = 627.0
 
-[node name="Control2" type="Control" parent="Slots" unique_id=103162659]
-layout_mode = 3
+[node name="Control2" type="Control" parent="Items" unique_id=103162659]
 anchors_preset = 0
 offset_left = 1062.0
 offset_top = 429.0
 offset_right = 1201.0
 offset_bottom = 627.0
 
-[node name="Control3" type="Control" parent="Slots" unique_id=2138176573]
-layout_mode = 3
+[node name="Control3" type="Control" parent="Items" unique_id=2138176573]
 anchors_preset = 0
 offset_left = 1211.0
 offset_top = 429.0
 offset_right = 1350.0
 offset_bottom = 627.0
 
-[node name="Control4" type="Control" parent="Slots" unique_id=1189206387]
-layout_mode = 3
+[node name="Control4" type="Control" parent="Items" unique_id=1189206387]
 anchors_preset = 0
 offset_left = 904.0
 offset_top = 644.0
 offset_right = 1043.0
 offset_bottom = 842.0
 
-[node name="Control5" type="Control" parent="Slots" unique_id=532967077]
-layout_mode = 3
+[node name="Control5" type="Control" parent="Items" unique_id=532967077]
 anchors_preset = 0
 offset_left = 1062.0
 offset_top = 644.0
 offset_right = 1201.0
 offset_bottom = 842.0
 
-[node name="Control6" type="Control" parent="Slots" unique_id=90910929]
-layout_mode = 3
+[node name="Control6" type="Control" parent="Items" unique_id=90910929]
 anchors_preset = 0
 offset_left = 1228.0
 offset_top = 644.0

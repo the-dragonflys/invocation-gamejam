@@ -12,4 +12,3 @@ func _setup() -> void:
 	Team.set(3, TeslaMage.new())
 	
 	curr_fighter = Team[1]
-	

@@ -7,7 +7,7 @@ var Team : Dictionary[int, Fighter] = {}
 var hand : Array[Item] = []	#array[Item]
 var energy : int = 8
 var curr_fighter : Fighter
-var itemgiver : ItemGiver
+var itemgiver : ItemGiver = ItemGiver.new()._setup_default()
 
 func _reset_energy() -> void: energy = 5
 
