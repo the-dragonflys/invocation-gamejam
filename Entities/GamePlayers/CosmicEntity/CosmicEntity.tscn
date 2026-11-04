@@ -1,0 +1,759 @@
+[gd_scene format=3 uid="uid://bgp4af684snmh"]
+
+[ext_resource type="Script" uid="uid://llfocxje0sml" path="res://Entities/GamePlayers/CosmicEntity/CosmicEntity.gd" id="1_8122u"]
+[ext_resource type="Texture2D" uid="uid://blxfjlejjpm21" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0000.png" id="1_oplc4"]
+[ext_resource type="Texture2D" uid="uid://b18ydqg2b8qa5" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0001.png" id="2_pvs7p"]
+[ext_resource type="Texture2D" uid="uid://dp7g3tw22s5yk" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0002.png" id="3_qomeg"]
+[ext_resource type="Texture2D" uid="uid://deu0vcwxidmj" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0003.png" id="4_cgk8l"]
+[ext_resource type="Texture2D" uid="uid://uy6cd0irml8r" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0004.png" id="5_v4146"]
+[ext_resource type="Texture2D" uid="uid://cuk7hora5l217" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0005.png" id="6_0myg7"]
+[ext_resource type="Texture2D" uid="uid://dpc285lectdat" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0006.png" id="7_aw2ix"]
+[ext_resource type="Texture2D" uid="uid://urwtst2w8tfh" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0007.png" id="8_ql4m4"]
+[ext_resource type="Texture2D" uid="uid://kyvbh1wk3en3" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0008.png" id="9_pgyjq"]
+[ext_resource type="Texture2D" uid="uid://cjj7hktq1ry04" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0009.png" id="10_30v08"]
+[ext_resource type="Texture2D" uid="uid://ca8hdtj11xq5p" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0010.png" id="11_kwdqw"]
+[ext_resource type="Texture2D" uid="uid://bo8xbnc8s57gb" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0011.png" id="12_0sdbc"]
+[ext_resource type="Texture2D" uid="uid://c6jhaxoqkkf0k" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0012.png" id="13_ip63f"]
+[ext_resource type="Texture2D" uid="uid://dvmasgxulv6qd" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0013.png" id="14_m3m8a"]
+[ext_resource type="Texture2D" uid="uid://xd6asryfqc44" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0014.png" id="15_0brp4"]
+[ext_resource type="Texture2D" uid="uid://csxy2qkjka4pl" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0015.png" id="16_0uo62"]
+[ext_resource type="Texture2D" uid="uid://cb4sr1a5mxohw" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0016.png" id="17_m6ist"]
+[ext_resource type="Texture2D" uid="uid://pk141g34iv63" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0017.png" id="18_twuof"]
+[ext_resource type="Texture2D" uid="uid://cg3l5xubnpiak" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0018.png" id="19_efxy0"]
+[ext_resource type="Texture2D" uid="uid://bsk07gky4m33g" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0019.png" id="20_ykxkw"]
+[ext_resource type="Texture2D" uid="uid://bk81pr22m6nva" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0020.png" id="21_n4hla"]
+[ext_resource type="Texture2D" uid="uid://cjivnm8xivtyt" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0021.png" id="22_7ucbx"]
+[ext_resource type="Texture2D" uid="uid://dnpdujx80n6jl" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0022.png" id="23_2tpoi"]
+[ext_resource type="Texture2D" uid="uid://vgkbunp1fmpi" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0023.png" id="24_t5v27"]
+[ext_resource type="Texture2D" uid="uid://vyyx4725nuyc" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0024.png" id="25_m6jfs"]
+[ext_resource type="Texture2D" uid="uid://cc6kl64gh17ib" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0025.png" id="26_3jj3c"]
+[ext_resource type="Texture2D" uid="uid://jx6y2rt4k7lh" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0026.png" id="27_d0e5n"]
+[ext_resource type="Texture2D" uid="uid://co8hl6hk3qjan" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0027.png" id="28_iqxwb"]
+[ext_resource type="Texture2D" uid="uid://dhv11wsju0v64" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0028.png" id="29_ff633"]
+[ext_resource type="Texture2D" uid="uid://bktiqc56os7wq" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0029.png" id="30_orvhk"]
+[ext_resource type="Texture2D" uid="uid://bg5iw8oig5d2g" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0030.png" id="31_1tc2g"]
+[ext_resource type="Texture2D" uid="uid://ckck1qjstr4mb" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0031.png" id="32_yygvp"]
+[ext_resource type="Texture2D" uid="uid://bld6d0abg56if" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0032.png" id="33_gysai"]
+[ext_resource type="Texture2D" uid="uid://1tjogd6je16e" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0033.png" id="34_agqnx"]
+[ext_resource type="Texture2D" uid="uid://b54ptus83m8dv" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0034.png" id="35_mjoev"]
+[ext_resource type="Texture2D" uid="uid://bkyebjp6gfq4s" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0035.png" id="36_d0dco"]
+[ext_resource type="Texture2D" uid="uid://b8bad2dnq4xdr" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0036.png" id="37_l8mog"]
+[ext_resource type="Texture2D" uid="uid://rdkoi4k41kc6" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0037.png" id="38_c4xpf"]
+[ext_resource type="Texture2D" uid="uid://b3jcu60xdrcdj" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0038.png" id="39_0m6mp"]
+[ext_resource type="Texture2D" uid="uid://d38vchflavlcn" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0039.png" id="40_3ux87"]
+[ext_resource type="Texture2D" uid="uid://coph50d2ystkv" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0040.png" id="41_vy3gr"]
+[ext_resource type="Texture2D" uid="uid://dyouhda3mwhts" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0041.png" id="42_eyr5y"]
+[ext_resource type="Texture2D" uid="uid://dgrb7x0s8lsc0" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0042.png" id="43_qr25m"]
+[ext_resource type="Texture2D" uid="uid://dgw6i6y1c5vf1" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0043.png" id="44_nuc4u"]
+[ext_resource type="Texture2D" uid="uid://hpg1nx0sxflq" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0044.png" id="45_hqvhp"]
+[ext_resource type="Texture2D" uid="uid://lmmamxproxoj" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0045.png" id="46_tvo3x"]
+[ext_resource type="Texture2D" uid="uid://7o5cjylmswe6" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0046.png" id="47_lp1ig"]
+[ext_resource type="Texture2D" uid="uid://dnuqgho11b6lm" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0047.png" id="48_jouk7"]
+[ext_resource type="Texture2D" uid="uid://ddetlr14qik6u" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0048.png" id="49_qm0pw"]
+[ext_resource type="Texture2D" uid="uid://3n8kidaj7lht" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0049.png" id="50_ea30e"]
+[ext_resource type="Texture2D" uid="uid://bia76p3urhp5k" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0050.png" id="51_tqyjy"]
+[ext_resource type="Texture2D" uid="uid://g1r06wya4rj4" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0051.png" id="52_c1ge2"]
+[ext_resource type="Texture2D" uid="uid://cuy25qegbcfgs" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0052.png" id="53_x7wal"]
+[ext_resource type="Texture2D" uid="uid://cf0f8kpqp8reg" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0053.png" id="54_1fq45"]
+[ext_resource type="Texture2D" uid="uid://bb4gh12r7angp" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0054.png" id="55_m3124"]
+[ext_resource type="Texture2D" uid="uid://mwreokrgeo5v" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0055.png" id="56_aiivl"]
+[ext_resource type="Texture2D" uid="uid://w2db4us3sver" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0056.png" id="57_vr5qs"]
+[ext_resource type="Texture2D" uid="uid://dcpewklnl1hu4" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0057.png" id="58_nxcp0"]
+[ext_resource type="Texture2D" uid="uid://bnidk75fknoo1" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0058.png" id="59_tomse"]
+[ext_resource type="Texture2D" uid="uid://2xp0juda0bsk" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0059.png" id="60_qvhff"]
+[ext_resource type="Texture2D" uid="uid://ejb6naayusdg" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0060.png" id="61_n7y77"]
+[ext_resource type="Texture2D" uid="uid://d4m1sgqic6sd4" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0061.png" id="62_h5hu4"]
+[ext_resource type="Texture2D" uid="uid://lejkxne2y2l6" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0062.png" id="63_xhjgn"]
+[ext_resource type="Texture2D" uid="uid://cgk565het2e4n" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0063.png" id="64_x4dgh"]
+[ext_resource type="Texture2D" uid="uid://c8ahdoq564dis" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0064.png" id="65_g8fo0"]
+[ext_resource type="Texture2D" uid="uid://cd2ekecsnsqcl" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0065.png" id="66_txldb"]
+[ext_resource type="Texture2D" uid="uid://cixwvq5uuc3di" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0066.png" id="67_otljx"]
+[ext_resource type="Texture2D" uid="uid://dwajhwwfs7tg4" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0067.png" id="68_qepss"]
+[ext_resource type="Texture2D" uid="uid://clcod6mh5xkbu" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0068.png" id="69_cg7tf"]
+[ext_resource type="Texture2D" uid="uid://cx41exeye8353" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0069.png" id="70_ymxx0"]
+[ext_resource type="Texture2D" uid="uid://w6f3txnjtuac" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0070.png" id="71_rmr25"]
+[ext_resource type="Texture2D" uid="uid://c2d0d6l1p1uoi" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0071.png" id="72_y1l2d"]
+[ext_resource type="Texture2D" uid="uid://bxmjfmoabei71" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0072.png" id="73_ir523"]
+[ext_resource type="Texture2D" uid="uid://cfh8hhsasksvv" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0073.png" id="74_068ns"]
+[ext_resource type="Texture2D" uid="uid://d07lf4stxkytj" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0074.png" id="75_gkhjc"]
+[ext_resource type="Texture2D" uid="uid://q68txuqg6ctl" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0075.png" id="76_k6n43"]
+[ext_resource type="Texture2D" uid="uid://bnewuikyjgpsf" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0076.png" id="77_ks0vy"]
+[ext_resource type="Texture2D" uid="uid://datvcbd46ob26" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0077.png" id="78_dbibj"]
+[ext_resource type="Texture2D" uid="uid://dj5br8dlw7n1i" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0078.png" id="79_w65v1"]
+[ext_resource type="Texture2D" uid="uid://b30f3pne3jlq" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0079.png" id="80_klcn1"]
+[ext_resource type="Texture2D" uid="uid://dq6bmkir22036" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0080.png" id="81_qayxr"]
+[ext_resource type="Texture2D" uid="uid://e5x0fh15868l" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0081.png" id="82_0n8ti"]
+[ext_resource type="Texture2D" uid="uid://cyn5cqds3txia" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0082.png" id="83_0tb3y"]
+[ext_resource type="Texture2D" uid="uid://exrphssf4twi" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0083.png" id="84_m1jka"]
+[ext_resource type="Texture2D" uid="uid://djh6rklyxhhjw" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0084.png" id="85_0nglv"]
+[ext_resource type="Texture2D" uid="uid://dh8mc0f76da3s" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0085.png" id="86_vq7fd"]
+[ext_resource type="Texture2D" uid="uid://cavvxwd6uruf" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0086.png" id="87_fhafe"]
+[ext_resource type="Texture2D" uid="uid://br1sjvepsvkur" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0087.png" id="88_iphbr"]
+[ext_resource type="Texture2D" uid="uid://tuljhkmsstkf" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0088.png" id="89_v3jrc"]
+[ext_resource type="Texture2D" uid="uid://cn4tn3yxlkvby" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0089.png" id="90_8vb13"]
+[ext_resource type="Texture2D" uid="uid://0q8btw2rqtkv" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0090.png" id="91_7lvhu"]
+[ext_resource type="Texture2D" uid="uid://dnce5cxrp84gi" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0091.png" id="92_q7vvp"]
+[ext_resource type="Texture2D" uid="uid://dkd10tp6sww7c" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0092.png" id="93_cujtr"]
+[ext_resource type="Texture2D" uid="uid://biiakwo3k4e3x" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0093.png" id="94_d6vj4"]
+[ext_resource type="Texture2D" uid="uid://dt6xxkrl1axs0" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0094.png" id="95_66xj4"]
+[ext_resource type="Texture2D" uid="uid://2gxnxromhi3q" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0095.png" id="96_pcdvv"]
+[ext_resource type="Texture2D" uid="uid://0v28knxlm5se" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0096.png" id="97_kcwg7"]
+[ext_resource type="Texture2D" uid="uid://l5tlje8yb76f" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0097.png" id="98_15tg2"]
+[ext_resource type="Texture2D" uid="uid://byndo61y34fih" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0098.png" id="99_t6utt"]
+[ext_resource type="Texture2D" uid="uid://d1aql2n10xteu" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0099.png" id="100_m2ac3"]
+[ext_resource type="Texture2D" uid="uid://c58mr8xk8ir1r" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0100.png" id="101_dtxem"]
+[ext_resource type="Texture2D" uid="uid://cqol66m7tepn3" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0101.png" id="102_tu55b"]
+[ext_resource type="Texture2D" uid="uid://besroroibt5sk" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0102.png" id="103_qpkhq"]
+[ext_resource type="Texture2D" uid="uid://bdfwnvjrbbyc0" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0103.png" id="104_7y68j"]
+[ext_resource type="Texture2D" uid="uid://cbxm3r75ro3db" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0104.png" id="105_k7oqx"]
+[ext_resource type="Texture2D" uid="uid://dfulv7lhjpat8" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0105.png" id="106_d8psg"]
+[ext_resource type="Texture2D" uid="uid://cqjbtq8dx24kx" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0106.png" id="107_3rey6"]
+[ext_resource type="Texture2D" uid="uid://bbgbd1p0p2xjo" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0107.png" id="108_fq3py"]
+[ext_resource type="Texture2D" uid="uid://chew2s48rm27x" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0108.png" id="109_fmvui"]
+[ext_resource type="Texture2D" uid="uid://xjdnrcv28jkv" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0109.png" id="110_ai4y8"]
+[ext_resource type="Texture2D" uid="uid://1in8jc3xqfn0" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0110.png" id="111_rfg85"]
+[ext_resource type="Texture2D" uid="uid://nlicdccisijw" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0111.png" id="112_bu75t"]
+[ext_resource type="Texture2D" uid="uid://b64prqwjqhjth" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0112.png" id="113_wocu3"]
+[ext_resource type="Texture2D" uid="uid://cogypbdwt7k7e" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0113.png" id="114_nm0g2"]
+[ext_resource type="Texture2D" uid="uid://ch8vc1sehx2ob" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0114.png" id="115_aaco3"]
+[ext_resource type="Texture2D" uid="uid://cowiytyp0fnie" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0115.png" id="116_v5n80"]
+[ext_resource type="Texture2D" uid="uid://c5d0iwlpnji0t" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0116.png" id="117_pw0xw"]
+[ext_resource type="Texture2D" uid="uid://cc17h831a56qe" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0117.png" id="118_tcof0"]
+[ext_resource type="Texture2D" uid="uid://evquj5uibaoo" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0118.png" id="119_5pqyp"]
+[ext_resource type="Texture2D" uid="uid://da08mlbk6e8og" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0119.png" id="120_gnfgs"]
+[ext_resource type="Texture2D" uid="uid://v8fonvkmujlp" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0120.png" id="121_tappf"]
+[ext_resource type="Texture2D" uid="uid://cuwd2si8xaigj" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0121.png" id="122_5y3p3"]
+[ext_resource type="Texture2D" uid="uid://b8twl7dxgvd27" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0122.png" id="123_vprql"]
+[ext_resource type="Texture2D" uid="uid://dgl6hnamf84vs" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0123.png" id="124_wbu4t"]
+[ext_resource type="Texture2D" uid="uid://blbyswpki3n66" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0124.png" id="125_kakc2"]
+[ext_resource type="Texture2D" uid="uid://e5dppfyrjl5e" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0125.png" id="126_n1tu6"]
+[ext_resource type="Texture2D" uid="uid://bcs3ya5p7r87m" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0126.png" id="127_fo4ul"]
+[ext_resource type="Texture2D" uid="uid://pxbvk3015htr" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0127.png" id="128_cmvkr"]
+[ext_resource type="Texture2D" uid="uid://bh1ggar8lwhqa" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0128.png" id="129_11aa7"]
+[ext_resource type="Texture2D" uid="uid://daymbp4y7jmv8" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0129.png" id="130_w5ccb"]
+[ext_resource type="Texture2D" uid="uid://cyjuqvkwdnqy7" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0130.png" id="131_eao4l"]
+[ext_resource type="Texture2D" uid="uid://5v67ssuq54dv" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0131.png" id="132_bm5n1"]
+[ext_resource type="Texture2D" uid="uid://cqodrtuwtl7fx" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0132.png" id="133_60l6u"]
+[ext_resource type="Texture2D" uid="uid://4ggo383ays1" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0133.png" id="134_auinb"]
+[ext_resource type="Texture2D" uid="uid://c8yoe51p8u6bm" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0134.png" id="135_5f72o"]
+[ext_resource type="Texture2D" uid="uid://lti5obx3o886" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0135.png" id="136_266wp"]
+[ext_resource type="Texture2D" uid="uid://bh60pdq4rsh7a" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0136.png" id="137_laa0u"]
+[ext_resource type="Texture2D" uid="uid://s15fddm7tjhc" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0137.png" id="138_p7n8w"]
+[ext_resource type="Texture2D" uid="uid://g0lkdc4mk2jd" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0138.png" id="139_2ww0i"]
+[ext_resource type="Texture2D" uid="uid://khkrmvar4hgv" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0139.png" id="140_wviyu"]
+[ext_resource type="Texture2D" uid="uid://b8u0vx8dw4us1" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0140.png" id="141_dibss"]
+[ext_resource type="Texture2D" uid="uid://bclqc7ajhbjgs" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0141.png" id="142_7vdwd"]
+[ext_resource type="Texture2D" uid="uid://n2ovl5h3hlx4" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0142.png" id="143_jwrl5"]
+[ext_resource type="Texture2D" uid="uid://dsng8yta4j5ls" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0143.png" id="144_j660j"]
+[ext_resource type="Texture2D" uid="uid://crfpr780vc1gv" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0144.png" id="145_tq3xc"]
+[ext_resource type="Texture2D" uid="uid://cbcfe2v1myc25" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0145.png" id="146_qjije"]
+[ext_resource type="Texture2D" uid="uid://dixkok07y2ews" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0146.png" id="147_4bwg7"]
+[ext_resource type="Texture2D" uid="uid://bf2xvaoihx2ec" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0147.png" id="148_tvdrr"]
+[ext_resource type="Texture2D" uid="uid://hbq85cgvhu6h" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0148.png" id="149_5c15t"]
+[ext_resource type="Texture2D" uid="uid://iehg85we64oe" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0149.png" id="150_va1st"]
+[ext_resource type="Texture2D" uid="uid://c77s1qhbagrob" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0150.png" id="151_jgic6"]
+[ext_resource type="Texture2D" uid="uid://05qmumf8dr1h" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0151.png" id="152_ft5vl"]
+[ext_resource type="Texture2D" uid="uid://bhrbxjfw7qhra" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0152.png" id="153_cj8xj"]
+[ext_resource type="Texture2D" uid="uid://bybdkredkdog5" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0153.png" id="154_fot45"]
+[ext_resource type="Texture2D" uid="uid://1cup5v5udu2q" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0154.png" id="155_f8oc6"]
+[ext_resource type="Texture2D" uid="uid://bgm3fbjh1cnfw" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0155.png" id="156_iroyb"]
+[ext_resource type="Texture2D" uid="uid://2dpjmrfbi08x" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0156.png" id="157_nb0k7"]
+[ext_resource type="Texture2D" uid="uid://cdp2m4c3ibpac" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0157.png" id="158_bvlup"]
+[ext_resource type="Texture2D" uid="uid://b8roh33gg1uck" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0158.png" id="159_bgq8n"]
+[ext_resource type="Texture2D" uid="uid://bgl7adlkj8ql4" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0159.png" id="160_rljof"]
+[ext_resource type="Texture2D" uid="uid://2gaoo1ovaekx" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0160.png" id="161_y28vs"]
+[ext_resource type="Texture2D" uid="uid://6d5j051pb3rj" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0161.png" id="162_7doju"]
+[ext_resource type="Texture2D" uid="uid://dv6ttep3j66o" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0162.png" id="163_khovd"]
+[ext_resource type="Texture2D" uid="uid://dnrx32qnuiij1" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0163.png" id="164_fx2eb"]
+[ext_resource type="Texture2D" uid="uid://hvpwi3lvojn0" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0164.png" id="165_ulhf6"]
+[ext_resource type="Texture2D" uid="uid://doetpn1e1xmrr" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0165.png" id="166_7w1xt"]
+[ext_resource type="Texture2D" uid="uid://d2sa1waew2k7n" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0166.png" id="167_sc17i"]
+[ext_resource type="Texture2D" uid="uid://ctpsunf82k15y" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0167.png" id="168_p2jhv"]
+[ext_resource type="Texture2D" uid="uid://d064awvrb5yfn" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0168.png" id="169_r21u5"]
+[ext_resource type="Texture2D" uid="uid://cc05njlf4o4s1" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0169.png" id="170_lswxk"]
+[ext_resource type="Texture2D" uid="uid://d28hkgmphnkdy" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0170.png" id="171_7ludg"]
+[ext_resource type="Texture2D" uid="uid://buakpa2eyhrd5" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0171.png" id="172_7rn3i"]
+[ext_resource type="Texture2D" uid="uid://6gvcsgoq2myg" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0172.png" id="173_s7wya"]
+[ext_resource type="Texture2D" uid="uid://cni0hrvcxkud8" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0173.png" id="174_rv51i"]
+[ext_resource type="Texture2D" uid="uid://csmxfjlxyktn1" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0174.png" id="175_638i0"]
+[ext_resource type="Texture2D" uid="uid://cmeb6x56j5378" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0175.png" id="176_imnhc"]
+[ext_resource type="Texture2D" uid="uid://cofjg3t4k5sbp" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0176.png" id="177_sy6e7"]
+[ext_resource type="Texture2D" uid="uid://bkyvjx01yt7sp" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0177.png" id="178_t51ls"]
+[ext_resource type="Texture2D" uid="uid://d0m7e5o2ltxpv" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0178.png" id="179_gvaym"]
+[ext_resource type="Texture2D" uid="uid://bhp6i7pn3grqo" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0179.png" id="180_j4w2d"]
+[ext_resource type="Texture2D" uid="uid://4drb2f6qg2fl" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0180.png" id="181_p3sat"]
+[ext_resource type="Texture2D" uid="uid://b86tnfa3xoo4e" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0181.png" id="182_mkmfy"]
+[ext_resource type="Texture2D" uid="uid://opup2n6gecfm" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0182.png" id="183_l0ho2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yf5fn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_oplc4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_pvs7p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qomeg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cgk8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_v4146")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_0myg7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_aw2ix")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ql4m4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_pgyjq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_30v08")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_kwdqw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_0sdbc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ip63f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_m3m8a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_0brp4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_0uo62")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_m6ist")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_twuof")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_efxy0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ykxkw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_n4hla")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_7ucbx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_2tpoi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_t5v27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_m6jfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_3jj3c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_d0e5n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_iqxwb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ff633")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_orvhk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_1tc2g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_yygvp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_gysai")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_agqnx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_mjoev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_d0dco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_l8mog")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_c4xpf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_0m6mp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_3ux87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_vy3gr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_eyr5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_qr25m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_nuc4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_hqvhp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_tvo3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_lp1ig")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_jouk7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_qm0pw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_ea30e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_tqyjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_c1ge2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_x7wal")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_1fq45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_m3124")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_aiivl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_vr5qs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_nxcp0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_tomse")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_qvhff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_n7y77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_h5hu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_xhjgn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_x4dgh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_g8fo0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_txldb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_otljx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_qepss")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_cg7tf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_ymxx0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_rmr25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_y1l2d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_ir523")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_068ns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_gkhjc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_k6n43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_ks0vy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_dbibj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_w65v1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_klcn1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_qayxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_0n8ti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_0tb3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_m1jka")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_0nglv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_vq7fd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_fhafe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_iphbr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_v3jrc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_8vb13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_7lvhu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_q7vvp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_cujtr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_d6vj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_66xj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_pcdvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_kcwg7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_15tg2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_t6utt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_m2ac3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_dtxem")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_tu55b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_qpkhq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_7y68j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_k7oqx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_d8psg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_3rey6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_fq3py")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_fmvui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_ai4y8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_rfg85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_bu75t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_wocu3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_nm0g2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_aaco3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_v5n80")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_pw0xw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_tcof0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_5pqyp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_gnfgs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_tappf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_5y3p3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_vprql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_wbu4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_kakc2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_n1tu6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_fo4ul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_cmvkr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_11aa7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_w5ccb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_eao4l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_bm5n1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_60l6u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_auinb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_5f72o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_266wp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_laa0u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_p7n8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_2ww0i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_wviyu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_dibss")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_7vdwd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_jwrl5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_j660j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_tq3xc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_qjije")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_4bwg7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_tvdrr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_5c15t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_va1st")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_jgic6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_ft5vl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_cj8xj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_fot45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_f8oc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_iroyb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_nb0k7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("158_bvlup")
+}, {
+"duration": 1.0,
+"texture": ExtResource("159_bgq8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("160_rljof")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161_y28vs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("162_7doju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("163_khovd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164_fx2eb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("165_ulhf6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("166_7w1xt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("167_sc17i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("168_p2jhv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("169_r21u5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("170_lswxk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("171_7ludg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("172_7rn3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("173_s7wya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("174_rv51i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("175_638i0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("176_imnhc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("177_sy6e7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("178_t51ls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("179_gvaym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("180_j4w2d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("181_p3sat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("182_mkmfy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("183_l0ho2")
+}],
+"loop": 2,
+"name": &"default",
+"speed": 6.0
+}]
+
+[node name="CosmicEntity" type="Node2D" unique_id=546302893]
+script = ExtResource("1_8122u")
+
+[node name="left_eye" type="AnimatedSprite2D" parent="." unique_id=696995964]
+position = Vector2(640, 536)
+sprite_frames = SubResource("SpriteFrames_yf5fn")
+autoplay = "default"
+
+[node name="right_eye" type="AnimatedSprite2D" parent="." unique_id=315384010]
+position = Vector2(1112, 536)
+sprite_frames = SubResource("SpriteFrames_yf5fn")
+autoplay = "default"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=436264285]
+anchor_mode = 0

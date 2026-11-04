@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dobuewv7nyada"]
 
 [ext_resource type="Texture2D" uid="uid://cjsrrlj2tbawf" path="res://Screens/Desk/Animations/Default/0_.png" id="1_k7bhy"]
+[ext_resource type="Script" uid="uid://dvyipgyjtgc36" path="res://Screens/Desk/Desk.gd" id="1_ql0fa"]
 [ext_resource type="Texture2D" uid="uid://skubybsiqvgh" path="res://Screens/Desk/Animations/Default/10_.png" id="2_bcxvh"]
 [ext_resource type="Script" uid="uid://d1egs8yhw0vcg" path="res://Screens/Desk/camera_2d.gd" id="2_n6b4a"]
 [ext_resource type="Script" uid="uid://bqtbt6is8hi7i" path="res://Screens/Desk/background.gd" id="2_vsru3"]
@@ -13,7 +14,8 @@
 [ext_resource type="Texture2D" uid="uid://bn4gf5grhcjkr" path="res://Screens/Desk/Animations/Default/80_.png" id="9_35o4q"]
 [ext_resource type="Texture2D" uid="uid://67cghhehx2u4" path="res://Screens/Desk/Animations/Default/90_.png" id="10_l6woq"]
 [ext_resource type="Texture2D" uid="uid://qicf05a76us4" path="res://Screens/Desk/Animations/Default/100_.png" id="11_ve7fg"]
-[ext_resource type="PackedScene" uid="uid://bgp4af684snmh" path="res://Entities/CosmicEntity/CosmicEntity.tscn" id="14_bcxvh"]
+[ext_resource type="PackedScene" uid="uid://bgp4af684snmh" path="res://Entities/GamePlayers/CosmicEntity/CosmicEntity.tscn" id="14_bcxvh"]
+[ext_resource type="PackedScene" uid="uid://b8fg7xok3tyfi" path="res://Entities/Briefcase/Briefcase.tscn" id="15_unumf"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yf5fn"]
 animations = [{
@@ -68,6 +70,7 @@ animations = [{
 }]
 
 [node name="Desk" type="Node2D" unique_id=1257678287]
+script = ExtResource("1_ql0fa")
 
 [node name="Background" type="AnimatedSprite2D" parent="." unique_id=518720088]
 position = Vector2(960, 1620)
@@ -90,3 +93,9 @@ script = ExtResource("2_n6b4a")
 [node name="CosmicEntity" parent="." unique_id=546302893 instance=ExtResource("14_bcxvh")]
 position = Vector2(192, 192)
 scale = Vector2(0.8, 0.8)
+
+[node name="Briefcase" parent="." unique_id=907388579 instance=ExtResource("15_unumf")]
+offset_left = -312.0
+offset_top = 2136.0
+offset_right = -312.0
+offset_bottom = 2136.0

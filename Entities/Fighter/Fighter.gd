@@ -3,13 +3,14 @@ class_name Fighter
 
 @export var nome : String
 @export var base : FighterResource
+@export var fighter_ref : PackedScene
 
 # define as propriedades da classe Fighter e seus tipos
 var life : int # max 50
 var strength : int # 0-200 ⇒ as a percentage
 var defense : int  # 0-200 ⇒ as a percentage
 var initiative : int = 1 	# 0 or 1 
-var energy : int = 5	# 5
+	# 5
 
 var action_queue : ActionQueue = ActionQueue.new()
 var state : States.Types = States.Types.IDLE
@@ -48,10 +49,10 @@ func _realize_action() -> Action:
 func attack(act : Action, target: Fighter) -> void:
 	var attack_value : float
 	var percentage : float
-	percentage = strength / target.defense
+	percentage = (strength as float) / (target.defense as float)
 	
-	attack_value = act.modifier * percentage
-	target.change_life(floor(attack_value))
+	attack_value = (act.modifier as float) * percentage
+	target.change_life((floor(attack_value) as int))
 	
 # UNARY OPERATOR
 func self_attack(act : Action) -> void: 

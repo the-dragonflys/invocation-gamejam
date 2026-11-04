@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://xyex2k8uu5mq"]
+
+[ext_resource type="Script" uid="uid://b5rowimta1g5f" path="res://Entities/Arena/Arena.gd" id="1_5e8a1"]
+
+[node name="Arena" type="Node2D" unique_id=635133051]
+script = ExtResource("1_5e8a1")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=969008777]
