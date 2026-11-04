@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://pfs5maeps6d2"]
+
+[ext_resource type="Script" uid="uid://crbodehl7swt4" path="res://Resources/Item/Default/Control/RustyHandcuffs.gd" id="1_etqbr"]
+
+[node name="RustyHandcuffs" type="Node2D" unique_id=438200989]
+script = ExtResource("1_etqbr")

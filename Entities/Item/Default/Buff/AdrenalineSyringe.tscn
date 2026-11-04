@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://jn3nionevms6"]
+
+[ext_resource type="Script" uid="uid://bkm5jwc3njdjs" path="res://Resources/Item/Default/Buff/AdrenalineSyringe.gd" id="1_supru"]
+
+[node name="AdrenalineSyringe" type="Node2D" unique_id=1641590057]
+script = ExtResource("1_supru")

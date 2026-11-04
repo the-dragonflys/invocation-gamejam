@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://wb8q0rsw06od"]
+
+[ext_resource type="Script" uid="uid://bv6fe4kmcpps2" path="res://Resources/Item/Default/Attack/RustedScalpel.gd" id="1_lrb5p"]
+
+[node name="RustedScalpel" type="Node2D" unique_id=1395784791]
+script = ExtResource("1_lrb5p")
