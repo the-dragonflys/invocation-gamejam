@@ -1,11 +1,11 @@
-extends Node
+class_name AdrenalineSyringe extends Item
 
+var act_get_a_shot = Action.new(Action.Types.BUFF, 12, Action.Stats.STRENGTH)
+var act_take_a_injection = Action.new(Action.Types.BUFF, 12, Action.Stats.DEFENSE)
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _init() -> void:
+	item_name = "Seringa de Adrenalina"
+	item_typ = Types.BUFF
+	description =  "Seringa de vidro suja que garante ação dupla imediata, aumentando ataque e defesa por igual durante uma rodada."
+	actions = [act_get_a_shot, act_take_a_injection]
+	cost =  3

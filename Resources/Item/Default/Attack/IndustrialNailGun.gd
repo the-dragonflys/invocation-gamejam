@@ -1,11 +1,10 @@
-extends Node
+class_name IndustrialNailGun extends Item
 
+var act_shot = Action.new(Action.Types.ATTACK, 3, Action.Stats.LIFE) 
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _init() -> void:
+	item_name = "Arma industrial de pregos"
+	item_typ = Types.ATTACK
+	description = "Pistola de pregos pesada, atira uma rajada de pregos no oponente."
+	actions = [act_shot]
+	cost =  1

@@ -1,11 +1,10 @@
-extends Node
+class_name LeadPlate extends Item
 
+var act_equip = Action.new(Action.Types.BUFF, 12, Action.Stats.DEFENSE)
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _init() -> void:
+	item_name = "Placa de Chumbo"
+	item_typ = Types.BUFF
+	description = "Placa de chumbo densa que deixa o lutador mais resistente a golpes."
+	actions = [act_equip]
+	cost = 1

@@ -1,11 +1,10 @@
-extends Node
+class_name StolenBloodBag extends Item
 
+var act_curar_se = Action.new(Action.Types.BUFF, 8, Action.Stats.LIFE)
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _init() -> void:
+	item_name = "Bolsa de Sangue Roubada"
+	item_typ = Types.HEAL
+	description = "Bolsa de sangue fria com agulha grossa. Restaura muita vida."
+	actions = [act_curar_se]
+	cost = 3

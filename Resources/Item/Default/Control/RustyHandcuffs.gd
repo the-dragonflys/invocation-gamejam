@@ -1,11 +1,10 @@
-extends Node
+class_name RustyHandcuffs extends Item
 
+var act_cegar = Action.new(Action.Types.ENEMY_DEBUFF, 0, Action.Stats.STATE)
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _init() -> void:
+	item_name = "Frasco de Cinzas"
+	item_typ = Types.CONTROL
+	description = "Algema prendendo uma mão do oponente à mesa, bloqueando o ataque dele nessa rodada."
+	actions = [act_cegar]
+	cost = 2

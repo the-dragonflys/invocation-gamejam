@@ -1,11 +1,10 @@
-extends Node
+class_name AshesBottle extends Item
 
+var act_cegar = Action.new(Action.Types.ENEMY_DEBUFF, 10, Action.Stats.STRENGTH)
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _init() -> void:
+	item_name = "Frasco de Cinzas"
+	item_typ = Types.DEBUFF
+	description = "Frasco com cinzas jogado no rosto do oponente, garantindo que o próximo ataque inimigo erre o alvo. Diminui o ataque do inimigo."
+	actions = [act_cegar]
+	cost = 2
