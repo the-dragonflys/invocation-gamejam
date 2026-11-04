@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://bgp4af684snmh" path="res://Entities/GamePlayers/CosmicEntity/CosmicEntity.tscn" id="14_bcxvh"]
 [ext_resource type="PackedScene" uid="uid://b8fg7xok3tyfi" path="res://Entities/Briefcase/Briefcase.tscn" id="15_unumf"]
 [ext_resource type="PackedScene" uid="uid://blhjfsvh483q1" path="res://Entities/ControllerBottons/ControllerButtons.tscn" id="17_pvmk7"]
+[ext_resource type="PackedScene" uid="uid://xyex2k8uu5mq" path="res://Entities/Arena/Arena.tscn" id="18_2euvh"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yf5fn"]
 animations = [{
@@ -106,3 +107,9 @@ offset_left = 1184.0
 offset_top = 2128.0
 offset_right = 1184.0
 offset_bottom = 2128.0
+
+[node name="Arena" parent="." unique_id=693090021 instance=ExtResource("18_2euvh")]
+offset_left = 968.0
+offset_top = 888.0
+offset_right = 968.0
+offset_bottom = 888.0

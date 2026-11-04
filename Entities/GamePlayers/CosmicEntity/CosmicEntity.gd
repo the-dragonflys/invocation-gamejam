@@ -1,15 +1,16 @@
 extends PlayerDef
 class_name CosmicEntity
 
-var itemgiver : ItemGiver
 var soundPlaying : bool = false
+var curr_idx : int = 0
 
 func _setup() -> void:
-	Team.push_back(BirglyBruiter.new())
-	Team.push_back(BrizockTrocky.new())
-	Team.push_back(ZibZibZub.new())
-	Team.push_back(ZorlobGord.new())
+	Team.set(0, BirglyBruiter.new())
+	Team.set(1, BrizockTrocky.new())
+	Team.set(2, ZibZibZub.new())
+	Team.set(3, ZorlobGord.new())
 
+	curr_fighter = Team[curr_idx]
 
 func _on_sound_timer_timeout() -> void:
 	if not soundPlaying:

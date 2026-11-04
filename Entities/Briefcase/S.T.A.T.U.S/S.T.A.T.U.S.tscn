@@ -1,0 +1,127 @@
+[gd_scene format=3 uid="uid://wj8p7arefdde"]
+
+[ext_resource type="Script" uid="uid://dk16pnu7u1xrr" path="res://Entities/Briefcase/S.T.A.T.U.S/S.T.A.T.U.S.gd" id="1_6muxv"]
+[ext_resource type="Texture2D" uid="uid://bfoqe7resdwkj" path="res://Entities/Briefcase/S.T.A.T.U.S/Assets/Background/Billy Apagados.png" id="1_yigdd"]
+[ext_resource type="Texture2D" uid="uid://cad1s58fik2dt" path="res://Entities/Briefcase/S.T.A.T.U.S/Assets/Background/Hop Apagados.png" id="2_6muxv"]
+[ext_resource type="Texture2D" uid="uid://b7dahvw4rm5ua" path="res://Entities/Briefcase/S.T.A.T.U.S/Assets/Background/Rock Apagados.png" id="3_1ktb5"]
+[ext_resource type="Texture2D" uid="uid://cawgnb48a88v2" path="res://Entities/Briefcase/S.T.A.T.U.S/Assets/Background/Tesla Apagados.png" id="4_fm53t"]
+[ext_resource type="Texture2D" uid="uid://c5mn1njlplvvo" path="res://Entities/Briefcase/S.T.A.T.U.S/Assets/Names/Billy.png" id="6_1ktb5"]
+[ext_resource type="Texture2D" uid="uid://qwel6jbj4j6s" path="res://Entities/Briefcase/S.T.A.T.U.S/Assets/Names/Hop.png" id="7_fm53t"]
+[ext_resource type="Texture2D" uid="uid://uqjjmrbra7hb" path="res://Entities/Briefcase/S.T.A.T.U.S/Assets/Names/Rock.png" id="8_hgmpu"]
+[ext_resource type="Texture2D" uid="uid://d1h84w4nh5fl0" path="res://Entities/Briefcase/S.T.A.T.U.S/Assets/Names/Tesla.png" id="9_ebtpg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_yigdd")
+}],
+"loop": 1,
+"name": &"billy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_6muxv")
+}],
+"loop": 1,
+"name": &"hop",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_1ktb5")
+}],
+"loop": 1,
+"name": &"rock",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_fm53t")
+}],
+"loop": 1,
+"name": &"tesla",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(114, 27)
+
+[node name="S_t_a_t_u_s" type="Control" unique_id=1359448430]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6muxv")
+
+[node name="Background" type="AnimatedSprite2D" parent="." unique_id=139780354]
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+animation = &"billy"
+autoplay = "billy"
+centered = false
+
+[node name="Characters" type="Control" parent="." unique_id=63378853]
+anchors_preset = 0
+
+[node name="Billy" type="Control" parent="Characters" unique_id=1648375336]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Name" type="Sprite2D" parent="Characters/Billy" unique_id=1972081354]
+position = Vector2(240, 272)
+texture = ExtResource("6_1ktb5")
+
+[node name="Area2D" type="Area2D" parent="Characters/Billy" unique_id=1044783773]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Characters/Billy/Area2D" unique_id=1175646067]
+position = Vector2(136, 320)
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="Hop" type="Control" parent="Characters" unique_id=1908403768]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Name" type="Sprite2D" parent="Characters/Hop" unique_id=1925363783]
+position = Vector2(240, 272)
+texture = ExtResource("7_fm53t")
+
+[node name="Area2D" type="Area2D" parent="Characters/Hop" unique_id=1053411712]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Characters/Hop/Area2D" unique_id=1036159927]
+position = Vector2(136, 349)
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="Rock" type="Control" parent="Characters" unique_id=1402653408]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Name" type="Sprite2D" parent="Characters/Rock" unique_id=430056979]
+position = Vector2(240, 272)
+texture = ExtResource("8_hgmpu")
+
+[node name="Area2D" type="Area2D" parent="Characters/Rock" unique_id=90878526]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Characters/Rock/Area2D" unique_id=1812434903]
+position = Vector2(136, 378.5)
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="Tesla" type="Control" parent="Characters" unique_id=1052041839]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Name" type="Sprite2D" parent="Characters/Tesla" unique_id=524799832]
+position = Vector2(240, 272)
+texture = ExtResource("9_ebtpg")
+
+[node name="Area2D" type="Area2D" parent="Characters/Tesla" unique_id=461361677]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Characters/Tesla/Area2D" unique_id=1323489442]
+position = Vector2(136, 408)
+shape = SubResource("RectangleShape2D_g4v7s")

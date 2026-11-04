@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dekuvj4bdpxot" path="res://Entities/Briefcase/Briefcase.gd" id="1_d3i6c"]
 [ext_resource type="Texture2D" uid="uid://bswy1qh65llua" path="res://Entities/Briefcase/Animations/Aberta.png" id="2_p5x35"]
+[ext_resource type="PackedScene" uid="uid://wj8p7arefdde" path="res://Entities/Briefcase/S.T.A.T.U.S/S.T.A.T.U.S.tscn" id="3_5oohj"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
 animations = [{
@@ -33,3 +34,60 @@ sprite_frames = SubResource("SpriteFrames_g4v7s")
 animation = &"Open"
 autoplay = "Open"
 centered = false
+
+[node name="Slots" type="Node" parent="." unique_id=1465625243]
+
+[node name="Control1" type="Control" parent="Slots" unique_id=877065823]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 909.0
+offset_top = 429.0
+offset_right = 1048.0
+offset_bottom = 627.0
+
+[node name="Control2" type="Control" parent="Slots" unique_id=103162659]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1062.0
+offset_top = 429.0
+offset_right = 1201.0
+offset_bottom = 627.0
+
+[node name="Control3" type="Control" parent="Slots" unique_id=2138176573]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1211.0
+offset_top = 429.0
+offset_right = 1350.0
+offset_bottom = 627.0
+
+[node name="Control4" type="Control" parent="Slots" unique_id=1189206387]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 904.0
+offset_top = 644.0
+offset_right = 1043.0
+offset_bottom = 842.0
+
+[node name="Control5" type="Control" parent="Slots" unique_id=532967077]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1062.0
+offset_top = 644.0
+offset_right = 1201.0
+offset_bottom = 842.0
+
+[node name="Control6" type="Control" parent="Slots" unique_id=90910929]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1228.0
+offset_top = 644.0
+offset_right = 1367.0
+offset_bottom = 842.0
+
+[node name="S_t_a_t_u_s" parent="." unique_id=1359448430 instance=ExtResource("3_5oohj")]
+layout_mode = 1
+offset_left = 494.0
+offset_top = 344.0
+offset_right = 494.0
+offset_bottom = 344.0

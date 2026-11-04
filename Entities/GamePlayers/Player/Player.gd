@@ -6,8 +6,10 @@ var briefcase : Briefcase
 func _init(bf_ref : Briefcase) -> void: briefcase = bf_ref
 
 func _setup() -> void:
-	Team.push_back(HopperTank.new())
-	Team.push_back(BillyBrute.new())
-	Team.push_back(Rocky.new())
-	Team.push_back(TeslaMage.new())
+	Team.set(0, HopperTank.new())
+	Team.set(1, BillyBrute.new())
+	Team.set(2, Rocky.new())
+	Team.set(3, TeslaMage.new())
+	
+	curr_fighter = Team[1]
 	

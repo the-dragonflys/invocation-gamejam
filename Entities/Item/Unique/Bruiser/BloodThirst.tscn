@@ -2,10 +2,16 @@
 
 [ext_resource type="Script" uid="uid://bo7gfjdyup1vg" path="res://Resources/Item/Unique/Bruiser/BloodThirst.gd" id="1_0mw3j"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+
 [node name="BloodThirst" type="Control" unique_id=817624474]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_0mw3j")
-item_ref = null
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=836621872]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1471867302]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1438040458]
+shape = SubResource("RectangleShape2D_g4v7s")

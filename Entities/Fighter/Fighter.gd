@@ -1,6 +1,8 @@
 extends Node2D
 class_name Fighter
 
+signal died
+
 @export var nome : String
 @export var base : FighterResource
 @export var fighter_ref : PackedScene
@@ -77,6 +79,8 @@ func change_initiative() -> void:
 	initiative = 0 if initiative == 1 else 1
 
 # CHECKERS
-func is_alive() -> bool : return life > 0
+func check_died() -> void :
+	if life == 0:
+		died.emit()
 func can_act() -> bool: 
 	return action_queue.is_there_actions_left()

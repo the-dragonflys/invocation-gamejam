@@ -1,0 +1,2 @@
+extends Control
+class_name s_t_a_t_u_s
