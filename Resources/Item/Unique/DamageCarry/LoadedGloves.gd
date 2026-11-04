@@ -3,7 +3,7 @@ class_name LoadedGloves extends Item
 var act_weaken = Action.new(Action.Types.ENEMY_DEBUFF, -14, Action.Stats.STRENGTH)
 
 func _init() -> void:
-	item_ref = preload("res://Entities/Item/Unique/DamageCarrier/LoadedGloves.tscn")
+	item_ref = load("res://Entities/Item/Unique/DamageCarrier/LoadedGloves.tscn")
 	item_name = "Luvas Chumbadas"
 	item_typ = Types.DEBUFF
 	description = "Luvas com pedras dentro. Acertos deixam o inimigo confuso e com dano reduzido."

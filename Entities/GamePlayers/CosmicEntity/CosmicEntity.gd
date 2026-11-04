@@ -1,16 +1,13 @@
 extends PlayerDef
 class_name CosmicEntity
 
+signal entity_lost
+
 var soundPlaying : bool = false
 var curr_idx : int = 0
 
 func _setup() -> void:
-	Team.set(0, BirglyBruiter.new())
-	Team.set(1, BrizockTrocky.new())
-	Team.set(2, ZibZibZub.new())
-	Team.set(3, ZorlobGord.new())
-
-	curr_fighter = Team[curr_idx]
+	curr_fighter = Team.get(curr_idx)
 
 func _on_sound_timer_timeout() -> void:
 	if not soundPlaying:
@@ -22,3 +19,10 @@ func _on_sound_timer_timeout() -> void:
 
 func _on_cosmic_entity_sound_finished() -> void:
 	soundPlaying = false
+
+func _on_fighter_died() -> void:
+	curr_idx += 1
+	if (curr_idx <= 3):
+		curr_fighter = Team.get(curr_idx)
+	else:
+		entity_lost.emit()

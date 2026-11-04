@@ -4,7 +4,7 @@ class_name Shotgun extends Item
 var act_pull_shotgun = Action.new(Action.Types.BUFF, 0, Action.Stats.STATE, States.Types.SHOTGUN)
 
 func _init() -> void:
-	item_ref = preload("res://Entities/Item/Unique/Bruiser/Shotgun.tscn")
+	item_ref = load("res://Entities/Item/Unique/Bruiser/Shotgun.tscn")
 	item_name = "Escopeta"
 	item_typ = Types.BUFF
 	description = "Saca uma espingarda escondida, garantindo que o próximo ataque seja um tiro."

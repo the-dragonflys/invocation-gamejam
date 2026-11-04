@@ -5,7 +5,6 @@ signal died
 
 @export var nome : String
 @export var base : FighterResource
-@export var fighter_ref : PackedScene
 
 # define as propriedades da classe Fighter e seus tipos
 var life : int # max 50

@@ -3,7 +3,7 @@ class_name CrowbarParry extends Item
 var act_parry = Action.new(Action.Types.BUFF, 15, Action.Stats.DEFENSE)
 
 func _init() -> void:
-	item_ref = preload("res://Entities/Item/Unique/Bruiser/CrowbarParry.tscn")
+	item_ref = load("res://Entities/Item/Unique/Bruiser/CrowbarParry.tscn")
 	item_name = "Aparar com Pé de Cabra"
 	item_typ = Types.BUFF
 	description = "Usa o pé de cabra para aparar, recebendo menos dano na rodada seguinte."

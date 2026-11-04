@@ -5,7 +5,7 @@ var act_uppercut = Action.new(Action.Types.ATTACK, 8, Action.Stats.LIFE)
 var act_morale = Action.new(Action.Types.BUFF, 12, Action.Stats.STRENGTH)
 
 func _init() -> void:
-	item_ref = preload("res://Entities/Item/Unique/DamageCarrier/MoraleUpperCut.tscn")
+	item_ref = load("res://Entities/Item/Unique/DamageCarrier/MoraleUpperCut.tscn")
 	item_name = "Gancho de Moral"
 	item_typ = Types.ATTACK
 	description = "Gancho poderoso que causa mais dano quanto maior for o ímpeto do personagem."

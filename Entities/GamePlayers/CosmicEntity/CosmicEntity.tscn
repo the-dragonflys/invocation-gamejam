@@ -185,6 +185,10 @@
 [ext_resource type="Texture2D" uid="uid://b86tnfa3xoo4e" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0181.png" id="182_mkmfy"]
 [ext_resource type="Texture2D" uid="uid://opup2n6gecfm" path="res://Entities/GamePlayers/CosmicEntity/Animations/Default/quadro0182.png" id="183_l0ho2"]
 [ext_resource type="AudioStream" uid="uid://d2pevkeyfm5sk" path="res://Assets/CosmicEntitySound/876443__eardeer__raptureofthedeep.wav" id="185_sigrw"]
+[ext_resource type="PackedScene" uid="uid://du24juk535nt4" path="res://Entities/Fighter/Aliens/BirglyBruiter/BirglyBruiter.tscn" id="186_0wvgx"]
+[ext_resource type="PackedScene" uid="uid://c1a1j4r3xw8cv" path="res://Entities/Fighter/Aliens/BrizockTrocky/BrizockTrocky.tscn" id="186_hnnek"]
+[ext_resource type="PackedScene" uid="uid://dl2kfmdxko0ql" path="res://Entities/Fighter/Aliens/ZorlobGord/ZorlobGord.tscn" id="186_jbjif"]
+[ext_resource type="PackedScene" uid="uid://dql5motie4siy" path="res://Entities/Fighter/Aliens/ZibZibZub/ZibZibZub.tscn" id="186_mr387"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yf5fn"]
 animations = [{
@@ -743,8 +747,9 @@ animations = [{
 "speed": 6.0
 }]
 
-[node name="CosmicEntity" type="Node2D" unique_id=546302893]
+[node name="CosmicEntity" type="Node2D" unique_id=546302893 node_paths=PackedStringArray("Team")]
 script = ExtResource("1_8122u")
+Team = [NodePath("Team/ZorlobGord"), NodePath("Team/ZibZibZub"), NodePath("Team/BrizockTrocky"), NodePath("Team/BirglyBruiter")]
 
 [node name="left_eye" type="AnimatedSprite2D" parent="." unique_id=696995964]
 position = Vector2(640, 536)
@@ -766,5 +771,16 @@ stream = ExtResource("185_sigrw")
 wait_time = 5.0
 autostart = true
 
+[node name="Team" type="Node2D" parent="." unique_id=1874772916]
+
+[node name="ZorlobGord" parent="Team" unique_id=2032782850 instance=ExtResource("186_jbjif")]
+
+[node name="ZibZibZub" parent="Team" unique_id=1195665946 instance=ExtResource("186_mr387")]
+
+[node name="BrizockTrocky" parent="Team" unique_id=784723869 instance=ExtResource("186_hnnek")]
+
+[node name="BirglyBruiter" parent="Team" unique_id=794310315 instance=ExtResource("186_0wvgx")]
+
+[connection signal="fighter_died" from="." to="." method="_on_fighter_died"]
 [connection signal="finished" from="CosmicEntitySound" to="." method="_on_cosmic_entity_sound_finished"]
 [connection signal="timeout" from="CosmicEntitySound/SoundTimer" to="." method="_on_sound_timer_timeout"]

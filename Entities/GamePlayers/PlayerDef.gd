@@ -3,7 +3,7 @@ class_name PlayerDef extends Node2D
 
 signal fighter_died
 
-var Team : Dictionary[int, Fighter] = {}
+@export var Team : Array[Fighter] = []
 var hand : Array[Item] = []	#array[Item]
 var energy : int = 8
 var curr_fighter : Fighter

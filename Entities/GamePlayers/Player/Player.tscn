@@ -1,6 +1,22 @@
 [gd_scene format=3 uid="uid://cqgmt0ahkrthf"]
 
 [ext_resource type="Script" uid="uid://qywe0edwpfom" path="res://Entities/GamePlayers/Player/Player.gd" id="1_lrrbj"]
+[ext_resource type="PackedScene" uid="uid://b66lu6rjj7q6w" path="res://Entities/Fighter/Earthlings/Rocky/Rocky.tscn" id="2_evpg1"]
+[ext_resource type="PackedScene" uid="uid://cdbqj3wfylwib" path="res://Entities/Fighter/Earthlings/BillyBrute/BillyBrute.tscn" id="3_st3qa"]
+[ext_resource type="PackedScene" uid="uid://4m17q22qudus" path="res://Entities/Fighter/Earthlings/HopperTank/HopperTank.tscn" id="4_jj6pu"]
+[ext_resource type="PackedScene" uid="uid://sc8qtw22mc5d" path="res://Entities/Fighter/Earthlings/TeslaMage/TeslaMage.tscn" id="5_bi5nh"]
 
-[node name="Player" type="Node2D" unique_id=1848530869]
+[node name="Player" type="Node2D" unique_id=1848530869 node_paths=PackedStringArray("Team")]
 script = ExtResource("1_lrrbj")
+Team = [NodePath("Team/Rocky"), NodePath("Team/BillyBrute"), NodePath("Team/HopperTank"), NodePath("Team/TeslaMage")]
+
+[node name="Team" type="Node2D" parent="." unique_id=905189502]
+visible = false
+
+[node name="Rocky" parent="Team" unique_id=192204277 instance=ExtResource("2_evpg1")]
+
+[node name="BillyBrute" parent="Team" unique_id=934498361 instance=ExtResource("3_st3qa")]
+
+[node name="HopperTank" parent="Team" unique_id=1832246876 instance=ExtResource("4_jj6pu")]
+
+[node name="TeslaMage" parent="Team" unique_id=321488268 instance=ExtResource("5_bi5nh")]

@@ -12,8 +12,6 @@ func _preparation(pl : Player, en : CosmicEntity, aren : Arena) -> void:
 	
 	player._setup()
 	enemy._setup()
-	battle_controller._set_fighters(player.curr_fighter, enemy.curr_fighter)
-	player.itemgiver._receive_curr_specific_deck(player.curr_fighter.base.specific_deck)
 
 func _gameloop() -> void:
 	var player_fighter : Fighter = player.curr_fighter
