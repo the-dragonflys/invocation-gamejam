@@ -7,3 +7,4 @@
 script = ExtResource("1_7potr")
 nome = "Billy"
 base = ExtResource("2_nw82u")
+fighter_ref = null

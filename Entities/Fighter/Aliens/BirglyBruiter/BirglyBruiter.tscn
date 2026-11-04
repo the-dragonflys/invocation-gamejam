@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://du24juk535nt4"]
+
+[ext_resource type="Script" uid="uid://bmuv6jlm4o8vr" path="res://Entities/Fighter/Aliens/BirglyBruiter/BirglyBruiter.gd" id="1_xdcj1"]
+[ext_resource type="Resource" uid="uid://d2dhj4351t0bj" path="res://Resources/Fighter/Classes/DamageCarry.tres" id="2_2gw8w"]
+
+[node name="BirglyBruiter" type="Node2D" unique_id=794310315]
+script = ExtResource("1_xdcj1")
+nome = "BirglyBruiter"
+base = ExtResource("2_2gw8w")
+fighter_ref = null

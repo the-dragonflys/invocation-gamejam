@@ -7,3 +7,4 @@
 script = ExtResource("1_gj84b")
 nome = "Tesla"
 base = ExtResource("2_1kqcc")
+fighter_ref = null

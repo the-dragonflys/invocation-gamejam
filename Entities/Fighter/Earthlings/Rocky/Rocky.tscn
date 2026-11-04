@@ -7,3 +7,4 @@
 script = ExtResource("1_twp3b")
 nome = "Rock"
 base = ExtResource("2_a5278")
+fighter_ref = null

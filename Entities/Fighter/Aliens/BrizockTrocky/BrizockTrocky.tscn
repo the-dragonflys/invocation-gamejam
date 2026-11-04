@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c1a1j4r3xw8cv"]
+
+[ext_resource type="Script" uid="uid://bmf34jpsj2cnl" path="res://Entities/Fighter/Aliens/BrizockTrocky/BrizockTrocky.gd" id="1_5bdj0"]
+[ext_resource type="Resource" uid="uid://d2dhj4351t0bj" path="res://Resources/Fighter/Classes/DamageCarry.tres" id="2_vafb5"]
+
+[node name="BrizockTrocky" type="Node2D" unique_id=784723869]
+script = ExtResource("1_5bdj0")
+nome = "BrizockTrocky"
+base = ExtResource("2_vafb5")
+fighter_ref = null
