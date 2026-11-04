@@ -1,7 +1,7 @@
 class_name Resilience extends Item
 
 var act_heal = Action.new(Action.Types.BUFF, 6, Action.Stats.LIFE)
-var act_willpower = Action.new(Action.Types.BUFF, 2, Action.Stats.STRENGTH)
+var act_willpower = Action.new(Action.Types.BUFF, 15, Action.Stats.STRENGTH)
 
 func _init() -> void:
 	item_name = "Resiliência"

@@ -1,6 +1,6 @@
 class_name ShockGun extends Item
 
-var action = Action.new(Action.Types.ATTACK, 3, Action.Stats.LIFE)
+var action = Action.new(Action.Types.ATTACK, 4, Action.Stats.LIFE)
 
 func _init() -> void:
 	item_name = "Shock Gun"

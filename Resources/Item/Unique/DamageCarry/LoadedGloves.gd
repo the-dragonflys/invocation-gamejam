@@ -1,6 +1,6 @@
 class_name LoadedGloves extends Item
 
-var act_weaken = Action.new(Action.Types.ENEMY_DEBUFF, -4, Action.Stats.STRENGTH)
+var act_weaken = Action.new(Action.Types.ENEMY_DEBUFF, -14, Action.Stats.STRENGTH)
 
 func _init() -> void:
 	item_name = "Luvas Chumbadas"
