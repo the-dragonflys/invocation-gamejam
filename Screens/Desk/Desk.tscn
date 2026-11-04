@@ -109,7 +109,7 @@ offset_right = 1184.0
 offset_bottom = 2128.0
 
 [node name="Arena" parent="." unique_id=693090021 instance=ExtResource("18_2euvh")]
-offset_left = 968.0
-offset_top = 888.0
-offset_right = 968.0
-offset_bottom = 888.0
+offset_left = -22.0
+offset_top = 25.0
+offset_right = -22.0
+offset_bottom = 25.0

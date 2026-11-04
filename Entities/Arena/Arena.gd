@@ -11,8 +11,8 @@ func _set_fighters(al : Fighter, en : Fighter) -> void:
 	ally = al
 	enemy = en
 	
-	fighters_in_scene[0] = ally.instantiate()
-	fighters_in_scene[1] = enemy.instantiate()
+	#fighters_in_scene[0] = ally.instantiate()
+	#fighters_in_scene[1] = enemy.instantiate()
 
 func round_start() -> void:
 	TurnManager.generate_queue(ally, enemy)
