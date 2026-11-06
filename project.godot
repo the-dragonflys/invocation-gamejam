@@ -30,6 +30,7 @@ folder_colors={
 "res://Assets/": "yellow",
 "res://Entities/": "red",
 "res://Fonts/": "purple",
+"res://Objects/": "gray",
 "res://Resources/": "pink",
 "res://Screens/": "green",
 "res://Utilities/": "blue"
