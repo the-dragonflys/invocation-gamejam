@@ -38,7 +38,7 @@ func attack(act : Action, target: Fighter) -> void: # will need to change this
 	percentage = (strength as float) / (target.defense as float)
 	
 	attack_value = (act.modifier as float) * percentage
-	target.change_life((floor(attack_value) as int))
+	target.stats.change_life((floor(attack_value) as int))
 func self_attack(act : Action) -> void: 
 	change_life(act.modifier)
 func self_buff_debuff(act : Action) -> void:
@@ -60,3 +60,13 @@ func change_state(new_state : States.Types) -> void:
 	state = new_state
 func change_initiative() -> void:
 	initiative = 0 if initiative == 1 else 1
+
+
+# CHECKERS
+func check_died() -> void:
+	pass
+	#if life == 0:
+		#died.emit()
+func can_act() -> bool: 
+	return true
+	#return action_queue.is_there_actions_left()

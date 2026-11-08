@@ -1,7 +1,7 @@
 extends Node2D
 class_name Fighter
 
-signal died
+
 
 @export var stats : FighterStats
 
@@ -9,13 +9,14 @@ signal died
 
 # OPERATORS
 func use_item(item: Item) -> void:
-	while item.check_IsThereActions():
-		var aux : Action
-		aux = item.get_action()
-		action_queue._add_action(aux)
+	pass
+	#while item.check_IsThereActions():
+		#var aux : Action
+		#aux = item.get_action()
+		#action_queue._add_action(aux)
 func _realize_action() -> Action:
 	var ret : Action
-	ret = action_queue.get_action()
+	#ret = action_queue.get_action()
 	return ret
 
 # INTERACTIONS
@@ -26,8 +27,3 @@ func _realize_action() -> Action:
 
 
 # CHECKERS
-func check_died() -> void:
-	if life == 0:
-		died.emit()
-func can_act() -> bool: 
-	return action_queue.is_there_actions_left()
