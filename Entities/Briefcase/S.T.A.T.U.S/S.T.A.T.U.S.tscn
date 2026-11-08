@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://wj8p7arefdde"]
 
 [ext_resource type="Script" uid="uid://dk16pnu7u1xrr" path="res://Entities/Briefcase/S.T.A.T.U.S/S.T.A.T.U.S.gd" id="1_6muxv"]
-[ext_resource type="Texture2D" uid="uid://bfoqe7resdwkj" path="res://Entities/Briefcase/S.T.A.T.U.S/Assets/Background/Billy Apagados.png" id="1_yigdd"]
-[ext_resource type="Texture2D" uid="uid://cad1s58fik2dt" path="res://Entities/Briefcase/S.T.A.T.U.S/Assets/Background/Hop Apagados.png" id="2_6muxv"]
-[ext_resource type="Texture2D" uid="uid://b7dahvw4rm5ua" path="res://Entities/Briefcase/S.T.A.T.U.S/Assets/Background/Rock Apagados.png" id="3_1ktb5"]
-[ext_resource type="Texture2D" uid="uid://cawgnb48a88v2" path="res://Entities/Briefcase/S.T.A.T.U.S/Assets/Background/Tesla Apagados.png" id="4_fm53t"]
-[ext_resource type="Texture2D" uid="uid://c5mn1njlplvvo" path="res://Entities/Briefcase/S.T.A.T.U.S/Assets/Names/Billy.png" id="6_1ktb5"]
-[ext_resource type="Texture2D" uid="uid://qwel6jbj4j6s" path="res://Entities/Briefcase/S.T.A.T.U.S/Assets/Names/Hop.png" id="7_fm53t"]
-[ext_resource type="Texture2D" uid="uid://uqjjmrbra7hb" path="res://Entities/Briefcase/S.T.A.T.U.S/Assets/Names/Rock.png" id="8_hgmpu"]
-[ext_resource type="Texture2D" uid="uid://d1h84w4nh5fl0" path="res://Entities/Briefcase/S.T.A.T.U.S/Assets/Names/Tesla.png" id="9_ebtpg"]
+[ext_resource type="Texture2D" uid="uid://bfoqe7resdwkj" path="res://Assets/Sprites/S.T.A.T.U.S/Background/Billy Apagados.png" id="1_yigdd"]
+[ext_resource type="Texture2D" uid="uid://cad1s58fik2dt" path="res://Assets/Sprites/S.T.A.T.U.S/Background/Hop Apagados.png" id="2_6muxv"]
+[ext_resource type="Texture2D" uid="uid://b7dahvw4rm5ua" path="res://Assets/Sprites/S.T.A.T.U.S/Background/Rock Apagados.png" id="3_1ktb5"]
+[ext_resource type="Texture2D" uid="uid://cawgnb48a88v2" path="res://Assets/Sprites/S.T.A.T.U.S/Background/Tesla Apagados.png" id="4_fm53t"]
+[ext_resource type="Texture2D" uid="uid://c5mn1njlplvvo" path="res://Assets/Sprites/S.T.A.T.U.S/Names/Billy.png" id="6_1ktb5"]
+[ext_resource type="Texture2D" uid="uid://qwel6jbj4j6s" path="res://Assets/Sprites/S.T.A.T.U.S/Names/Hop.png" id="7_fm53t"]
+[ext_resource type="Texture2D" uid="uid://uqjjmrbra7hb" path="res://Assets/Sprites/S.T.A.T.U.S/Names/Rock.png" id="8_hgmpu"]
+[ext_resource type="Texture2D" uid="uid://d1h84w4nh5fl0" path="res://Assets/Sprites/S.T.A.T.U.S/Names/Tesla.png" id="9_ebtpg"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
 animations = [{

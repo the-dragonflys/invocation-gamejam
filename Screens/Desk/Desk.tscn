@@ -1,19 +1,19 @@
 [gd_scene format=3 uid="uid://dobuewv7nyada"]
 
-[ext_resource type="Texture2D" uid="uid://cjsrrlj2tbawf" path="res://Screens/Desk/Animations/Default/0_.png" id="1_k7bhy"]
+[ext_resource type="Texture2D" uid="uid://cjsrrlj2tbawf" path="res://Assets/Animations/Desk/Default/0_.png" id="1_k7bhy"]
 [ext_resource type="Script" uid="uid://dvyipgyjtgc36" path="res://Screens/Desk/Desk.gd" id="1_ql0fa"]
-[ext_resource type="Texture2D" uid="uid://skubybsiqvgh" path="res://Screens/Desk/Animations/Default/10_.png" id="2_bcxvh"]
+[ext_resource type="Texture2D" uid="uid://skubybsiqvgh" path="res://Assets/Animations/Desk/Default/10_.png" id="2_bcxvh"]
 [ext_resource type="Script" uid="uid://d1egs8yhw0vcg" path="res://Screens/Desk/camera_2d.gd" id="2_n6b4a"]
 [ext_resource type="Script" uid="uid://bqtbt6is8hi7i" path="res://Screens/Desk/background.gd" id="2_vsru3"]
-[ext_resource type="Texture2D" uid="uid://bpd4ioe7i3hjj" path="res://Screens/Desk/Animations/Default/20_.png" id="3_unumf"]
-[ext_resource type="Texture2D" uid="uid://yr4euv5p3etu" path="res://Screens/Desk/Animations/Default/30_.png" id="4_ql0fa"]
-[ext_resource type="Texture2D" uid="uid://dyco5fryw7fs" path="res://Screens/Desk/Animations/Default/40_.png" id="5_pvmk7"]
-[ext_resource type="Texture2D" uid="uid://du76cpo46pm1i" path="res://Screens/Desk/Animations/Default/50_.png" id="6_2euvh"]
-[ext_resource type="Texture2D" uid="uid://uk20kn8yrn3g" path="res://Screens/Desk/Animations/Default/60_.png" id="7_fx147"]
-[ext_resource type="Texture2D" uid="uid://oadjonqnhgr3" path="res://Screens/Desk/Animations/Default/70_.png" id="8_inlv8"]
-[ext_resource type="Texture2D" uid="uid://bn4gf5grhcjkr" path="res://Screens/Desk/Animations/Default/80_.png" id="9_35o4q"]
-[ext_resource type="Texture2D" uid="uid://67cghhehx2u4" path="res://Screens/Desk/Animations/Default/90_.png" id="10_l6woq"]
-[ext_resource type="Texture2D" uid="uid://qicf05a76us4" path="res://Screens/Desk/Animations/Default/100_.png" id="11_ve7fg"]
+[ext_resource type="Texture2D" uid="uid://bpd4ioe7i3hjj" path="res://Assets/Animations/Desk/Default/20_.png" id="3_unumf"]
+[ext_resource type="Texture2D" uid="uid://yr4euv5p3etu" path="res://Assets/Animations/Desk/Default/30_.png" id="4_ql0fa"]
+[ext_resource type="Texture2D" uid="uid://dyco5fryw7fs" path="res://Assets/Animations/Desk/Default/40_.png" id="5_pvmk7"]
+[ext_resource type="Texture2D" uid="uid://du76cpo46pm1i" path="res://Assets/Animations/Desk/Default/50_.png" id="6_2euvh"]
+[ext_resource type="Texture2D" uid="uid://uk20kn8yrn3g" path="res://Assets/Animations/Desk/Default/60_.png" id="7_fx147"]
+[ext_resource type="Texture2D" uid="uid://oadjonqnhgr3" path="res://Assets/Animations/Desk/Default/70_.png" id="8_inlv8"]
+[ext_resource type="Texture2D" uid="uid://bn4gf5grhcjkr" path="res://Assets/Animations/Desk/Default/80_.png" id="9_35o4q"]
+[ext_resource type="Texture2D" uid="uid://67cghhehx2u4" path="res://Assets/Animations/Desk/Default/90_.png" id="10_l6woq"]
+[ext_resource type="Texture2D" uid="uid://qicf05a76us4" path="res://Assets/Animations/Desk/Default/100_.png" id="11_ve7fg"]
 [ext_resource type="PackedScene" uid="uid://bgp4af684snmh" path="res://Entities/GamePlayers/CosmicEntity/CosmicEntity.tscn" id="14_bcxvh"]
 [ext_resource type="PackedScene" uid="uid://b8fg7xok3tyfi" path="res://Entities/Briefcase/Briefcase.tscn" id="15_unumf"]
 [ext_resource type="PackedScene" uid="uid://blhjfsvh483q1" path="res://Entities/ControllerBottons/ControllerButtons.tscn" id="17_pvmk7"]
@@ -112,6 +112,7 @@ offset_bottom = 2128.0
 [node name="Arena" parent="." unique_id=693090021 instance=ExtResource("18_2euvh")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1681230267]
+visible = false
 
 [node name="TextLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=456269118]
 anchors_preset = 8

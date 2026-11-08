@@ -1,11 +1,7 @@
 extends Node2D
 class_name Fighter
 
-
-
 @export var stats : FighterStats
-
-
 
 # OPERATORS
 func use_item(item: Item) -> void:
@@ -18,12 +14,3 @@ func _realize_action() -> Action:
 	var ret : Action
 	#ret = action_queue.get_action()
 	return ret
-
-# INTERACTIONS
-
-	
-# UNARY OPERATOR
-
-
-
-# CHECKERS

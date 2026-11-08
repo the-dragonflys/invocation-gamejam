@@ -6,3 +6,6 @@ like, my plan:
 - Objects (Definitions and the data entities)
 - Resources (the "templates"/basis for the entities and some things that'll stay
 			 alive for the entire project)
+
+actually, maybe I'll forget this distribution. dunno, it'll depends on
+future me.
