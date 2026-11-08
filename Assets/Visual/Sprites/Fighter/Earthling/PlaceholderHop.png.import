@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dp2eadvkgpjb"
-path="res://.godot/imported/PlaceholderRock.png-87a145f3bec2702a18455b8f2e2a8f19.ctex"
+uid="uid://xsp6wviry3fm"
+path="res://.godot/imported/PlaceholderHop.png-9b76b1abbe843162a7b1a629a7b513d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Visual/Sprites/Fighter/Earthling/Rocky/PlaceholderRock.png"
-dest_files=["res://.godot/imported/PlaceholderRock.png-87a145f3bec2702a18455b8f2e2a8f19.ctex"]
+source_file="res://Assets/Visual/Sprites/Fighter/Earthling/PlaceholderHop.png"
+dest_files=["res://.godot/imported/PlaceholderHop.png-9b76b1abbe843162a7b1a629a7b513d8.ctex"]
 
 [params]
 

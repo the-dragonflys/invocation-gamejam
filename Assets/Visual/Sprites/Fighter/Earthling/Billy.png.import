@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://k4jle6ursu65"
-path="res://.godot/imported/PlaceholderBilly.png-0c4dd8773038ba647ad6ec68519d6e00.ctex"
+uid="uid://bpjongil0wyvb"
+path="res://.godot/imported/Billy.png-24deafcaa122320155761ef37a1c3eac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Visual/Sprites/Fighter/Earthling/BillyBrute/PlaceholderBilly.png"
-dest_files=["res://.godot/imported/PlaceholderBilly.png-0c4dd8773038ba647ad6ec68519d6e00.ctex"]
+source_file="res://Assets/Visual/Sprites/Fighter/Earthling/Billy.png"
+dest_files=["res://.godot/imported/Billy.png-24deafcaa122320155761ef37a1c3eac.ctex"]
 
 [params]
 

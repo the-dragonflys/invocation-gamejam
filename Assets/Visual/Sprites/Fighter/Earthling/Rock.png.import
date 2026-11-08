@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2024c6bicc7p"
-path="res://.godot/imported/humano.png-db9e9f4d48c4acbadb025aeb7e7fe2a1.ctex"
+uid="uid://bg8tjloc5sj2w"
+path="res://.godot/imported/Rock.png-2ffb5a7ecf06d474930d7c410232fb36.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Visual/Sprites/Fighter/Earthling/humano.png"
-dest_files=["res://.godot/imported/humano.png-db9e9f4d48c4acbadb025aeb7e7fe2a1.ctex"]
+source_file="res://Assets/Visual/Sprites/Fighter/Earthling/Rock.png"
+dest_files=["res://.godot/imported/Rock.png-2ffb5a7ecf06d474930d7c410232fb36.ctex"]
 
 [params]
 

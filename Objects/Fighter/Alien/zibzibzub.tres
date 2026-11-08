@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="Fighter" format=3 uid="uid://c7gedkb08rq4e"]
 
 [ext_resource type="Script" uid="uid://c8q8rfhqfqhsk" path="res://Resources/Fighter/fighter.gd" id="1_8jqg3"]
-[ext_resource type="Resource" uid="uid://b3jxil8it7ojd" path="res://Resources/Fighter/Classes/mage.tres" id="1_48j87"]
-[ext_resource type="Texture2D" uid="uid://cdap66ykyiitw" path="res://Assets/Visual/Sprites/Fighter/Alien/ZibZibZub/PlaceholderZip Zip Zub.png" id="1_ardxs"]
+[ext_resource type="Resource" uid="uid://b3jxil8it7ojd" path="res://Resources/Fighter/Classes/Mage.tres" id="1_48j87"]
+[ext_resource type="Texture2D" uid="uid://cdap66ykyiitw" path="res://Assets/Visual/Sprites/Fighter/Alien/PlaceholderZip Zip Zub.png" id="1_ardxs"]
 
 [resource]
 script = ExtResource("1_8jqg3")

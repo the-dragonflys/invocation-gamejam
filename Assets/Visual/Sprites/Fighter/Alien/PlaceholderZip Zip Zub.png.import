@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xsp6wviry3fm"
-path="res://.godot/imported/PlaceholderHop.png-83ddd82715849bc49dff8cf7acb8eccb.ctex"
+uid="uid://cdap66ykyiitw"
+path="res://.godot/imported/PlaceholderZip Zip Zub.png-f5764d1e51bd5040a9f9f77c7d198118.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Visual/Sprites/Fighter/Earthling/HopperTank/PlaceholderHop.png"
-dest_files=["res://.godot/imported/PlaceholderHop.png-83ddd82715849bc49dff8cf7acb8eccb.ctex"]
+source_file="res://Assets/Visual/Sprites/Fighter/Alien/PlaceholderZip Zip Zub.png"
+dest_files=["res://.godot/imported/PlaceholderZip Zip Zub.png-f5764d1e51bd5040a9f9f77c7d198118.ctex"]
 
 [params]
 

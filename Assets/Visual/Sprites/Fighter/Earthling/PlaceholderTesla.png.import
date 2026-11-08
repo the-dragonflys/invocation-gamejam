@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdap66ykyiitw"
-path="res://.godot/imported/PlaceholderZip Zip Zub.png-b7802f507022595fe21937343104673e.ctex"
+uid="uid://ps6hfyd7s80k"
+path="res://.godot/imported/PlaceholderTesla.png-70e529e1200f23d7b77c0d1049b8f97f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Visual/Sprites/Fighter/Alien/ZibZibZub/PlaceholderZip Zip Zub.png"
-dest_files=["res://.godot/imported/PlaceholderZip Zip Zub.png-b7802f507022595fe21937343104673e.ctex"]
+source_file="res://Assets/Visual/Sprites/Fighter/Earthling/PlaceholderTesla.png"
+dest_files=["res://.godot/imported/PlaceholderTesla.png-70e529e1200f23d7b77c0d1049b8f97f.ctex"]
 
 [params]
 

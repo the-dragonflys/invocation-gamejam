@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://b5rowimta1g5f" path="res://Entities/Arena&Monitor/Arena.gd" id="1_5e8a1"]
 [ext_resource type="Texture2D" uid="uid://dc3l0y88wy625" path="res://Assets/Visual/Sprites/Arena&Monitor/Arena e monitor.png" id="2_0ltms"]
-[ext_resource type="Texture2D" uid="uid://b2024c6bicc7p" path="res://Assets/Visual/Sprites/Fighter/Earthling/humano.png" id="3_twi15"]
-[ext_resource type="Texture2D" uid="uid://c7advl5vcj6vo" path="res://Assets/Visual/Sprites/Fighter/Alien/Alien.png" id="4_5gko3"]
+[ext_resource type="Texture2D" uid="uid://b2024c6bicc7p" path="res://Assets/Visual/Sprites/Fighter/Earthling/_base_human.png" id="3_twi15"]
+[ext_resource type="Texture2D" uid="uid://c7advl5vcj6vo" path="res://Assets/Visual/Sprites/Fighter/Alien/_base_alien.png" id="4_5gko3"]
 
 [node name="Arena" type="Control" unique_id=2024477554 node_paths=PackedStringArray("fighters_in_scene")]
 layout_mode = 3
