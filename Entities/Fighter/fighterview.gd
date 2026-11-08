@@ -12,4 +12,13 @@ func set_fighter(fight : Fighter):
 	update_fighter()
 
 func update_fighter() -> void:
+	if not fighter is Fighter:
+		return
+	if not is_inside_tree():
+		await ready
+	
+	sprite2d.texture = fighter.art
+	update_stats()
+
+func update_stats() -> void:
 	pass

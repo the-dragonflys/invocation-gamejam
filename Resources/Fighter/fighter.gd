@@ -19,7 +19,7 @@ var active_debuff : Action
 
 
 #CREATOR
-func create_instance() -> Resource:
+func create_instance() -> Fighter:
 	var instance : Fighter = self.duplicate()
 	life = m_class.max_life
 	strength = m_class.ori_strength
@@ -30,8 +30,10 @@ func create_instance() -> Resource:
 
 #RESETERS
 func _reset_modifiers() -> void:
-	active_buff.free()
-	active_debuff.free()
+	if active_buff:
+		active_buff.free()
+	if active_debuff:
+		active_debuff.free()
 	strength = m_class.ori_strength
 	defense = m_class.ori_defense
 	initiative = 1

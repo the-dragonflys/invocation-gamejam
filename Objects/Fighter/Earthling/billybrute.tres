@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="Fighter" format=3 uid="uid://c4d5lsh0wtgnx"]
 
-[ext_resource type="Texture2D" uid="uid://k4jle6ursu65" path="res://Assets/Visual/Sprites/Fighter/Earthling/BillyBrute/PlaceholderBilly.png" id="1_e71md"]
-[ext_resource type="Resource" uid="uid://bil12o5f7x6ug" path="res://Resources/Fighter/Classes/bruiser.tres" id="1_ojugy"]
+[ext_resource type="Texture2D" uid="uid://bpjongil0wyvb" path="res://Assets/Visual/Sprites/Fighter/Earthling/Billy.png" id="1_e71md"]
+[ext_resource type="Resource" uid="uid://bil12o5f7x6ug" path="res://Resources/Fighter/Classes/Bruiser.tres" id="1_ojugy"]
 [ext_resource type="Script" uid="uid://c8q8rfhqfqhsk" path="res://Resources/Fighter/fighter.gd" id="3_7oqjw"]
 
 [resource]
