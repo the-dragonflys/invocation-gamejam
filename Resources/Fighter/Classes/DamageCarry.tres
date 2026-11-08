@@ -1,10 +1,10 @@
-[gd_resource type="Resource" script_class="FighterStats" format=3 uid="uid://d2dhj4351t0bj"]
+[gd_resource type="Resource" script_class="FighterClass" format=3 uid="uid://cwuvhoc5dfcsd"]
 
-[ext_resource type="Script" uid="uid://c8q8rfhqfqhsk" path="res://Resources/Fighter/fighterstats.gd" id="1_pmnwp"]
+[ext_resource type="Script" uid="uid://djd1fvabb06hn" path="res://Resources/Fighter/fighterclass.gd" id="1_bqr4k"]
 
 [resource]
-script = ExtResource("1_pmnwp")
+script = ExtResource("1_bqr4k")
 max_life = 35
 ori_strength = 130
 ori_defense = 70
-metadata/_custom_type_script = "uid://c8q8rfhqfqhsk"
+metadata/_custom_type_script = "uid://djd1fvabb06hn"

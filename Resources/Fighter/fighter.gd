@@ -1,10 +1,8 @@
-class_name FighterStats extends Resource #Classe abstrata Fighter
+class_name Fighter extends Resource #Classe abstrata Fighter
 
 @export_group("Base Details")
 @export var nome : String
-@export var max_life : int # this will be used on the init
-@export var ori_strength : int # this is the original strength
-@export var ori_defense : int
+@export var m_class : FighterClass
 @export var art : Texture
 #@export var specific_deck : Array[Item] 	will deal with this later
 
@@ -20,15 +18,38 @@ var active_buff : Action
 var active_debuff : Action
 
 
+#CREATOR
+func create_instance() -> Resource:
+	var instance : Fighter = self.duplicate()
+	life = m_class.max_life
+	strength = m_class.ori_strength
+	defense = m_class.ori_defense
+	instance._reset_modifiers()
+	instance._reset_state()
+	return instance
+
 #RESETERS
 func _reset_modifiers() -> void:
 	active_buff.free()
 	active_debuff.free()
-	strength = ori_strength
-	defense = ori_defense
+	strength = m_class.ori_strength
+	defense = m_class.ori_defense
 	initiative = 1
 func _reset_state() -> void:
 	state = States.Types.IDLE
+
+
+#ITEM RELATED
+func use_item(item: Item) -> void:
+	pass
+	#while item.check_IsThereActions():
+		#var aux : Action
+		#aux = item.get_action()
+		#action_queue._add_action(aux)
+func _realize_action() -> Action:
+	var ret : Action
+	#ret = action_queue.get_action()
+	return ret
 
 
 #INTERACTIONS
@@ -38,25 +59,28 @@ func attack(act : Action, target: Fighter) -> void: # will need to change this
 	percentage = (strength as float) / (target.defense as float)
 	
 	attack_value = (act.modifier as float) * percentage
-	target.stats.change_life((floor(attack_value) as int))
+	target.change_life((floor(attack_value) as int))
 func self_attack(act : Action) -> void: 
 	change_life(act.modifier)
-func self_buff_debuff(act : Action) -> void:
+func apply_modifier(act : Action, target : Fighter) -> void:
 	match act.stats:
 		Action.Stats.STRENGTH:
-			change_strength(act.modifier)
+			target.change_strength(act.modifier)
 		Action.Stats.DEFENSE:
-			change_defense(act.modifier)
-
+			target.change_defense(act.modifier)
+func self_modifier(act : Action) -> void:
+	apply_modifier(act, self)
 
 # MODIFIERS
 func change_life(modifier : int) -> void:
-	life = clampi(life + modifier, 0, max_life)
+	life = clampi(life + modifier, 0, m_class.max_life)
 func change_strength(modifier : int ) -> void:
 	strength = clampi(strength + modifier, 0, 200)
 func change_defense(modifier : int) -> void:
 	defense = clampi(defense + modifier, 0, 200)
 func change_state(new_state : States.Types) -> void:
+	if not new_state in States.Types:
+		return
 	state = new_state
 func change_initiative() -> void:
 	initiative = 0 if initiative == 1 else 1
