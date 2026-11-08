@@ -1,42 +1,10 @@
-[gd_resource type="Resource" script_class="FighterResource" format=3 uid="uid://bl16elpuww1q"]
+[gd_resource type="Resource" script_class="FighterClass" format=3 uid="uid://bil12o5f7x6ug"]
 
-[ext_resource type="Script" uid="uid://c8q8rfhqfqhsk" path="res://Resources/Fighter/FighterResource.gd" id="1_xp5du"]
-[ext_resource type="Script" uid="uid://io4h5owvawpb" path="res://Resources/Item/Item.gd" id="2_k1kq3"]
-[ext_resource type="Script" uid="uid://bo7gfjdyup1vg" path="res://Resources/Item/Unique/Bruiser/BloodThirst.gd" id="3_fgxk4"]
-[ext_resource type="Script" uid="uid://c3363ct3ved1r" path="res://Resources/Item/Unique/Bruiser/BloodyStrike.gd" id="4_o1vr0"]
-[ext_resource type="Script" uid="uid://px0u678w0ohn" path="res://Resources/Item/Unique/Bruiser/CrowbarParry.gd" id="5_ps2dq"]
-[ext_resource type="Script" uid="uid://jbcv1f8i6e4a" path="res://Resources/Item/Unique/Bruiser/CrowbarSmash.gd" id="6_gfu2l"]
-[ext_resource type="Script" uid="uid://bb0t4ls0n1u2e" path="res://Resources/Item/Unique/Bruiser/KneeBreaker.gd" id="7_h8xjc"]
-[ext_resource type="Script" uid="uid://dxm0y6a6pr0f0" path="res://Resources/Item/Unique/Bruiser/Shotgun.gd" id="8_d3ioh"]
-
-[sub_resource type="Resource" id="Resource_oqaid"]
-script = ExtResource("3_fgxk4")
-metadata/_custom_type_script = "uid://bo7gfjdyup1vg"
-
-[sub_resource type="Resource" id="Resource_rlc2e"]
-script = ExtResource("4_o1vr0")
-metadata/_custom_type_script = "uid://c3363ct3ved1r"
-
-[sub_resource type="Resource" id="Resource_5gtci"]
-script = ExtResource("5_ps2dq")
-metadata/_custom_type_script = "uid://px0u678w0ohn"
-
-[sub_resource type="Resource" id="Resource_tal88"]
-script = ExtResource("6_gfu2l")
-metadata/_custom_type_script = "uid://jbcv1f8i6e4a"
-
-[sub_resource type="Resource" id="Resource_q0ewm"]
-script = ExtResource("7_h8xjc")
-metadata/_custom_type_script = "uid://bb0t4ls0n1u2e"
-
-[sub_resource type="Resource" id="Resource_6ralh"]
-script = ExtResource("8_d3ioh")
-metadata/_custom_type_script = "uid://dxm0y6a6pr0f0"
+[ext_resource type="Script" uid="uid://djd1fvabb06hn" path="res://Resources/Fighter/fighterclass.gd" id="1_w40la"]
 
 [resource]
-script = ExtResource("1_xp5du")
+script = ExtResource("1_w40la")
 max_life = 40
 ori_strength = 100
 ori_defense = 100
-specific_deck = Array[ExtResource("2_k1kq3")]([SubResource("Resource_oqaid"), SubResource("Resource_rlc2e"), SubResource("Resource_5gtci"), SubResource("Resource_tal88"), SubResource("Resource_q0ewm"), SubResource("Resource_6ralh")])
-metadata/_custom_type_script = "uid://c8q8rfhqfqhsk"
+metadata/_custom_type_script = "uid://djd1fvabb06hn"

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://m6tebe7upsfj"]
 
-[ext_resource type="VideoStream" uid="uid://bwkyvpjpg4ivl" path="res://Assets/Cutscene/cutscene_game_ntsc.ogv" id="1_0rv75"]
+[ext_resource type="VideoStream" uid="uid://bwkyvpjpg4ivl" path="res://Assets/Videos/Cutscene/cutscene_game_ntsc.ogv" id="1_0rv75"]
 
 [node name="CutscenePlayer" type="Node2D" unique_id=1091462041]
 

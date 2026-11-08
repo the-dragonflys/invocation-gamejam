@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ci8vevsaecaol"]
+
+[ext_resource type="Script" uid="uid://dmbnb6ll68qqd" path="res://Entities/Fighter/fighterview.gd" id="1_auhc4"]
+
+[node name="FighterView" type="Node2D" unique_id=2018804461]
+script = ExtResource("1_auhc4")
+metadata/_custom_type_script = "uid://dmbnb6ll68qqd"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=269521201]

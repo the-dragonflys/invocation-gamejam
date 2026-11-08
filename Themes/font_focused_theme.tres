@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://crt7en63rkidc"]
+
+[ext_resource type="FontFile" uid="uid://cfi67leblbykh" path="res://Assets/Fonts/vcr_osd_mono/VCR_OSD_MONO_1.001.ttf" id="1_3fwsl"]
+
+[resource]
+default_font = ExtResource("1_3fwsl")
+default_font_size = 0

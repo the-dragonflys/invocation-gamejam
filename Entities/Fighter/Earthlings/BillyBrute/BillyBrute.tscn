@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://cdbqj3wfylwib"]
-
-[ext_resource type="Script" uid="uid://be21enwf4rmrg" path="res://Entities/Fighter/Earthlings/BillyBrute/BillyBrute.gd" id="1_7potr"]
-[ext_resource type="Resource" uid="uid://bl16elpuww1q" path="res://Resources/Fighter/Classes/Bruiser.tres" id="2_nw82u"]
-
-[node name="BillyBrute" type="Node2D" unique_id=934498361]
-script = ExtResource("1_7potr")
-nome = "Billy"
-base = ExtResource("2_nw82u")

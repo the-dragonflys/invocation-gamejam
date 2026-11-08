@@ -1,42 +1,10 @@
-[gd_resource type="Resource" script_class="FighterResource" format=3 uid="uid://dmudyrehthys5"]
+[gd_resource type="Resource" script_class="FighterClass" format=3 uid="uid://b3jxil8it7ojd"]
 
-[ext_resource type="Script" uid="uid://c8q8rfhqfqhsk" path="res://Resources/Fighter/FighterResource.gd" id="1_ga1yt"]
-[ext_resource type="Script" uid="uid://io4h5owvawpb" path="res://Resources/Item/Item.gd" id="2_bmpa5"]
-[ext_resource type="Script" uid="uid://dhklpkek35g04" path="res://Resources/Item/Unique/Mage/ElectricGun.gd" id="3_k0sho"]
-[ext_resource type="Script" uid="uid://c58q8rg2o0imn" path="res://Resources/Item/Unique/Mage/ElectricPin.gd" id="4_kqya5"]
-[ext_resource type="Script" uid="uid://dlnbjffq1ehp8" path="res://Resources/Item/Unique/Mage/EnergeticPill.gd" id="5_shv7g"]
-[ext_resource type="Script" uid="uid://8bf78xa8rmb" path="res://Resources/Item/Unique/Mage/MagneticCuff.gd" id="6_o0kc8"]
-[ext_resource type="Script" uid="uid://cbtwlcv0sbigq" path="res://Resources/Item/Unique/Mage/ShockGun.gd" id="7_txjqy"]
-[ext_resource type="Script" uid="uid://e8xbsusqyh8l" path="res://Resources/Item/Unique/Mage/TeslaCoil.gd" id="8_bavvd"]
-
-[sub_resource type="Resource" id="Resource_mo3x3"]
-script = ExtResource("3_k0sho")
-metadata/_custom_type_script = "uid://dhklpkek35g04"
-
-[sub_resource type="Resource" id="Resource_kvco5"]
-script = ExtResource("4_kqya5")
-metadata/_custom_type_script = "uid://c58q8rg2o0imn"
-
-[sub_resource type="Resource" id="Resource_eke6b"]
-script = ExtResource("5_shv7g")
-metadata/_custom_type_script = "uid://dlnbjffq1ehp8"
-
-[sub_resource type="Resource" id="Resource_j460x"]
-script = ExtResource("6_o0kc8")
-metadata/_custom_type_script = "uid://8bf78xa8rmb"
-
-[sub_resource type="Resource" id="Resource_cesoc"]
-script = ExtResource("7_txjqy")
-metadata/_custom_type_script = "uid://cbtwlcv0sbigq"
-
-[sub_resource type="Resource" id="Resource_nbtfc"]
-script = ExtResource("8_bavvd")
-metadata/_custom_type_script = "uid://e8xbsusqyh8l"
+[ext_resource type="Script" uid="uid://djd1fvabb06hn" path="res://Resources/Fighter/fighterclass.gd" id="1_e520j"]
 
 [resource]
-script = ExtResource("1_ga1yt")
+script = ExtResource("1_e520j")
 max_life = 30
 ori_strength = 140
 ori_defense = 60
-specific_deck = Array[ExtResource("2_bmpa5")]([SubResource("Resource_mo3x3"), SubResource("Resource_kvco5"), SubResource("Resource_eke6b"), SubResource("Resource_j460x"), SubResource("Resource_cesoc"), SubResource("Resource_nbtfc")])
-metadata/_custom_type_script = "uid://c8q8rfhqfqhsk"
+metadata/_custom_type_script = "uid://djd1fvabb06hn"

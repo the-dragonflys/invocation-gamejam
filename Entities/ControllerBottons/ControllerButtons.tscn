@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://blhjfsvh483q1"]
 
 [ext_resource type="Script" uid="uid://bh1hatmsxuhnl" path="res://Entities/ControllerBottons/ControllerButtons.gd" id="1_jy06l"]
-[ext_resource type="Texture2D" uid="uid://c3axtd8ray7f3" path="res://Entities/ControllerBottons/Animations/Idle/Nd Pressionado.png" id="2_tb76x"]
-[ext_resource type="Texture2D" uid="uid://e4cc611aolmk" path="res://Entities/ControllerBottons/Animations/Idle/Lixo.png" id="3_mmbvf"]
+[ext_resource type="Texture2D" uid="uid://c3axtd8ray7f3" path="res://Assets/Visual/Animations/ControllerButtons/Idle/Nd Pressionado.png" id="2_tb76x"]
+[ext_resource type="Texture2D" uid="uid://e4cc611aolmk" path="res://Assets/Visual/Animations/ControllerButtons/Idle/Lixo.png" id="3_mmbvf"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
 animations = [{

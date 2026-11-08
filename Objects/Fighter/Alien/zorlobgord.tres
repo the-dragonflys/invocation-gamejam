@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Fighter" format=3 uid="uid://ubof5c4jtkx7"]
+
+[ext_resource type="Resource" uid="uid://cbfihehji33wc" path="res://Resources/Fighter/Classes/tank.tres" id="1_dv42c"]
+[ext_resource type="Texture2D" uid="uid://dr7dwkihskofb" path="res://Assets/Visual/Sprites/Fighter/Alien/ZorlobGord/Placeholdererofnerfne.png" id="1_jury3"]
+[ext_resource type="Script" uid="uid://c8q8rfhqfqhsk" path="res://Resources/Fighter/fighter.gd" id="1_x6v5u"]
+
+[resource]
+script = ExtResource("1_x6v5u")
+nome = "ZorlobGord"
+m_class = ExtResource("1_dv42c")
+art = ExtResource("1_jury3")
+metadata/_custom_type_script = "uid://c8q8rfhqfqhsk"
