@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://xyex2k8uu5mq"]
+
+[ext_resource type="Script" uid="uid://b5rowimta1g5f" path="res://Entities/Arena/Arena.gd" id="1_3qki2"]
+[ext_resource type="Texture2D" uid="uid://dc3l0y88wy625" path="res://Assets/Visual/Sprites/Arena/Arena e monitor.png" id="2_twi15"]
+[ext_resource type="PackedScene" uid="uid://ci8vevsaecaol" path="res://Entities/Fighter/FighterView.tscn" id="3_5gko3"]
+
+[node name="Arena" type="Control" unique_id=2024477554]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_3qki2")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=969008777]
+texture = ExtResource("2_twi15")
+centered = false
+
+[node name="Fighters" type="Node2D" parent="." unique_id=628425345]
+position = Vector2(960, 728)
+
+[node name="FighterView" parent="Fighters" unique_id=1228074438 instance=ExtResource("3_5gko3")]
+position = Vector2(-150, 0)
+
+[node name="FighterView2" parent="Fighters" unique_id=2018804461 instance=ExtResource("3_5gko3")]
+position = Vector2(150, 0)

@@ -1,9 +1,10 @@
 extends Control
 class_name Arena
 
+@onready var ally_side : FighterView = $Fighters/FighterView as FighterView
+@onready var enemy_side : FighterView = $Fighters/FighterView2 as FighterView
 var ally : Fighter
 var enemy : Fighter
-@export var fighters_in_scene : Array[Node2D]
 
 var TurnManager : TurnQueue = TurnQueue.new()
 
@@ -11,8 +12,8 @@ func _set_fighters(al : Fighter, en : Fighter) -> void:
 	ally = al
 	enemy = en
 	
-	#fighters_in_scene[0] = ally.instantiate()
-	#fighters_in_scene[1] = enemy.instantiate()
+	ally_side.set_fighter(ally)
+	enemy_side.set_fighter(enemy)
 
 func round_start() -> void:
 	TurnManager.generate_queue(ally, enemy)

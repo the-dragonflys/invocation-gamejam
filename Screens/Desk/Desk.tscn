@@ -2,9 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://cjsrrlj2tbawf" path="res://Assets/Visual/Animations/Desk/Default/0_.png" id="1_k7bhy"]
 [ext_resource type="Script" uid="uid://dvyipgyjtgc36" path="res://Screens/Desk/Desk.gd" id="1_ql0fa"]
+[ext_resource type="Resource" uid="uid://c4d5lsh0wtgnx" path="res://Objects/Fighter/Earthling/billybrute.tres" id="2_35o4q"]
 [ext_resource type="Texture2D" uid="uid://skubybsiqvgh" path="res://Assets/Visual/Animations/Desk/Default/10_.png" id="2_bcxvh"]
 [ext_resource type="Script" uid="uid://d1egs8yhw0vcg" path="res://Screens/Desk/camera_2d.gd" id="2_n6b4a"]
 [ext_resource type="Script" uid="uid://bqtbt6is8hi7i" path="res://Screens/Desk/background.gd" id="2_vsru3"]
+[ext_resource type="Resource" uid="uid://cpijc2cspw1ym" path="res://Objects/Fighter/Earthling/rocky.tres" id="3_l6woq"]
 [ext_resource type="Texture2D" uid="uid://bpd4ioe7i3hjj" path="res://Assets/Visual/Animations/Desk/Default/20_.png" id="3_unumf"]
 [ext_resource type="Texture2D" uid="uid://yr4euv5p3etu" path="res://Assets/Visual/Animations/Desk/Default/30_.png" id="4_ql0fa"]
 [ext_resource type="Texture2D" uid="uid://dyco5fryw7fs" path="res://Assets/Visual/Animations/Desk/Default/40_.png" id="5_pvmk7"]
@@ -17,7 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://bgp4af684snmh" path="res://Entities/GamePlayers/CosmicEntity/CosmicEntity.tscn" id="14_bcxvh"]
 [ext_resource type="PackedScene" uid="uid://b8fg7xok3tyfi" path="res://Entities/Briefcase/Briefcase.tscn" id="15_unumf"]
 [ext_resource type="PackedScene" uid="uid://blhjfsvh483q1" path="res://Entities/ControllerBottons/ControllerButtons.tscn" id="17_pvmk7"]
-[ext_resource type="PackedScene" uid="uid://xyex2k8uu5mq" path="res://Entities/Arena&Monitor/Arena.tscn" id="18_2euvh"]
+[ext_resource type="PackedScene" uid="uid://xyex2k8uu5mq" path="res://Entities/Arena/Arena.tscn" id="18_2euvh"]
 [ext_resource type="Theme" uid="uid://crt7en63rkidc" path="res://Themes/font_focused_theme.tres" id="19_fx147"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yf5fn"]
@@ -74,6 +76,8 @@ animations = [{
 
 [node name="Desk" type="Node2D" unique_id=1257678287]
 script = ExtResource("1_ql0fa")
+f1 = ExtResource("2_35o4q")
+f2 = ExtResource("3_l6woq")
 
 [node name="Background" type="AnimatedSprite2D" parent="." unique_id=518720088]
 position = Vector2(960, 1620)
@@ -111,10 +115,10 @@ offset_bottom = 2128.0
 
 [node name="Arena" parent="." unique_id=693090021 instance=ExtResource("18_2euvh")]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1681230267]
+[node name="Dialogue" type="CanvasLayer" parent="." unique_id=1681230267]
 visible = false
 
-[node name="TextLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=456269118]
+[node name="TextLabel" type="RichTextLabel" parent="Dialogue" unique_id=456269118]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5

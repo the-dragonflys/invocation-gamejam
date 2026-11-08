@@ -1,17 +1,16 @@
 [gd_scene format=3 uid="uid://bral1bhwvnljy"]
 
 [ext_resource type="Script" uid="uid://cf134ximkhkbx" path="res://Screens/testingScene/testing_scene.gd" id="1_myrcx"]
-[ext_resource type="PackedScene" uid="uid://ci8vevsaecaol" path="res://Entities/Fighter/FighterView.tscn" id="2_b5wbb"]
 [ext_resource type="Resource" uid="uid://c4d5lsh0wtgnx" path="res://Objects/Fighter/Earthling/billybrute.tres" id="2_cr1n3"]
-[ext_resource type="Resource" uid="uid://cpijc2cspw1ym" path="res://Objects/Fighter/Earthling/rocky.tres" id="3_e5m7m"]
+[ext_resource type="PackedScene" uid="uid://xyex2k8uu5mq" path="res://Entities/Arena/Arena.tscn" id="4_cr1n3"]
+[ext_resource type="Resource" uid="uid://c7gedkb08rq4e" path="res://Objects/Fighter/Alien/zibzibzub.tres" id="6_58jla"]
 
 [node name="TestingScene" type="Node2D" unique_id=389920248]
 script = ExtResource("1_myrcx")
-fighter = ExtResource("2_cr1n3")
-
-[node name="FighterView" parent="." unique_id=2018804461 instance=ExtResource("2_b5wbb")]
-position = Vector2(960, 540)
-fighter = ExtResource("3_e5m7m")
+f1 = ExtResource("2_cr1n3")
+f2 = ExtResource("6_58jla")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1913364039]
 anchor_mode = 0
+
+[node name="Arena" parent="." unique_id=2024477554 instance=ExtResource("4_cr1n3")]

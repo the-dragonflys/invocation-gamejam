@@ -7,8 +7,6 @@ class_name FighterView
 func set_fighter(fight : Fighter):
 	fighter = fight.create_instance()
 	
-	#create the ifs to connect the signals
-	
 	update_fighter()
 
 func update_fighter() -> void:
@@ -18,7 +16,5 @@ func update_fighter() -> void:
 		await ready
 	
 	sprite2d.texture = fighter.art
-	update_stats()
-
-func update_stats() -> void:
-	pass
+	sprite2d.apply_scale(Vector2(0.4, 0.4))
+	fighter.changes_feedback()
