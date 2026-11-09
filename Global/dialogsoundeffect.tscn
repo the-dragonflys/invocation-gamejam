@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bp6c7lnuyvuvg"]
+
+[ext_resource type="AudioStream" uid="uid://dhebghsruh5f0" path="res://Assets/Audio/DialogSoundEffect/BAD OMEN.mp3" id="1_86m8x"]
+[ext_resource type="Script" uid="uid://dcaorxgmvdrs2" path="res://Global/dialogsoundeffect.gd" id="1_l1pxx"]
+
+[node name="DialogSoundEffect" type="Node2D" unique_id=535573823]
+script = ExtResource("1_l1pxx")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=408065660]
+stream = ExtResource("1_86m8x")

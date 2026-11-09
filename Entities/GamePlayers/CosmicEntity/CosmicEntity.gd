@@ -2,15 +2,22 @@ extends PlayerDef
 class_name CosmicEntity
 
 var soundPlaying : bool = false
+var can_play = false
 var next_idx : int = 0
 
+func _ready() -> void:
+	GlobalSignals.game_started.connect(can_play_sound)
+
 #	SOUND EFFECTS
+func can_play_sound() -> void:
+	can_play = true
 func _on_sound_timer_timeout() -> void:
-	if not soundPlaying:
-		var chance : int = randi_range(0, 3)
-		if (chance != 3):
-			$CosmicEntitySound.play()
-			soundPlaying = true
+	if can_play:
+		if not soundPlaying:
+			var chance : int = randi_range(0, 3)
+			if (chance != 3):
+				$CosmicEntitySound.play()
+				soundPlaying = true
 func _on_cosmic_entity_sound_finished() -> void:
 	soundPlaying = false
 

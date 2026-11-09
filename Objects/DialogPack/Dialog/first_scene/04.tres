@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="Dialog" format=3 uid="uid://epksjctyw27w"]
 
-[ext_resource type="Script" uid="uid://dly2myvttjlcl" path="res://Resources/Dialog/dialog.gd" id="1_5pisj"]
+[ext_resource type="Script" uid="uid://dly2myvttjlcl" path="res://Resources/DialogPack/dialog.gd" id="1_5pisj"]
 
 [resource]
 script = ExtResource("1_5pisj")
-text = "GUIDE THE FLASH"
+text = "GUIDE THE FLESH"
 metadata/_custom_type_script = "uid://dly2myvttjlcl"

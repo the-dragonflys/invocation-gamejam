@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cpeqcv1oqmrpr"]
+
+[ext_resource type="AudioStream" uid="uid://bk64gnynqxgfe" path="res://Assets/Audio/Soundtrack/leberch-airium-tense-610770.mp3" id="1_ja0nq"]
+
+[node name="Soundtrack" type="AudioStreamPlayer2D" unique_id=1454158737]
+stream = ExtResource("1_ja0nq")
+max_distance = 10000.0
+parameters/looping = true

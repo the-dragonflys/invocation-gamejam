@@ -7,6 +7,10 @@ signal tooltip_hide
 signal play_credits
 ## FROM CutscenePlayer TO Game
 signal end_game
+## FROM Desk TO DialogSoundEffect
+signal play_dialog_effect
+## FROM Desk TO CosmicEntity
+signal game_started
 
 #	related to the items
 signal items_played()

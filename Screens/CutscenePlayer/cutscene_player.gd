@@ -11,7 +11,7 @@ func _ready() -> void:
 	stream_player.play()
 
 func credits_scene() -> void:
-	streamtheora.file = "res://Assets/Videos/credits_scene_ntsc-converted.ogv"
+	streamtheora.file = "res://Assets/Videos/credits_scene_ntsc.ogv"
 	stream_player.play()
 	credits = true
 

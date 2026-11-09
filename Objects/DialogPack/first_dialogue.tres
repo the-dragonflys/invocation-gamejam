@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DialogPack" format=3 uid="uid://cmyhug4f80p67"]
+
+[ext_resource type="Script" uid="uid://dly2myvttjlcl" path="res://Resources/DialogPack/dialog.gd" id="1_ye6e2"]
+[ext_resource type="Script" uid="uid://dc2f2d08s2g2j" path="res://Resources/DialogPack/DialogPack.gd" id="2_7eiss"]
+[ext_resource type="Resource" uid="uid://b0t3fb1tamp2d" path="res://Objects/DialogPack/Dialog/first_scene/01.tres" id="2_dxgti"]
+[ext_resource type="Resource" uid="uid://cnd0j8oe0h2xf" path="res://Objects/DialogPack/Dialog/first_scene/02.tres" id="3_d0bo4"]
+[ext_resource type="Resource" uid="uid://cu1slsrxppukc" path="res://Objects/DialogPack/Dialog/first_scene/03.tres" id="4_ndo50"]
+[ext_resource type="Resource" uid="uid://epksjctyw27w" path="res://Objects/DialogPack/Dialog/first_scene/04.tres" id="5_gny2v"]
+[ext_resource type="Resource" uid="uid://yqu51fcup3ca" path="res://Objects/DialogPack/Dialog/first_scene/05.tres" id="6_ce5vo"]
+[ext_resource type="Resource" uid="uid://vk8jawfuuukt" path="res://Objects/DialogPack/Dialog/first_scene/06.tres" id="7_mrlfu"]
+[ext_resource type="Resource" uid="uid://curxw48i84a2t" path="res://Objects/DialogPack/Dialog/first_scene/07.tres" id="8_d0bo4"]
+
+[resource]
+script = ExtResource("2_7eiss")
+dialogs = Array[ExtResource("1_ye6e2")]([ExtResource("2_dxgti"), ExtResource("3_d0bo4"), ExtResource("4_ndo50"), ExtResource("5_gny2v"), ExtResource("6_ce5vo"), ExtResource("7_mrlfu"), ExtResource("8_d0bo4")])
+metadata/_custom_type_script = "uid://dc2f2d08s2g2j"
