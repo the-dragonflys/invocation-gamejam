@@ -33,5 +33,7 @@ signal ally_fighter_choosen(idx : int)
 signal entity_lost
 
 #	related to the buttons
+## FROM ControllerButtons TO RoundManager
 signal confirmation_button_pressed
+## FROM ControllerButtons TO RoundManager
 signal skip_button_pressed
