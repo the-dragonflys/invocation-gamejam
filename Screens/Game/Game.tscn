@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://btn3kkai86jcn"]
 
-[ext_resource type="Script" uid="uid://c4huvcp56jmph" path="res://Screens/Game/GameManager.gd" id="1_7ipda"]
+[ext_resource type="Script" uid="uid://c4huvcp56jmph" path="res://Screens/Game/gamemanager.gd" id="1_7ipda"]
 [ext_resource type="AudioStream" uid="uid://bk64gnynqxgfe" path="res://Assets/Audio/Soundtrack/leberch-airium-tense-610770.mp3" id="2_gos1l"]
 
 [node name="Game" type="Node" unique_id=1248509455]

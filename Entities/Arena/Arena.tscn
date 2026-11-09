@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://xyex2k8uu5mq"]
 
-[ext_resource type="Script" uid="uid://b5rowimta1g5f" path="res://Entities/Arena/Arena.gd" id="1_3qki2"]
+[ext_resource type="Script" uid="uid://b5rowimta1g5f" path="res://Entities/Arena/arena.gd" id="1_3qki2"]
 [ext_resource type="Texture2D" uid="uid://dc3l0y88wy625" path="res://Assets/Visual/Sprites/Arena/Arena e monitor.png" id="2_twi15"]
 [ext_resource type="PackedScene" uid="uid://ci8vevsaecaol" path="res://Entities/Fighter/FighterView.tscn" id="3_5gko3"]
 

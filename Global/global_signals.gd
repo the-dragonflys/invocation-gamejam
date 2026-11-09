@@ -18,3 +18,5 @@ signal fighter_tooltip_requested(fighter : Fighter)
 
 #	related to the player
 signal action_points_used(current : int)
+signal player_lost
+signal entity_lost

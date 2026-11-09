@@ -6,7 +6,7 @@ var count_deaths : int = 0
 
 func create_instance() -> Team:
 	var instance : Team = self.duplicate()
-	GlobalSignals.fighter_died.connect(fighter_died)
+	GlobalSignals.fighter_died.connect(instance.fighter_died)
 	return instance
 
 func get_fighter(idx : int) -> Fighter:
