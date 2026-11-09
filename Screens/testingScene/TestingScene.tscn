@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bral1bhwvnljy"]
 
-[ext_resource type="Script" uid="uid://cf134ximkhkbx" path="res://Screens/testingScene/testing_scene.gd" id="1_myrcx"]
+[ext_resource type="Script" uid="uid://cf134ximkhkbx" path="res://Screens/TestingScene/testing_scene.gd" id="1_myrcx"]
 [ext_resource type="Resource" uid="uid://c4d5lsh0wtgnx" path="res://Objects/Fighter/Earthling/billybrute.tres" id="2_cr1n3"]
 [ext_resource type="PackedScene" uid="uid://xyex2k8uu5mq" path="res://Entities/Arena/Arena.tscn" id="4_cr1n3"]
 [ext_resource type="Resource" uid="uid://c7gedkb08rq4e" path="res://Objects/Fighter/Alien/zibzibzub.tres" id="6_58jla"]
