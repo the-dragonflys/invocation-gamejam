@@ -15,10 +15,10 @@ func _expose_hand() -> void:
 			slot.set_item(item)
 
 
-func _on_controller_buttons_action_confirmed() -> void:
-	var items_selected = Array[Item]
-	for slot in slots:
-		if slot.state == ItemUI.ItemStates.SELECTED:
-			items_selected.append(slot.item)
-	
-	GlobalSignals.items_played.emit(items_selected)
+#func _on_controller_buttons_action_confirmed() -> void:
+	##var items_selected = Array[Item]
+	#for slot in slots:
+		#if slot.state == ItemUI.ItemStates.SELECTED:
+			#items_selected.append(slot.item)
+	#
+	#GlobalSignals.items_played.emit(items_selected)
