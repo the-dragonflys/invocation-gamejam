@@ -24,7 +24,7 @@ signal fighter_tooltip_requested(fighter : Fighter)
 
 #	related to the player
 ## FROM Player TO PALabel
-signal action_points_used(current : int)
+signal action_points_changed(current : int)
 ## FROM Player TO Game
 signal player_lost
 ## FROM TeamUI TO Player

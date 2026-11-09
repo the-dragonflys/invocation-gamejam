@@ -14,6 +14,9 @@ func check_if_lost() -> void:
 	if death_counter == 4:
 		GlobalSignals.player_lost.emit()
 		lost = true
+func change_energy(modifier : int):
+	energy = clampi(energy + modifier, 0, max_energy)
+	GlobalSignals.action_points_changed.emit(energy)
 
 
 #	FIGHTER RELATED
