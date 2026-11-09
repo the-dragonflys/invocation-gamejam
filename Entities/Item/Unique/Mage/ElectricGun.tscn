@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://e2p670b6thlw"]
-
-[ext_resource type="Script" uid="uid://dhklpkek35g04" path="res://Resources/Item/Unique/Mage/ElectricGun.gd" id="1_ht8g8"]
-
-[node name="ElectricGun" type="Control" unique_id=810274546]
-layout_mode = 3
-anchors_preset = 0
-script = ExtResource("1_ht8g8")

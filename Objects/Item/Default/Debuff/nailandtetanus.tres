@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://hr27nofw0380"]
+
+[ext_resource type="Script" uid="uid://dg2vle05hfg0o" path="res://Utilities/Action/action.gd" id="1_dfw4l"]
+[ext_resource type="Texture2D" uid="uid://d1cpclf66mxyf" path="res://Assets/Visual/Sprites/Items/Default/Nail and Tetanus (False Outline).png" id="2_cvtvg"]
+[ext_resource type="Script" uid="uid://io4h5owvawpb" path="res://Resources/Item/item.gd" id="2_spb65"]
+
+[sub_resource type="Resource" id="Resource_cvtvg"]
+script = ExtResource("1_dfw4l")
+type = 1
+modifier = -20
+stats = 2
+metadata/_custom_type_script = "uid://dg2vle05hfg0o"
+
+[resource]
+script = ExtResource("2_spb65")
+art = ExtResource("2_cvtvg")
+item_name = "Prego com Tétano"
+item_typ = 3
+description = "Prego com tétano, literalmente causa tétano no oponente, diminuindo sua defesa."
+cost = 1
+actions = Array[ExtResource("1_dfw4l")]([SubResource("Resource_cvtvg")])
+metadata/_custom_type_script = "uid://io4h5owvawpb"

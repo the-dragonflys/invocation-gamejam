@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://b1rkrrx41lak0"]
-
-[ext_resource type="Script" uid="uid://dlnbjffq1ehp8" path="res://Resources/Item/Unique/Mage/EnergeticPill.gd" id="1_gl537"]
-
-[node name="EnergeticPill" type="Control" unique_id=1447271838]
-layout_mode = 3
-anchors_preset = 0
-script = ExtResource("1_gl537")

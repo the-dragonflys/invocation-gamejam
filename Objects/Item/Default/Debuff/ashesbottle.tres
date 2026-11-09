@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://ctieox8gs6d30"]
+
+[ext_resource type="Script" uid="uid://dg2vle05hfg0o" path="res://Utilities/Action/action.gd" id="1_eb5y8"]
+[ext_resource type="Texture2D" uid="uid://dnorib74qib7f" path="res://Assets/Visual/Sprites/Items/Default/Ashe Bottle (False Outline).png" id="2_f0pol"]
+[ext_resource type="Script" uid="uid://io4h5owvawpb" path="res://Resources/Item/item.gd" id="2_xvpux"]
+
+[sub_resource type="Resource" id="Resource_omrel"]
+script = ExtResource("1_eb5y8")
+type = 1
+modifier = -20
+stats = 1
+metadata/_custom_type_script = "uid://dg2vle05hfg0o"
+
+[resource]
+script = ExtResource("2_xvpux")
+art = ExtResource("2_f0pol")
+item_name = "Frasco de Cinzas"
+item_typ = 3
+description = "Frasco com cinzas jogado no rosto do oponente, garantindo que o próximo ataque inimigo seja mais fraco."
+cost = 2
+actions = Array[ExtResource("1_eb5y8")]([SubResource("Resource_omrel")])
+metadata/_custom_type_script = "uid://io4h5owvawpb"

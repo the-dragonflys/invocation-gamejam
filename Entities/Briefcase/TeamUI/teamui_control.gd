@@ -6,9 +6,6 @@ var can_choose : bool = false
 }
 
 
-func _unhandled_input(event: InputEvent) -> void:
-	pass
-
 func _enter_tree() -> void:
 	GlobalSignals.ally_fighter_died.connect(fighter_died)
 

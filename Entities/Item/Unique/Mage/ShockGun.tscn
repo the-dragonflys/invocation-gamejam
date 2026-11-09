@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://4yv83b8bosrs"]
-
-[ext_resource type="Script" uid="uid://cbtwlcv0sbigq" path="res://Resources/Item/Unique/Mage/ShockGun.gd" id="1_18glw"]
-
-[node name="ShockGun" type="Control" unique_id=1065206553]
-layout_mode = 3
-anchors_preset = 0
-script = ExtResource("1_18glw")

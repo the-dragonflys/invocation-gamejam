@@ -19,7 +19,7 @@ func _setup() -> void:
 	pass
 func check_if_lost() -> void:
 	pass
-func change_energy(modifier : int):
+func change_energy(_modifier : int):
 	pass
 
 #	FIGHTER_VIEW RELATED

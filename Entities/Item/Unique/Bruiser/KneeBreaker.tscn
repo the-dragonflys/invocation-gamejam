@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://cpxw0m25np0up"]
-
-[ext_resource type="Script" uid="uid://bb0t4ls0n1u2e" path="res://Resources/Item/Unique/Bruiser/KneeBreaker.gd" id="1_pvoun"]
-
-[node name="KneeBreaker" type="Control" unique_id=1273559621]
-layout_mode = 3
-anchors_preset = 0
-script = ExtResource("1_pvoun")

@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://cxqp3f1fashhv"]
-
-[ext_resource type="Script" uid="uid://co8p6gbj7jshe" path="res://Resources/Item/Unique/DamageCarry/CounterHook.gd" id="1_0kubw"]
-
-[node name="CounterHook" type="Control" unique_id=985491151]
-layout_mode = 3
-anchors_preset = 0
-script = ExtResource("1_0kubw")

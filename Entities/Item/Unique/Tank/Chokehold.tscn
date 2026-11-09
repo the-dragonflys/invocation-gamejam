@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://dfmfbdlbm0wqj"]
-
-[ext_resource type="Script" uid="uid://4skwijlqh2pm" path="res://Resources/Item/Unique/Tank/Chokehold.gd" id="1_2unhd"]
-
-[node name="Chokehold" type="Control" unique_id=1727175480]
-layout_mode = 3
-anchors_preset = 0
-script = ExtResource("1_2unhd")

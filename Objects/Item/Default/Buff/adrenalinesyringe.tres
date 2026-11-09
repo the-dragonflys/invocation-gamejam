@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://dx6re476uwwnn"]
+
+[ext_resource type="Script" uid="uid://dg2vle05hfg0o" path="res://Utilities/Action/action.gd" id="1_dxx3o"]
+[ext_resource type="Script" uid="uid://io4h5owvawpb" path="res://Resources/Item/item.gd" id="2_5nxbe"]
+[ext_resource type="Texture2D" uid="uid://de6m87e0r6s6d" path="res://Assets/Visual/Sprites/Items/Default/Adrenaline Syringe (False Outline).png" id="2_r6bq5"]
+
+[sub_resource type="Resource" id="Resource_r6bq5"]
+script = ExtResource("1_dxx3o")
+type = 2
+modifier = 12
+stats = 1
+metadata/_custom_type_script = "uid://dg2vle05hfg0o"
+
+[sub_resource type="Resource" id="Resource_84t3o"]
+script = ExtResource("1_dxx3o")
+type = 2
+modifier = 12
+stats = 2
+metadata/_custom_type_script = "uid://dg2vle05hfg0o"
+
+[resource]
+script = ExtResource("2_5nxbe")
+art = ExtResource("2_r6bq5")
+item_name = "Seringa de Adrenalina"
+item_typ = 2
+description = "Seringa de vidro suja que garante ação dupla imediata, aumentando ataque e defesa por igual durante uma rodada."
+cost = 3
+actions = Array[ExtResource("1_dxx3o")]([SubResource("Resource_r6bq5"), SubResource("Resource_84t3o")])
+metadata/_custom_type_script = "uid://io4h5owvawpb"

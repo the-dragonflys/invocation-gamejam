@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://bwclodoov1yv8"]
+
+[ext_resource type="Script" uid="uid://dg2vle05hfg0o" path="res://Utilities/Action/action.gd" id="1_fqeqj"]
+[ext_resource type="Script" uid="uid://io4h5owvawpb" path="res://Resources/Item/item.gd" id="2_6hbwb"]
+[ext_resource type="Texture2D" uid="uid://dgyhft2shng8i" path="res://Assets/Visual/Sprites/Items/Default/Rusted Scalpel(False Outline).png" id="2_38nhh"]
+
+[sub_resource type="Resource" id="Resource_38nhh"]
+script = ExtResource("1_fqeqj")
+type = 3
+modifier = -5
+metadata/_custom_type_script = "uid://dg2vle05hfg0o"
+
+[resource]
+script = ExtResource("2_6hbwb")
+art = ExtResource("2_38nhh")
+item_name = "Bisturi Enferrujado"
+description = "Bisturi enferrujado que causa um corte profundo, porém impreciso."
+cost = 2
+actions = Array[ExtResource("1_fqeqj")]([SubResource("Resource_38nhh")])
+metadata/_custom_type_script = "uid://io4h5owvawpb"

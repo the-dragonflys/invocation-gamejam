@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://bl5b5y0e87wvi"]
-
-[ext_resource type="Script" uid="uid://cucpuofoack7r" path="res://Resources/Item/Unique/DamageCarry/RapidJabs.gd" id="1_r3h6x"]
-
-[node name="RapidJabs" type="Control" unique_id=2009446289]
-layout_mode = 3
-anchors_preset = 0
-script = ExtResource("1_r3h6x")

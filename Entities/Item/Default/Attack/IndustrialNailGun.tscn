@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://ckm162pn845hl"]
-
-[ext_resource type="Script" uid="uid://c58tuegj1snf3" path="res://Resources/Item/Default/Attack/IndustrialNailGun.gd" id="1_t0q02"]
-
-[node name="IndustrialNailGun" type="Node2D" unique_id=1789212402]
-script = ExtResource("1_t0q02")
