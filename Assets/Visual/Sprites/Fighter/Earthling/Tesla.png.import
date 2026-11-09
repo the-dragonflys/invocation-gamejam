@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ps6hfyd7s80k"
-path="res://.godot/imported/PlaceholderTesla.png-70e529e1200f23d7b77c0d1049b8f97f.ctex"
+uid="uid://brqhcduvrbc4u"
+path="res://.godot/imported/Tesla.png-14b2d8df8699165f0ac7e62c6a6c21a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Visual/Sprites/Fighter/Earthling/PlaceholderTesla.png"
-dest_files=["res://.godot/imported/PlaceholderTesla.png-70e529e1200f23d7b77c0d1049b8f97f.ctex"]
+source_file="res://Assets/Visual/Sprites/Fighter/Earthling/Tesla.png"
+dest_files=["res://.godot/imported/Tesla.png-14b2d8df8699165f0ac7e62c6a6c21a9.ctex"]
 
 [params]
 

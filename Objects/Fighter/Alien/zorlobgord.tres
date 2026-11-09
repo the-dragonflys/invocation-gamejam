@@ -8,6 +8,6 @@
 script = ExtResource("1_x6v5u")
 nome = "ZorlobGord"
 m_class = ExtResource("1_dv42c")
-afiliated = 1
+alliedto = 1
 art = ExtResource("1_jury3")
 metadata/_custom_type_script = "uid://c8q8rfhqfqhsk"

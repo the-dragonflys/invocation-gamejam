@@ -2,7 +2,7 @@ class_name Team
 extends Resource
 
 @export var components : Array[Fighter]
-var count_deaths : int = 0
+var curr_idx : int
 
 func create_instance() -> Team:
 	var instance : Team = self.duplicate()
@@ -11,6 +11,7 @@ func create_instance() -> Team:
 
 func get_fighter(idx : int) -> Fighter:
 	var ret : Fighter
+	curr_idx = idx
 	ret = components[idx]
 	return ret
 
@@ -18,12 +19,9 @@ func fighter_died(fighter : Fighter) -> void:
 	if not fighter in components:
 		return
 	
-	count_deaths += 1
-	components.erase(fighter)
-	
 	match fighter.alliedto:
 		Fighter.AlliedTo.ALLY:
-			GlobalSignals.ally_fighter_died.emit(fighter)
+			GlobalSignals.ally_fighter_died.emit(curr_idx)
 		Fighter.AlliedTo.ENEMY:
 			GlobalSignals.enemy_fighter_died.emit()
 		

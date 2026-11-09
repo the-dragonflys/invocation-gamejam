@@ -4,23 +4,29 @@ class_name PlayerDef extends Node2D
 var energy : int = 6
 var curr_fighter : Fighter
 var fighterviewer : FighterView : set = set_fighter_view
+var death_counter : int = 0
+var lost : bool = false
 
+
+#	OVERRIDE FUNCTIONS
+func _setup() -> void:
+	pass
+func check_if_lost() -> void:
+	pass
+
+#	FIGHTER_VIEW RELATED
 func set_fighter_view(fighter_view : FighterView) -> void:
 	if not fighter_view is FighterView:
 		return
 	
 	fighterviewer = fighter_view
+func update_figher_view() -> void:
+	fighterviewer.set_fighter(curr_fighter)
 
-#	OVERRIDE FUNCTIONS
-func _setup() -> void:
-	pass
-func set_fighter(idx : int) -> void:
-	pass
 
-#@export var team : Array[Fighter] = []
+
+
 #var hand : Array[Item] = []	#array[Item]
-#var energy : int = 8
-#var curr_fighter : Fighter
 #var itemgiver : ItemGiver = ItemGiver.new()._setup_default()
 #
 #func _reset_energy() -> void: energy = 8
