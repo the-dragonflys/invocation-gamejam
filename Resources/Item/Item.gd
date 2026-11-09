@@ -25,8 +25,9 @@ enum Types { #Enum para os tipos de items
 @export var actions : Array[Action]
 
 
-func create_instante() -> void:
-	pass
+func create_instante() -> Item:
+	var instance = self.duplicate()
+	return instance
 
 
 #	the item logic will be implemented here now

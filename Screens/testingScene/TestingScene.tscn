@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bral1bhwvnljy"]
 
 [ext_resource type="Script" uid="uid://cf134ximkhkbx" path="res://Screens/TestingScene/testing_scene.gd" id="1_myrcx"]
-[ext_resource type="PackedScene" uid="uid://bgp4af684snmh" path="res://Entities/GamePlayers/CosmicEntity/CosmicEntity.tscn" id="3_oj0ep"]
-[ext_resource type="PackedScene" uid="uid://xyex2k8uu5mq" path="res://Entities/Arena/Arena.tscn" id="4_cr1n3"]
+[ext_resource type="PackedScene" uid="uid://74kutrh12t3i" path="res://Entities/Item/item_ui.tscn" id="2_1513u"]
+[ext_resource type="Resource" uid="uid://cew4kgvt5tx70" path="res://Objects/Item/Default/Buff/leadplate.tres" id="3_oj0ep"]
 
 [node name="TestingScene" type="Node2D" unique_id=389920248]
 script = ExtResource("1_myrcx")
@@ -10,6 +10,7 @@ script = ExtResource("1_myrcx")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1913364039]
 anchor_mode = 0
 
-[node name="Arena" parent="." unique_id=2024477554 instance=ExtResource("4_cr1n3")]
-
-[node name="CosmicEntity" parent="." unique_id=546302893 instance=ExtResource("3_oj0ep")]
+[node name="ItemUi" parent="." unique_id=256018292 instance=ExtResource("2_1513u")]
+offset_right = 638.0
+offset_bottom = 642.0
+item = ExtResource("3_oj0ep")

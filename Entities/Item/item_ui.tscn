@@ -1,12 +1,42 @@
 [gd_scene format=3 uid="uid://74kutrh12t3i"]
 
 [ext_resource type="Script" uid="uid://iuts2bkkvl86" path="res://Entities/Item/item_ui.gd" id="1_mra2m"]
+[ext_resource type="StyleBox" uid="uid://dhyocva24lrkt" path="res://Entities/Item/item_ui_base.tres" id="2_mmnnq"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bpqfu"]
 
 [node name="ItemUi" type="Control" unique_id=256018292]
+material = SubResource("ShaderMaterial_bpqfu")
+custom_minimum_size = Vector2(638, 642)
+custom_maximum_size = Vector2(638, 642)
 layout_mode = 3
+anchor_right = 0.33200002
+anchor_bottom = 0.59400004
+offset_right = 0.5599365
+offset_bottom = 0.47998047
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mra2m")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=842216529]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_mra2m")
+mouse_filter = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=903908812]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = ExtResource("2_mmnnq")
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

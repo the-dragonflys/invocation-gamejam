@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Item" format=3 uid="uid://bwclodoov1yv8"]
 
-[ext_resource type="Script" uid="uid://dg2vle05hfg0o" path="res://Utilities/Action/action.gd" id="1_fqeqj"]
+[ext_resource type="Script" uid="uid://dg2vle05hfg0o" path="res://Utilities/Action/Action.gd" id="1_fqeqj"]
 [ext_resource type="Script" uid="uid://io4h5owvawpb" path="res://Resources/Item/item.gd" id="2_6hbwb"]
 [ext_resource type="Texture2D" uid="uid://dgyhft2shng8i" path="res://Assets/Visual/Sprites/Items/Default/Rusted Scalpel(False Outline).png" id="2_38nhh"]
 

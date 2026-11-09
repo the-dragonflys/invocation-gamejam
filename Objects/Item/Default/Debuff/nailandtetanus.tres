@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Item" format=3 uid="uid://hr27nofw0380"]
 
-[ext_resource type="Script" uid="uid://dg2vle05hfg0o" path="res://Utilities/Action/action.gd" id="1_dfw4l"]
+[ext_resource type="Script" uid="uid://dg2vle05hfg0o" path="res://Utilities/Action/Action.gd" id="1_dfw4l"]
 [ext_resource type="Texture2D" uid="uid://d1cpclf66mxyf" path="res://Assets/Visual/Sprites/Items/Default/Nail and Tetanus (False Outline).png" id="2_cvtvg"]
 [ext_resource type="Script" uid="uid://io4h5owvawpb" path="res://Resources/Item/item.gd" id="2_spb65"]
 
