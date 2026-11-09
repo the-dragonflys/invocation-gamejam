@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Dialog" format=3 uid="uid://bltlowqa888d2"]
+
+[ext_resource type="Script" uid="uid://dly2myvttjlcl" path="res://Resources/Dialog/dialog.gd" id="1_vijup"]
+
+[resource]
+script = ExtResource("1_vijup")
+text = "CHOOSE YOUR CONDEMNED"
+metadata/_custom_type_script = "uid://dly2myvttjlcl"

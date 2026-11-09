@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://cew4kgvt5tx70"]
+
+[ext_resource type="Script" uid="uid://dg2vle05hfg0o" path="res://Utilities/Action/action.gd" id="1_o80yj"]
+[ext_resource type="Script" uid="uid://io4h5owvawpb" path="res://Resources/Item/item.gd" id="2_gn8nr"]
+[ext_resource type="Texture2D" uid="uid://c3vowlxivit3v" path="res://Assets/Visual/Sprites/Items/Default/Lead Plate (False Outline).png" id="2_vcpo5"]
+
+[sub_resource type="Resource" id="Resource_vcpo5"]
+script = ExtResource("1_o80yj")
+type = 2
+modifier = 12
+stats = 2
+metadata/_custom_type_script = "uid://dg2vle05hfg0o"
+
+[resource]
+script = ExtResource("2_gn8nr")
+art = ExtResource("2_vcpo5")
+item_name = "Placa de Chumbo"
+item_typ = 2
+description = "Placa de chumbo densa que deixa o lutador mais resistente a golpes."
+cost = 1
+actions = Array[ExtResource("1_o80yj")]([SubResource("Resource_vcpo5")])
+metadata/_custom_type_script = "uid://io4h5owvawpb"

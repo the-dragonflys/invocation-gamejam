@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://cs21x21mg68t2"]
-
-[ext_resource type="Script" uid="uid://c58q8rg2o0imn" path="res://Resources/Item/Unique/Mage/ElectricPin.gd" id="1_ytw8x"]
-
-[node name="ElectricPin" type="Control" unique_id=399881658]
-layout_mode = 3
-anchors_preset = 0
-script = ExtResource("1_ytw8x")

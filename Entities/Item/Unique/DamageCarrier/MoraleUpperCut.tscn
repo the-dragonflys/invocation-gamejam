@@ -1,7 +1,0 @@
-[gd_scene format=3 uid="uid://cxcdpsdbtsrlv"]
-
-[ext_resource type="Script" uid="uid://cr2kwvjkjy8qj" path="res://Resources/Item/Unique/DamageCarry/MoraleUpperCut.gd" id="1_1k83v"]
-
-[node name="MoraleUpperCut" type="Node2D" unique_id=2090566124]
-script = ExtResource("1_1k83v")
-item_ref = null

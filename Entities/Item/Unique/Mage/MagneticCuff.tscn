@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://bbsa1csrcm224"]
-
-[ext_resource type="Script" uid="uid://8bf78xa8rmb" path="res://Resources/Item/Unique/Mage/MagneticCuff.gd" id="1_cjdc8"]
-
-[node name="MagneticCuff" type="Control" unique_id=1001980830]
-layout_mode = 3
-anchors_preset = 0
-script = ExtResource("1_cjdc8")

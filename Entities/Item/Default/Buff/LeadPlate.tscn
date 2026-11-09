@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://btc6vcgtranr6"]
-
-[ext_resource type="Script" uid="uid://dwvukcjbdu865" path="res://Resources/Item/Default/Buff/LeadPlate.gd" id="1_4q2is"]
-
-[node name="LeadPlate" type="Node2D" unique_id=54356985]
-script = ExtResource("1_4q2is")

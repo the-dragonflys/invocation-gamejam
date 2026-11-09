@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dpaybwrl6v8p8"]
 
-[ext_resource type="Script" uid="uid://c5dt2uu420s1g" path="res://Entities/GamePlayers/Player/player.gd" id="1_1fhut"]
+[ext_resource type="Script" uid="uid://cn4jgg3fnee0j" path="res://Entities/GamePlayers/Player/player.gd" id="1_1fhut"]
 [ext_resource type="Resource" uid="uid://b2ccmdognrymj" path="res://Objects/Team/earthlings_team.tres" id="2_1fhut"]
 
 [node name="Player" type="Node2D" unique_id=1443839445]

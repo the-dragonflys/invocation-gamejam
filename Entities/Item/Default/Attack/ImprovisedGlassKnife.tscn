@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://dq16m7txp0qlr"]
-
-[ext_resource type="Script" uid="uid://dsm1jfikea4x6" path="res://Resources/Item/Default/Attack/ImprovisedGlassKnife.gd" id="1_mebj1"]
-
-[node name="ImprovisedGlassKnife" type="Node2D" unique_id=1994338015]
-script = ExtResource("1_mebj1")

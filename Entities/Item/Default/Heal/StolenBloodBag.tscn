@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://brh4p7vhrfu0g"]
-
-[ext_resource type="Script" uid="uid://gmdt7nbnkgmh" path="res://Resources/Item/Default/Heal/StolenBloodBag.gd" id="1_174jw"]
-
-[node name="StolenBloodBag" type="Node2D" unique_id=1127132842]
-script = ExtResource("1_174jw")

@@ -12,18 +12,23 @@ enum Types { #Enum para os tipos de items
 }
 
 #propriedades da classe Item
-var item_name: String
-var item_typ: Types
-var description : String
-var actions : Array[Action] = []
-var cost : int
-var item_ref : PackedScene
+@export_group("Visual")
+@export var art : Texture
 
-func check_IsThereActions() -> bool:
-	return not actions.is_empty()
+@export_group("Details")
+@export var item_name: String
+@export var item_typ: Types
+@export_multiline var description : String
+@export var cost : int
 
-func get_action() -> Action:
-	var ret : Action
-	ret = actions.back()
-	actions.pop_back()
-	return ret
+@export_group("Effects")
+@export var actions : Array[Action]
+
+
+func create_instante() -> void:
+	pass
+
+
+#	the item logic will be implemented here now
+func use_item(user : Fighter, poss_target : Fighter) -> void:
+	pass

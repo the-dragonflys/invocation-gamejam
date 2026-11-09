@@ -10,29 +10,23 @@ enum Types{
 	ENEMY_DEBUFF=1,
 	BUFF=2,
 	ATTACK=3,
-	SELF_ATTACK=4
+	SELF_ATTACK=4,
+	HEAL=5,
 }
 
 ## [b]Enum que define qual atributo será afetado na ação.[/b][br][br]
 ## São eles:[br]
 ## [color=lightgreen]NONE[br]LIFE[br]STRENGTH[br]DEFENSE[br]INITIATIVE[br]STATE[/color]
-enum Stats{
+enum BuffAffects{
 	NONE=0,
-	LIFE=1,
-	STRENGTH=2,
-	DEFENSE=3,
-	INITIATIVE=4,
-	STATE=5,
+	STRENGTH=1,
+	DEFENSE=2,
+	INITIATIVE=3,
+	STATE=4,
 }
+
 
 @export var type : Types
 @export var modifier : int
-@export var stats : Stats
+@export var stats : BuffAffects
 @export var stateChange : States.Types
-
-func _init(t : Types, value : int, s : Stats = Stats.NONE,
-		   sChange : States.Types = States.Types.IDLE):
-	type = t
-	modifier = value
-	stats = s
-	stateChange = sChange

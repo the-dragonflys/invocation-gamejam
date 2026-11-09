@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Dialog" format=3 uid="uid://b0t3fb1tamp2d"]
+
+[ext_resource type="Script" uid="uid://dly2myvttjlcl" path="res://Resources/Dialog/dialog.gd" id="1_t3vkn"]
+
+[resource]
+script = ExtResource("1_t3vkn")
+text = "WELCOME TO YOUR TRIAL"
+metadata/_custom_type_script = "uid://dly2myvttjlcl"

@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://bv8e5q227mvnd"]
-
-[ext_resource type="Script" uid="uid://c132wlg5433xj" path="res://Resources/Item/Unique/DamageCarry/Resilience.gd" id="1_oud42"]
-
-[node name="Resilience" type="Control" unique_id=1735969808]
-layout_mode = 3
-anchors_preset = 0
-script = ExtResource("1_oud42")

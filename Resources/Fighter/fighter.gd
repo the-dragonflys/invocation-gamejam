@@ -17,8 +17,6 @@ enum AlliedTo{
 var life : int # max 50
 var strength : int # 0-200 ⇒ as a percentage
 var defense : int  # 0-200 ⇒ as a percentage
-var initiative : int = 0 	# 0 or 1, will actually change how this works
-#var action_queue : ActionQueue = ActionQueue.new() will touch this can of worms later
 var state : States.Types
 var active_buff : Action
 var active_debuff : Action
@@ -42,7 +40,6 @@ func _reset_modifiers() -> void:
 		active_debuff.free()
 	strength = m_class.ori_strength
 	defense = m_class.ori_defense
-	initiative = 1
 	changes_feedback()
 func _reset_state() -> void:
 	state = States.Types.IDLE
@@ -55,10 +52,6 @@ func use_item(item: Item) -> void:
 		#var aux : Action
 		#aux = item.get_action()
 		#action_queue._add_action(aux)
-func _realize_action() -> Action:
-	var ret : Action
-	#ret = action_queue.get_action()
-	return ret
 
 
 #INTERACTIONS
@@ -73,9 +66,9 @@ func self_attack(act : Action) -> void:
 	change_life(act.modifier)
 func apply_modifier(act : Action, target : Fighter) -> void:
 	match act.stats:
-		Action.Stats.STRENGTH:
+		Action.BuffAffects.STRENGTH:
 			target.change_strength(act.modifier)
-		Action.Stats.DEFENSE:
+		Action.BuffAffects.DEFENSE:
 			target.change_defense(act.modifier)
 func self_modifier(act : Action) -> void:
 	apply_modifier(act, self)
@@ -95,9 +88,6 @@ func change_state(new_state : States.Types) -> void:
 		return
 	state = new_state
 	changes_feedback()
-func change_initiative() -> void:
-	initiative = 0 if initiative == 1 else 1
-	changes_feedback()
 
 
 # CHECKERS
@@ -107,8 +97,10 @@ func check_died() -> void:
 		print(nome)
 		print("died")
 func can_act() -> bool: 
+	if state == States.Types.STUNNED or state == States.Types.PATIENT:
+		return false
 	return true
-	#return action_queue.is_there_actions_left()
+
 
 # FEEDBACK
 func changes_feedback() -> void:

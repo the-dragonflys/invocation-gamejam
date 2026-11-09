@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://82b04vxt887k"]
+
+[ext_resource type="Script" uid="uid://dg2vle05hfg0o" path="res://Utilities/Action/action.gd" id="1_tho25"]
+[ext_resource type="Script" uid="uid://io4h5owvawpb" path="res://Resources/Item/item.gd" id="2_jdyfw"]
+[ext_resource type="Texture2D" uid="uid://3qafv6cj8y3q" path="res://Assets/Visual/Sprites/Items/Default/Industrial Nail Gun (False Outline).png" id="2_tp1s7"]
+
+[sub_resource type="Resource" id="Resource_dfdeb"]
+script = ExtResource("1_tho25")
+type = 3
+modifier = -3
+metadata/_custom_type_script = "uid://dg2vle05hfg0o"
+
+[resource]
+script = ExtResource("2_jdyfw")
+art = ExtResource("2_tp1s7")
+item_name = "Arma industrial de pregos"
+description = "Pistola de pregos pesada, atira uma rajada de pregos no oponente."
+cost = 1
+actions = Array[ExtResource("1_tho25")]([SubResource("Resource_dfdeb")])
+metadata/_custom_type_script = "uid://io4h5owvawpb"

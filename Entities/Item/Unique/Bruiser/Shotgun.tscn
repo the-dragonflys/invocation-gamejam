@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://bwwo71eymhuta"]
-
-[ext_resource type="Script" uid="uid://dxm0y6a6pr0f0" path="res://Resources/Item/Unique/Bruiser/Shotgun.gd" id="1_ealad"]
-
-[node name="Shotgun" type="Control" unique_id=1214459752]
-layout_mode = 3
-anchors_preset = 0
-script = ExtResource("1_ealad")

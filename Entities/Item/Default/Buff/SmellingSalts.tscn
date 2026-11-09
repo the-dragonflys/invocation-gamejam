@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://scx3tmma1j25"]
-
-[ext_resource type="Script" uid="uid://b6x1turotmqcm" path="res://Resources/Item/Default/Buff/SmellingSalts.gd" id="1_ly1ru"]
-
-[node name="SmellingSalts" type="Node2D" unique_id=868714302]
-script = ExtResource("1_ly1ru")

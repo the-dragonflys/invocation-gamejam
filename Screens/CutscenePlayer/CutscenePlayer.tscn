@@ -1,16 +1,18 @@
 [gd_scene format=3 uid="uid://m6tebe7upsfj"]
 
-[ext_resource type="VideoStream" uid="uid://bwkyvpjpg4ivl" path="res://Assets/Videos/Cutscene/cutscene_game_ntsc.ogv" id="1_0rv75"]
+[ext_resource type="Script" uid="uid://cvf2vy2ivx0fn" path="res://Screens/CutscenePlayer/cutscene_player.gd" id="1_3lepe"]
 
 [node name="CutscenePlayer" type="Node2D" unique_id=1091462041]
+script = ExtResource("1_3lepe")
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1181357598]
 offset_right = 854.0
 offset_bottom = 480.0
-stream = ExtResource("1_0rv75")
 autoplay = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=352802100]
 anchor_mode = 0
 zoom = Vector2(2.25, 2.25)
 limit_enabled = false
+
+[connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]

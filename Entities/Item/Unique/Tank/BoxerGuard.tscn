@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://eyrchokrnq1e"]
-
-[ext_resource type="Script" uid="uid://cqhkpds2stlym" path="res://Resources/Item/Unique/Tank/BoxerGuard.gd" id="1_33pt8"]
-
-[node name="BoxerGuard" type="Control" unique_id=887329828]
-layout_mode = 3
-anchors_preset = 0
-script = ExtResource("1_33pt8")
