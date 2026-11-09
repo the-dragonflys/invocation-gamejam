@@ -1,8 +1,14 @@
 class_name Fighter extends Resource #Classe abstrata Fighter
 
+enum AlliedTo{
+	ALLY = 0,
+	ENEMY,
+}
+
 @export_group("Base Details")
 @export var nome : String
 @export var m_class : FighterClass
+@export var alliedto : AlliedTo
 @export var art : Texture
 #@export var specific_deck : Array[Item] 	will deal with this later
 
@@ -19,7 +25,7 @@ var active_debuff : Action
 
 
 #CREATOR
-func create_instance() -> Resource:
+func create_instance() -> Fighter:
 	var instance : Fighter = self.duplicate()
 	life = m_class.max_life
 	strength = m_class.ori_strength
@@ -30,8 +36,10 @@ func create_instance() -> Resource:
 
 #RESETERS
 func _reset_modifiers() -> void:
-	active_buff.free()
-	active_debuff.free()
+	if active_buff:
+		active_buff.free()
+	if active_debuff:
+		active_debuff.free()
 	strength = m_class.ori_strength
 	defense = m_class.ori_defense
 	initiative = 1
@@ -74,23 +82,37 @@ func self_modifier(act : Action) -> void:
 # MODIFIERS
 func change_life(modifier : int) -> void:
 	life = clampi(life + modifier, 0, m_class.max_life)
+	changes_feedback()
 func change_strength(modifier : int ) -> void:
 	strength = clampi(strength + modifier, 0, 200)
+	changes_feedback()
 func change_defense(modifier : int) -> void:
 	defense = clampi(defense + modifier, 0, 200)
+	changes_feedback()
 func change_state(new_state : States.Types) -> void:
 	if not new_state in States.Types:
 		return
 	state = new_state
+	changes_feedback()
 func change_initiative() -> void:
 	initiative = 0 if initiative == 1 else 1
+	changes_feedback()
 
 
 # CHECKERS
 func check_died() -> void:
-	pass
-	#if life == 0:
-		#died.emit()
+	if life == 0:
+		GlobalSignals.fighter_died.emit(self)
 func can_act() -> bool: 
 	return true
 	#return action_queue.is_there_actions_left()
+
+# FEEDBACK
+func changes_feedback() -> void:
+	match alliedto:
+		AlliedTo.ALLY:
+			GlobalSignals.ally_stats_changed.emit(self)
+		AlliedTo.ENEMY:
+			GlobalSignals.enemy_stats_changed.emit(self)
+	
+	check_died()

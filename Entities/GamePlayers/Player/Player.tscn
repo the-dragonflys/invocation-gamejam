@@ -1,7 +1,9 @@
-[gd_scene format=3 uid="uid://cqgmt0ahkrthf"]
+[gd_scene format=3 uid="uid://dpaybwrl6v8p8"]
 
-[ext_resource type="Script" uid="uid://qywe0edwpfom" path="res://Entities/GamePlayers/Player/Player.gd" id="1_lrrbj"]
+[ext_resource type="Script" uid="uid://c5dt2uu420s1g" path="res://Entities/GamePlayers/Player/player.gd" id="1_1fhut"]
+[ext_resource type="Resource" uid="uid://b2ccmdognrymj" path="res://Objects/Team/earthlings_team.tres" id="2_1fhut"]
 
-[node name="Player" type="Node2D" unique_id=1848530869 node_paths=PackedStringArray("Team")]
-script = ExtResource("1_lrrbj")
-Team = [NodePath(""), NodePath(""), NodePath(""), NodePath("")]
+[node name="Player" type="Node2D" unique_id=1443839445]
+script = ExtResource("1_1fhut")
+team = ExtResource("2_1fhut")
+metadata/_custom_type_script = "uid://56neu4oqa5xk"

@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="invocation-gamejam"
+config/name="He_Can_See_Our_Sins"
 run/main_scene="uid://btn3kkai86jcn"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="uid://dubupb8ng3837"

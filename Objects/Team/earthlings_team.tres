@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Team" format=3 uid="uid://b2ccmdognrymj"]
+
+[ext_resource type="Script" uid="uid://c8q8rfhqfqhsk" path="res://Resources/Fighter/fighter.gd" id="1_sfv5q"]
+[ext_resource type="Script" uid="uid://c372b0ocrr4qu" path="res://Resources/Team/team.gd" id="2_4fmrs"]
+[ext_resource type="Resource" uid="uid://c4d5lsh0wtgnx" path="res://Objects/Fighter/Earthling/billybrute.tres" id="2_k253x"]
+[ext_resource type="Resource" uid="uid://cuvad3amfnqrm" path="res://Objects/Fighter/Earthling/hoppertank.tres" id="3_uds7c"]
+[ext_resource type="Resource" uid="uid://cpijc2cspw1ym" path="res://Objects/Fighter/Earthling/rocky.tres" id="4_cgilx"]
+[ext_resource type="Resource" uid="uid://coac22m5lb1up" path="res://Objects/Fighter/Earthling/teslamage.tres" id="5_urmde"]
+
+[resource]
+script = ExtResource("2_4fmrs")
+components = Array[ExtResource("1_sfv5q")]([ExtResource("2_k253x"), ExtResource("3_uds7c"), ExtResource("4_cgilx"), ExtResource("5_urmde")])
+metadata/_custom_type_script = "uid://c372b0ocrr4qu"

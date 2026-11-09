@@ -1,10 +1,11 @@
 [gd_resource type="Resource" script_class="Fighter" format=3 uid="uid://xrpwh6ql83gb"]
 
 [ext_resource type="Script" uid="uid://c8q8rfhqfqhsk" path="res://Resources/Fighter/fighter.gd" id="1_iphq5"]
-[ext_resource type="Resource" uid="uid://bil12o5f7x6ug" path="res://Resources/Fighter/Classes/bruiser.tres" id="1_lsjmm"]
+[ext_resource type="Resource" uid="uid://bil12o5f7x6ug" path="res://Resources/Fighter/Classes/Bruiser.tres" id="1_lsjmm"]
 
 [resource]
 script = ExtResource("1_iphq5")
 nome = "BirglyBruiter"
 m_class = ExtResource("1_lsjmm")
+alliedto = 1
 metadata/_custom_type_script = "uid://c8q8rfhqfqhsk"

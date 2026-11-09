@@ -1,10 +1,11 @@
 [gd_resource type="Resource" script_class="Fighter" format=3 uid="uid://uqdcan0sa2v7"]
 
 [ext_resource type="Script" uid="uid://c8q8rfhqfqhsk" path="res://Resources/Fighter/fighter.gd" id="1_cqe87"]
-[ext_resource type="Resource" uid="uid://cwuvhoc5dfcsd" path="res://Resources/Fighter/Classes/damagecarry.tres" id="1_iqms7"]
+[ext_resource type="Resource" uid="uid://cwuvhoc5dfcsd" path="res://Resources/Fighter/Classes/DamageCarry.tres" id="1_iqms7"]
 
 [resource]
 script = ExtResource("1_cqe87")
 nome = "BrizockTrocky"
 m_class = ExtResource("1_iqms7")
+alliedto = 1
 metadata/_custom_type_script = "uid://c8q8rfhqfqhsk"

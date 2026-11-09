@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Team" format=3 uid="uid://c8fle5fhj5tjq"]
+
+[ext_resource type="Script" uid="uid://c8q8rfhqfqhsk" path="res://Resources/Fighter/fighter.gd" id="1_rq5nm"]
+[ext_resource type="Script" uid="uid://c372b0ocrr4qu" path="res://Resources/Team/team.gd" id="2_5giat"]
+[ext_resource type="Resource" uid="uid://xrpwh6ql83gb" path="res://Objects/Fighter/Alien/birglybruiter.tres" id="2_n8x18"]
+[ext_resource type="Resource" uid="uid://uqdcan0sa2v7" path="res://Objects/Fighter/Alien/brizocktrocky.tres" id="3_dftpp"]
+[ext_resource type="Resource" uid="uid://c7gedkb08rq4e" path="res://Objects/Fighter/Alien/zibzibzub.tres" id="4_yot8a"]
+[ext_resource type="Resource" uid="uid://ubof5c4jtkx7" path="res://Objects/Fighter/Alien/zorlobgord.tres" id="5_xjjd2"]
+
+[resource]
+script = ExtResource("2_5giat")
+components = Array[ExtResource("1_rq5nm")]([ExtResource("2_n8x18"), ExtResource("3_dftpp"), ExtResource("4_yot8a"), ExtResource("5_xjjd2")])
+metadata/_custom_type_script = "uid://c372b0ocrr4qu"

@@ -1,3 +1,15 @@
 [gd_scene format=3 uid="uid://bral1bhwvnljy"]
 
+[ext_resource type="Script" uid="uid://cf134ximkhkbx" path="res://Screens/TestingScene/testing_scene.gd" id="1_myrcx"]
+[ext_resource type="PackedScene" uid="uid://bgp4af684snmh" path="res://Entities/GamePlayers/CosmicEntity/CosmicEntity.tscn" id="3_oj0ep"]
+[ext_resource type="PackedScene" uid="uid://xyex2k8uu5mq" path="res://Entities/Arena/Arena.tscn" id="4_cr1n3"]
+
 [node name="TestingScene" type="Node2D" unique_id=389920248]
+script = ExtResource("1_myrcx")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1913364039]
+anchor_mode = 0
+
+[node name="Arena" parent="." unique_id=2024477554 instance=ExtResource("4_cr1n3")]
+
+[node name="CosmicEntity" parent="." unique_id=546302893 instance=ExtResource("3_oj0ep")]
