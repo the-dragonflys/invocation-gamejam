@@ -24,10 +24,16 @@ signal fighter_tooltip_requested(fighter : Fighter)
 
 #	related to the player
 ## FROM Player TO PALabel
-signal action_points_used(current : int)
+signal action_points_changed(current : int)
 ## FROM Player TO Game
 signal player_lost
 ## FROM TeamUI TO Player
 signal ally_fighter_choosen(idx : int)
 ## FROM CosmicEntity TO Game
 signal entity_lost
+
+#	related to the buttons
+## FROM ControllerButtons TO RoundManager
+signal confirmation_button_pressed
+## FROM ControllerButtons TO RoundManager
+signal skip_button_pressed

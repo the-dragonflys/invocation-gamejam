@@ -1,11 +1,17 @@
 [gd_scene format=3 uid="uid://wj8p7arefdde"]
 
-[ext_resource type="Script" uid="uid://dk16pnu7u1xrr" path="res://Entities/Briefcase/TeamUI/teamui.gd" id="1_6muxv"]
+[ext_resource type="Script" uid="uid://dn61wolu7ui6q" path="res://Entities/Briefcase/TeamUI/team_ui.gd" id="1_o31ok"]
 [ext_resource type="Texture2D" uid="uid://bfoqe7resdwkj" path="res://Assets/Visual/Sprites/S.T.A.T.U.S/Background/Billy Apagados.png" id="1_yigdd"]
 [ext_resource type="Texture2D" uid="uid://cad1s58fik2dt" path="res://Assets/Visual/Sprites/S.T.A.T.U.S/Background/Hop Apagados.png" id="2_6muxv"]
 [ext_resource type="Texture2D" uid="uid://b7dahvw4rm5ua" path="res://Assets/Visual/Sprites/S.T.A.T.U.S/Background/Rock Apagados.png" id="3_1ktb5"]
 [ext_resource type="Texture2D" uid="uid://cawgnb48a88v2" path="res://Assets/Visual/Sprites/S.T.A.T.U.S/Background/Tesla Apagados.png" id="4_fm53t"]
 [ext_resource type="Theme" uid="uid://crt7en63rkidc" path="res://Themes/font_focused_theme.tres" id="6_2pufh"]
+[ext_resource type="Script" uid="uid://r8tdbh0lnqsn" path="res://Entities/Briefcase/TeamUI/teamui_info.gd" id="6_k6u14"]
+[ext_resource type="Texture2D" uid="uid://c5mn1njlplvvo" path="res://Assets/Visual/Sprites/S.T.A.T.U.S/Names/Billy.png" id="8_1nxm1"]
+[ext_resource type="Script" uid="uid://bmccwta6ck1a0" path="res://Entities/Briefcase/TeamUI/teamui_control.gd" id="8_o31ok"]
+[ext_resource type="Texture2D" uid="uid://qwel6jbj4j6s" path="res://Assets/Visual/Sprites/S.T.A.T.U.S/Names/Hop.png" id="9_o31ok"]
+[ext_resource type="Texture2D" uid="uid://uqjjmrbra7hb" path="res://Assets/Visual/Sprites/S.T.A.T.U.S/Names/Rock.png" id="10_y3hwx"]
+[ext_resource type="Texture2D" uid="uid://d1h84w4nh5fl0" path="res://Assets/Visual/Sprites/S.T.A.T.U.S/Names/Tesla.png" id="11_5ao87"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
 animations = [{
@@ -49,7 +55,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_6muxv")
+script = ExtResource("1_o31ok")
 
 [node name="Background" type="AnimatedSprite2D" parent="." unique_id=139780354]
 sprite_frames = SubResource("SpriteFrames_g4v7s")
@@ -57,23 +63,121 @@ animation = &"billy"
 autoplay = "billy"
 centered = false
 
-[node name="PVInfo" type="Node2D" parent="." unique_id=1350531106]
+[node name="Info" type="Node2D" parent="." unique_id=1350531106]
 skew = 0.092502356
+script = ExtResource("6_k6u14")
 
-[node name="PVLabel" type="RichTextLabel" parent="PVInfo" unique_id=1920242251]
+[node name="PVLabel" type="RichTextLabel" parent="Info" unique_id=1920242251]
 offset_left = 216.32703
 offset_top = 176.75569
 offset_right = 312.32703
 offset_bottom = 216.75569
 theme = ExtResource("6_2pufh")
+theme_override_colors/default_color = Color(0.9882353, 0.88235295, 0, 1)
 theme_override_font_sizes/normal_font_size = 40
 text = "50"
 
-[node name="PALabel" type="RichTextLabel" parent="PVInfo" unique_id=2088447515]
+[node name="PALabel" type="RichTextLabel" parent="Info" unique_id=2088447515]
 offset_left = 213.52199
 offset_top = 232.99614
 offset_right = 309.52197
 offset_bottom = 272.99615
 theme = ExtResource("6_2pufh")
+theme_override_colors/default_color = Color(0.9882353, 0.88235295, 0, 1)
 theme_override_font_sizes/normal_font_size = 40
 text = "50"
+
+[node name="TeamControl" type="Control" parent="." unique_id=1875023511]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+script = ExtResource("8_o31ok")
+
+[node name="Billy" type="Control" parent="TeamControl" unique_id=476087120]
+anchors_preset = 0
+offset_left = 77.0
+offset_top = 307.0
+offset_right = 193.0
+offset_bottom = 334.0
+
+[node name="TextureRect" type="TextureRect" parent="TeamControl/Billy" unique_id=1273578155]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -191.0
+offset_top = -362.5
+offset_right = 403.0
+offset_bottom = 270.5
+mouse_filter = 2
+texture = ExtResource("8_1nxm1")
+
+[node name="Hop" type="Control" parent="TeamControl" unique_id=1576077584]
+anchors_preset = 0
+offset_left = 75.0
+offset_top = 338.0
+offset_right = 190.0
+offset_bottom = 365.0
+
+[node name="TextureRect" type="TextureRect" parent="TeamControl/Hop" unique_id=367914886]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -190.5
+offset_top = -394.5
+offset_right = 403.5
+offset_bottom = 238.5
+mouse_filter = 2
+texture = ExtResource("9_o31ok")
+
+[node name="Rock" type="Control" parent="TeamControl" unique_id=115298499]
+anchors_preset = 0
+offset_left = 76.0
+offset_top = 368.0
+offset_right = 191.0
+offset_bottom = 395.0
+
+[node name="TextureRect" type="TextureRect" parent="TeamControl/Rock" unique_id=2024071490]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -191.5
+offset_top = -424.5
+offset_right = 402.5
+offset_bottom = 208.5
+mouse_filter = 2
+texture = ExtResource("10_y3hwx")
+
+[node name="Tesla" type="Control" parent="TeamControl" unique_id=1888373211]
+anchors_preset = 0
+offset_left = 74.0
+offset_top = 399.0
+offset_right = 189.0
+offset_bottom = 426.0
+
+[node name="TextureRect" type="TextureRect" parent="TeamControl/Tesla" unique_id=1317786285]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -188.5
+offset_top = -454.5
+offset_right = 405.5
+offset_bottom = 178.5
+mouse_filter = 2
+texture = ExtResource("11_5ao87")
+
+[connection signal="gui_input" from="TeamControl/Hop" to="TeamControl" method="_on_hop_gui_input"]
+[connection signal="gui_input" from="TeamControl/Rock" to="TeamControl" method="_on_rock_gui_input"]
+[connection signal="gui_input" from="TeamControl/Tesla" to="TeamControl" method="_on_tesla_gui_input"]

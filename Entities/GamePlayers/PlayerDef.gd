@@ -1,17 +1,25 @@
 class_name PlayerDef extends Node2D
 
 @export var team : Team
-var energy : int = 6
+const max_energy : int = 6
+var energy : int
 var curr_fighter : Fighter
 var fighterviewer : FighterView : set = set_fighter_view
 var death_counter : int = 0
 var lost : bool = false
 
 
+#	RESETERS
+func reset_energy():
+	change_energy(max_energy)
+
+
 #	OVERRIDE FUNCTIONS
 func _setup() -> void:
 	pass
 func check_if_lost() -> void:
+	pass
+func change_energy(modifier : int):
 	pass
 
 #	FIGHTER_VIEW RELATED
@@ -22,8 +30,6 @@ func set_fighter_view(fighter_view : FighterView) -> void:
 	fighterviewer = fighter_view
 func update_figher_view() -> void:
 	fighterviewer.set_fighter(curr_fighter)
-
-
 
 
 #var hand : Array[Item] = []	#array[Item]

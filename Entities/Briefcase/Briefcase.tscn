@@ -83,9 +83,9 @@ offset_top = 644.0
 offset_right = 1367.0
 offset_bottom = 842.0
 
-[node name="S_t_a_t_u_s" parent="." unique_id=1359448430 instance=ExtResource("3_5oohj")]
+[node name="TeamUI" parent="." unique_id=1359448430 instance=ExtResource("3_5oohj")]
 layout_mode = 1
-offset_left = 494.0
+offset_left = 496.0
 offset_top = 344.0
-offset_right = 494.0
+offset_right = 496.0
 offset_bottom = 344.0

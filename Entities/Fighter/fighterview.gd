@@ -16,5 +16,5 @@ func update_fighter() -> void:
 		await ready
 	
 	sprite2d.texture = fighter.art
-	sprite2d.apply_scale(Vector2(0.4, 0.4))
+	sprite2d.scale = Vector2(0.4, 0.4)
 	fighter.changes_feedback()

@@ -12,16 +12,16 @@ func create_instance() -> Team:
 func get_fighter(idx : int) -> Fighter:
 	var ret : Fighter
 	curr_idx = idx
-	ret = components[idx]
+	ret = components[curr_idx]
+	ret = ret.create_instance()
 	return ret
 
 func fighter_died(fighter : Fighter) -> void:
-	if not fighter in components:
-		return
-	
+	#print("its connecting")
 	match fighter.alliedto:
 		Fighter.AlliedTo.ALLY:
 			GlobalSignals.ally_fighter_died.emit(curr_idx)
+			#print("an ally died")
 		Fighter.AlliedTo.ENEMY:
 			GlobalSignals.enemy_fighter_died.emit()
 		
