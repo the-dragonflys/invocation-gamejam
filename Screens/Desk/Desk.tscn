@@ -117,3 +117,4 @@ offset_bottom = 2128.0
 [node name="Arena" parent="." unique_id=693090021 instance=ExtResource("18_2euvh")]
 
 [node name="Dialogue" parent="." unique_id=1325147308 instance=ExtResource("20_inlv8")]
+visible = false

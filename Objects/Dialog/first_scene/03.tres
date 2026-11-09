@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Dialog" format=3 uid="uid://cu1slsrxppukc"]
+
+[ext_resource type="Script" uid="uid://dly2myvttjlcl" path="res://Resources/Dialog/dialog.gd" id="1_lsow1"]
+
+[resource]
+script = ExtResource("1_lsow1")
+text = "USE YOUR ITEMS WISELY"
+metadata/_custom_type_script = "uid://dly2myvttjlcl"

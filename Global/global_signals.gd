@@ -3,6 +3,10 @@ extends Node
 
 #	used in general
 signal tooltip_hide
+## FROM dunnoyet TO Game AND CutscenePlayer
+signal play_credits
+## FROM CutscenePlayer TO Game
+signal end_game
 
 #	related to the items
 signal items_played()

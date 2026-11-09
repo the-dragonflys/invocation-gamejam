@@ -6,12 +6,11 @@
 [node name="Game" type="Node" unique_id=1248509455]
 script = ExtResource("1_7ipda")
 
-[node name="CutsceneTimer" type="Timer" parent="." unique_id=768445134]
-wait_time = 30.0
+[node name="Timer" type="Timer" parent="." unique_id=768445134]
 
 [node name="Soundtrack" type="AudioStreamPlayer2D" parent="." unique_id=1046551593]
 stream = ExtResource("2_gos1l")
 max_distance = 10000.0
 parameters/looping = true
 
-[connection signal="timeout" from="CutsceneTimer" to="." method="_on_cutscene_timer_timeout"]
+[connection signal="timeout" from="Timer" to="." method="_on_cutscene_timer_timeout"]
