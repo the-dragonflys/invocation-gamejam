@@ -7,27 +7,34 @@
 
 [node name="ItemUi" type="Control" unique_id=256018292]
 material = SubResource("ShaderMaterial_bpqfu")
-custom_minimum_size = Vector2(638, 642)
-custom_maximum_size = Vector2(638, 642)
+custom_minimum_size = Vector2(184, 240)
+custom_maximum_size = Vector2(184, 240)
 layout_mode = 3
-anchor_right = 0.33200002
-anchor_bottom = 0.59400004
-offset_right = 0.5599365
-offset_bottom = 0.47998047
+anchor_right = 0.096
+anchor_bottom = 0.22200002
+offset_right = -0.32000732
+offset_bottom = 0.23997498
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_mra2m")
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=842216529]
+custom_minimum_size = Vector2(639, 642)
+custom_maximum_size = Vector2(639, 642)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 455.0
+offset_bottom = 402.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
 [node name="Panel" type="Panel" parent="." unique_id=903908812]
+custom_minimum_size = Vector2(184, 240)
+custom_maximum_size = Vector2(184, 240)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

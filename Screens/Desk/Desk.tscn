@@ -86,6 +86,7 @@ autoplay = "Default"
 script = ExtResource("2_vsru3")
 
 [node name="Camera2D" type="Camera2D" parent="Background" unique_id=1898599858]
+visible = false
 position = Vector2(-960, -1620)
 anchor_mode = 0
 limit_left = -640
@@ -105,31 +106,32 @@ scale = Vector2(0.8, 0.8)
 
 [node name="Player" parent="GamePlayers" unique_id=1443839445 instance=ExtResource("18_l6woq")]
 
-[node name="Briefcase" parent="." unique_id=907388579 instance=ExtResource("15_unumf")]
-visible = false
-offset_left = -312.0
-offset_top = 2136.0
-offset_right = -312.0
-offset_bottom = 2136.0
-
-[node name="ControllerButtons" parent="." unique_id=1268034392 instance=ExtResource("17_pvmk7")]
-visible = false
-offset_left = 1184.0
-offset_top = 2128.0
-offset_right = 1184.0
-offset_bottom = 2128.0
-
 [node name="Arena" parent="." unique_id=693090021 instance=ExtResource("18_2euvh")]
 visible = false
 
 [node name="Dialogue" parent="." unique_id=1325147308 instance=ExtResource("20_inlv8")]
 visible = false
 
+[node name="ControllerButtons" parent="." unique_id=1268034392 instance=ExtResource("17_pvmk7")]
+offset_left = 1184.0
+offset_top = 2128.0
+offset_right = 1184.0
+offset_bottom = 2128.0
+
 [node name="Soundtrack" parent="." unique_id=1454158737 instance=ExtResource("21_35o4q")]
+visible = false
 
 [node name="DialogSoundEffect" parent="." unique_id=535573823 instance=ExtResource("22_l6woq")]
+visible = false
 
 [node name="Timer" type="Timer" parent="." unique_id=29948638]
 wait_time = 4.0
 
+[node name="Briefcase" parent="." unique_id=907388579 instance=ExtResource("15_unumf")]
+offset_left = -201.0
+offset_top = 2128.0
+offset_right = -201.0
+offset_bottom = 2128.0
+
 [connection signal="animation_finished" from="Background" to="." method="_on_background_animation_finished"]
+[connection signal="action_confirmed" from="ControllerButtons" to="Briefcase" method="_on_controller_buttons_action_confirmed"]

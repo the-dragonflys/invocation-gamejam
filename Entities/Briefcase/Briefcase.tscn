@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dekuvj4bdpxot" path="res://Entities/Briefcase/briefcase.gd" id="1_d3i6c"]
 [ext_resource type="Texture2D" uid="uid://bswy1qh65llua" path="res://Assets/Visual/Animations/Briefcase/Aberta.png" id="2_p5x35"]
 [ext_resource type="PackedScene" uid="uid://wj8p7arefdde" path="res://Entities/Briefcase/TeamUI/TeamUI.tscn" id="3_5oohj"]
+[ext_resource type="PackedScene" uid="uid://74kutrh12t3i" path="res://Entities/Item/item_ui.tscn" id="3_m7ju3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
 animations = [{
@@ -28,64 +29,90 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_d3i6c")
-slots = [NodePath("Items/Control1"), NodePath("Items/Control2"), NodePath("Items/Control3"), NodePath("Items/Control4"), NodePath("Items/Control5"), NodePath("Items/Control6")]
+slots = [NodePath("Items/ItemUi"), NodePath("Items/ItemUi2"), NodePath("Items/ItemUi3"), NodePath("Items/ItemUi4"), NodePath("Items/ItemUi5"), NodePath("Items/ItemUi6")]
 
 [node name="Briefcase" type="AnimatedSprite2D" parent="." unique_id=1999400932]
+position = Vector2(-168, -96)
+scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_g4v7s")
 animation = &"Open"
 autoplay = "Open"
 centered = false
 
-[node name="Items" type="Control" parent="." unique_id=1900835304]
+[node name="TeamUI" parent="." unique_id=1359448430 instance=ExtResource("3_5oohj")]
+layout_mode = 1
+offset_left = 424.0
+offset_top = 320.0
+offset_right = 424.0
+offset_bottom = 320.0
+
+[node name="Items" type="Control" parent="." unique_id=522599870]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Control1" type="Control" parent="Items" unique_id=877065823]
-anchors_preset = 0
-offset_left = 909.0
-offset_top = 429.0
-offset_right = 1048.0
-offset_bottom = 627.0
-
-[node name="Control2" type="Control" parent="Items" unique_id=103162659]
-anchors_preset = 0
-offset_left = 1062.0
-offset_top = 429.0
-offset_right = 1201.0
-offset_bottom = 627.0
-
-[node name="Control3" type="Control" parent="Items" unique_id=2138176573]
-anchors_preset = 0
-offset_left = 1211.0
-offset_top = 429.0
-offset_right = 1350.0
-offset_bottom = 627.0
-
-[node name="Control4" type="Control" parent="Items" unique_id=1189206387]
-anchors_preset = 0
-offset_left = 904.0
-offset_top = 644.0
-offset_right = 1043.0
-offset_bottom = 842.0
-
-[node name="Control5" type="Control" parent="Items" unique_id=532967077]
-anchors_preset = 0
-offset_left = 1062.0
-offset_top = 644.0
-offset_right = 1201.0
-offset_bottom = 842.0
-
-[node name="Control6" type="Control" parent="Items" unique_id=90910929]
-anchors_preset = 0
-offset_left = 1228.0
-offset_top = 644.0
-offset_right = 1367.0
-offset_bottom = 842.0
-
-[node name="TeamUI" parent="." unique_id=1359448430 instance=ExtResource("3_5oohj")]
+[node name="ItemUi" parent="Items" unique_id=256018292 instance=ExtResource("3_m7ju3")]
 layout_mode = 1
-offset_left = 496.0
-offset_top = 344.0
-offset_right = 496.0
-offset_bottom = 344.0
+anchor_left = 0.475
+anchor_top = 0.38518518
+anchor_right = 0.57100004
+anchor_bottom = 0.6071852
+offset_left = 893.0
+offset_top = 400.5926
+offset_right = 1073.16
+offset_bottom = 631.7126
+
+[node name="ItemUi2" parent="Items" unique_id=1089765700 instance=ExtResource("3_m7ju3")]
+layout_mode = 1
+anchor_left = 0.5708333
+anchor_top = 0.37777779
+anchor_right = 0.66683334
+anchor_bottom = 0.59977776
+offset_left = 1073.1666
+offset_top = 392.88885
+offset_right = 1253.3267
+offset_bottom = 624.0089
+
+[node name="ItemUi3" parent="Items" unique_id=766798497 instance=ExtResource("3_m7ju3")]
+layout_mode = 1
+anchor_left = 0.67083335
+anchor_top = 0.37777779
+anchor_right = 0.76683336
+anchor_bottom = 0.59977776
+offset_left = 1261.1666
+offset_top = 392.88885
+offset_right = 1441.3267
+offset_bottom = 624.0089
+
+[node name="ItemUi4" parent="Items" unique_id=1008456178 instance=ExtResource("3_m7ju3")]
+layout_mode = 1
+anchor_left = 0.475
+anchor_top = 0.6222229
+anchor_right = 0.57099915
+anchor_bottom = 0.844223
+offset_left = 1269.0
+offset_top = 647.1111
+offset_right = 1449.16
+offset_bottom = 878.2311
+
+[node name="ItemUi5" parent="Items" unique_id=219851406 instance=ExtResource("3_m7ju3")]
+layout_mode = 1
+anchor_left = 0.5708333
+anchor_top = 0.6296296
+anchor_right = 0.66683334
+anchor_bottom = 0.8516296
+offset_left = 1073.1666
+offset_top = 654.8148
+offset_right = 1253.3267
+offset_bottom = 885.9348
+
+[node name="ItemUi6" parent="Items" unique_id=347748855 instance=ExtResource("3_m7ju3")]
+layout_mode = 1
+anchor_left = 0.47083333
+anchor_top = 0.62222224
+anchor_right = 0.5668334
+anchor_bottom = 0.84422225
+offset_left = 885.1667
+offset_top = 647.1111
+offset_right = 1065.3267
+offset_bottom = 878.2311

@@ -22,6 +22,7 @@ func set_item(it : Item) -> void:
 	
 	item = it.create_instante()
 	icon.texture = item.art
+	icon.scale = Vector2(0.38, 0.38)
 	state = ItemStates.IDLE
 
 
@@ -30,7 +31,7 @@ func _on_gui_input(event: InputEvent) -> void:
 		if state == ItemStates.HOVER:
 			panel.set("theme_override_styles/panel", SELECTED_STYLEBOX)
 			state = ItemStates.SELECTED
-			#print("its selected")
+			print("its selected")
 		elif state == ItemStates.SELECTED:
 			panel.set("theme_override_styles/panel", BASE_STYLEBOX)
 			state = ItemStates.IDLE

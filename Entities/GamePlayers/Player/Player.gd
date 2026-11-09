@@ -37,4 +37,5 @@ func set_fighter(idx : int) -> void:
 		return
 	
 	curr_fighter = team.get_fighter(idx)
+	itempile.set_specific(curr_fighter.specific_deck)
 	update_figher_view()

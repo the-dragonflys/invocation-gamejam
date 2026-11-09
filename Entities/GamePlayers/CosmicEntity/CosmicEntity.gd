@@ -39,6 +39,7 @@ func change_energy(modifier : int):
 func set_fighter() -> void:
 	curr_fighter = team.get_fighter(next_idx)
 	next_idx += 1
+	itempile.set_specific(curr_fighter.specific_deck)
 	update_figher_view()
 func fighter_died() -> void:
 	death_counter += 1

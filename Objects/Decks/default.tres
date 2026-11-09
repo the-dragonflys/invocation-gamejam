@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemDeck" format=3 uid="uid://bpmrjxrm71xvt"]
+
+[ext_resource type="Script" uid="uid://io4h5owvawpb" path="res://Resources/Item/item.gd" id="1_x4kvd"]
+[ext_resource type="Resource" uid="uid://v2h373ru1jpt" path="res://Objects/Item/Default/Attack/improvisedglassknife.tres" id="2_4iqxy"]
+[ext_resource type="Script" uid="uid://dqf62bx0xipy7" path="res://Resources/ItemDeck/itemdeck.gd" id="2_oyy35"]
+[ext_resource type="Resource" uid="uid://82b04vxt887k" path="res://Objects/Item/Default/Attack/industrialnailgun.tres" id="3_dot56"]
+[ext_resource type="Resource" uid="uid://bwclodoov1yv8" path="res://Objects/Item/Default/Attack/rustedscalpel.tres" id="4_1goj0"]
+[ext_resource type="Resource" uid="uid://dx6re476uwwnn" path="res://Objects/Item/Default/Buff/adrenalinesyringe.tres" id="5_61wby"]
+[ext_resource type="Resource" uid="uid://cew4kgvt5tx70" path="res://Objects/Item/Default/Buff/leadplate.tres" id="6_jdox1"]
+[ext_resource type="Resource" uid="uid://u27t7ek3loox" path="res://Objects/Item/Default/Buff/smellingsalts.tres" id="7_bfjqf"]
+[ext_resource type="Resource" uid="uid://b14ynojohojt7" path="res://Objects/Item/Default/Control/rustyhandcuffs.tres" id="8_f8gmd"]
+[ext_resource type="Resource" uid="uid://ctieox8gs6d30" path="res://Objects/Item/Default/Debuff/ashesbottle.tres" id="9_1geup"]
+[ext_resource type="Resource" uid="uid://hr27nofw0380" path="res://Objects/Item/Default/Debuff/nailandtetanus.tres" id="10_vg1ie"]
+[ext_resource type="Resource" uid="uid://tchca0eaun1u" path="res://Objects/Item/Default/Heal/stolenbloodbag.tres" id="11_ot2jn"]
+
+[resource]
+script = ExtResource("2_oyy35")
+items = Array[ExtResource("1_x4kvd")]([ExtResource("2_4iqxy"), ExtResource("3_dot56"), ExtResource("4_1goj0"), ExtResource("5_61wby"), ExtResource("6_jdox1"), ExtResource("7_bfjqf"), ExtResource("8_f8gmd"), ExtResource("9_1geup"), ExtResource("10_vg1ie"), ExtResource("11_ot2jn")])
+metadata/_custom_type_script = "uid://dqf62bx0xipy7"

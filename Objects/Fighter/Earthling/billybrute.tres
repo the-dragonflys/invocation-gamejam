@@ -3,10 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://bpjongil0wyvb" path="res://Assets/Visual/Sprites/Fighter/Earthling/Billy.png" id="1_e71md"]
 [ext_resource type="Resource" uid="uid://bil12o5f7x6ug" path="res://Resources/Fighter/Classes/Bruiser.tres" id="1_ojugy"]
 [ext_resource type="Script" uid="uid://c8q8rfhqfqhsk" path="res://Resources/Fighter/fighter.gd" id="3_7oqjw"]
+[ext_resource type="Resource" uid="uid://bpmrjxrm71xvt" path="res://Objects/Decks/default.tres" id="4_7oqjw"]
 
 [resource]
 script = ExtResource("3_7oqjw")
 nome = "Billy"
 m_class = ExtResource("1_ojugy")
 art = ExtResource("1_e71md")
+specific_deck = ExtResource("4_7oqjw")
 metadata/_custom_type_script = "uid://c8q8rfhqfqhsk"

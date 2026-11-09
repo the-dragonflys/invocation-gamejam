@@ -3,10 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://brqhcduvrbc4u" path="res://Assets/Visual/Sprites/Fighter/Earthling/Tesla.png" id="1_k55hl"]
 [ext_resource type="Resource" uid="uid://b3jxil8it7ojd" path="res://Resources/Fighter/Classes/Mage.tres" id="1_rmlql"]
 [ext_resource type="Script" uid="uid://c8q8rfhqfqhsk" path="res://Resources/Fighter/fighter.gd" id="1_xrqer"]
+[ext_resource type="Resource" uid="uid://bpmrjxrm71xvt" path="res://Objects/Decks/default.tres" id="4_bw3ru"]
 
 [resource]
 script = ExtResource("1_xrqer")
 nome = "Tesla"
 m_class = ExtResource("1_rmlql")
 art = ExtResource("1_k55hl")
+specific_deck = ExtResource("4_bw3ru")
 metadata/_custom_type_script = "uid://c8q8rfhqfqhsk"

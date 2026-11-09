@@ -13,7 +13,7 @@ signal play_dialog_effect
 signal game_started
 
 #	related to the items
-signal items_played()
+signal items_played(hand : Array[Item])
 signal item_tooltip_requested(item : Item)
 
 #	related to the Fighter
@@ -39,9 +39,3 @@ signal player_lost
 signal ally_fighter_choosen(idx : int)
 ## FROM CosmicEntity TO Game
 signal entity_lost
-
-#	related to the buttons
-## FROM ControllerButtons TO RoundManager
-signal confirmation_button_pressed
-## FROM ControllerButtons TO RoundManager
-signal skip_button_pressed

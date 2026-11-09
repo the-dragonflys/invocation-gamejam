@@ -5,6 +5,8 @@ const max_energy : int = 6
 var energy : int
 var curr_fighter : Fighter
 var fighterviewer : FighterView : set = set_fighter_view
+var hand : Array[Item]
+var itempile : ItemPile = ItemPile.new().create_instance()
 var death_counter : int = 0
 var lost : bool = false
 

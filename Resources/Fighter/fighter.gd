@@ -10,7 +10,7 @@ enum AlliedTo{
 @export var m_class : FighterClass
 @export var alliedto : AlliedTo
 @export var art : Texture
-#@export var specific_deck : Array[Item] 	will deal with this later
+@export var specific_deck : ItemDeck
 
 #atributes that'll change during game
 #define as propriedades da classe Fighter e seus tipos

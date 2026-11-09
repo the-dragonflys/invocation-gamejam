@@ -6,6 +6,8 @@ class_name Arena
 var ally : Fighter
 var enemy : Fighter
 
+func _ready() -> void:
+	GlobalSignals.items_played.connect(_turn_execution)
 
 func _set_fighters(al : Fighter, en : Fighter) -> void:
 	ally = al
@@ -17,17 +19,18 @@ func _set_fighters(al : Fighter, en : Fighter) -> void:
 func round_start() -> void:
 	pass
 
-func _turn_execution() -> void:
+func _turn_execution(player_hand : Array[Item]) -> void:
 	# [ 1 ] Run each of their actions
-	# [ 1.1 ] First
-	use_items(enemy, ally)
+	## [ 1.1 ] First
+	#use_items(enemy, ally)
 	
 	# [ 1.2 ] Second
-	use_items(ally, enemy)
+	use_items(ally, enemy, player_hand)
 
 
-func use_items(acting : Fighter, target: Fighter) -> void:
-	pass
+func use_items(acting : Fighter, target: Fighter, items : Array[Item]) -> void:
+	for item in items:
+		item.use_item(ally, enemy)
 
 #func run_actions() -> void:
 	#while acting.can_act():

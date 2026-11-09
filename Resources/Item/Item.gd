@@ -32,4 +32,15 @@ func create_instante() -> Item:
 
 #	the item logic will be implemented here now
 func use_item(user : Fighter, poss_target : Fighter) -> void:
-	pass
+	for act in actions:
+		match act.type:
+			Action.Types.ATTACK:
+				user.attack(act, poss_target)
+			Action.Types.HEAL:
+				user.change_life(act.modifier)
+			Action.Types.ENEMY_DEBUFF:
+				user.apply_modifier(act, poss_target)
+			Action.Types.SELF_ATTACK:
+				user.self_attack(act)
+			Action.Types.SELF_DEBUFF:
+				user.self_modifier(act)

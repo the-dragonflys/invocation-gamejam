@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xsp6wviry3fm"
-path="res://.godot/imported/PlaceholderHop.png-9b76b1abbe843162a7b1a629a7b513d8.ctex"
+uid="uid://b56qrhi26x6o3"
+path="res://.godot/imported/Hop.png-c1edb1083c9858027df6ab96ff4ab76e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Visual/Sprites/Fighter/Earthling/PlaceholderHop.png"
-dest_files=["res://.godot/imported/PlaceholderHop.png-9b76b1abbe843162a7b1a629a7b513d8.ctex"]
+source_file="res://Assets/Visual/Sprites/Fighter/Earthling/Hop.png"
+dest_files=["res://.godot/imported/Hop.png-c1edb1083c9858027df6ab96ff4ab76e.ctex"]
 
 [params]
 
