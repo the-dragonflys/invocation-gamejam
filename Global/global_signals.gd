@@ -31,3 +31,7 @@ signal player_lost
 signal ally_fighter_choosen(idx : int)
 ## FROM CosmicEntity TO Game
 signal entity_lost
+
+#	related to the buttons
+signal confirmation_button_pressed
+signal skip_button_pressed

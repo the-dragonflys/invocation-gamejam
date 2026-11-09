@@ -17,9 +17,9 @@ enum AlliedTo{
 var life : int # max 50
 var strength : int # 0-200 ⇒ as a percentage
 var defense : int  # 0-200 ⇒ as a percentage
-var initiative : int = 1 	# 0 or 1, will actually change how this works
+var initiative : int = 0 	# 0 or 1, will actually change how this works
 #var action_queue : ActionQueue = ActionQueue.new() will touch this can of worms later
-var state : States.Types = States.Types.IDLE
+var state : States.Types
 var active_buff : Action
 var active_debuff : Action
 
@@ -27,11 +27,11 @@ var active_debuff : Action
 #CREATOR
 func create_instance() -> Fighter:
 	var instance : Fighter = self.duplicate()
-	life = m_class.max_life
-	strength = m_class.ori_strength
-	defense = m_class.ori_defense
-	instance._reset_modifiers()
+	instance.life = m_class.max_life
+	instance.strength = m_class.ori_strength
+	instance.defense = m_class.ori_defense
 	instance._reset_state()
+	instance.changes_feedback()
 	return instance
 
 #RESETERS
@@ -43,6 +43,7 @@ func _reset_modifiers() -> void:
 	strength = m_class.ori_strength
 	defense = m_class.ori_defense
 	initiative = 1
+	changes_feedback()
 func _reset_state() -> void:
 	state = States.Types.IDLE
 

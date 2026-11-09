@@ -68,6 +68,7 @@ offset_top = 176.75569
 offset_right = 312.32703
 offset_bottom = 216.75569
 theme = ExtResource("6_2pufh")
+theme_override_colors/default_color = Color(0.9882353, 0.88235295, 0, 1)
 theme_override_font_sizes/normal_font_size = 40
 text = "50"
 
@@ -77,5 +78,6 @@ offset_top = 232.99614
 offset_right = 309.52197
 offset_bottom = 272.99615
 theme = ExtResource("6_2pufh")
+theme_override_colors/default_color = Color(0.9882353, 0.88235295, 0, 1)
 theme_override_font_sizes/normal_font_size = 40
 text = "50"

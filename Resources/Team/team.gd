@@ -12,7 +12,8 @@ func create_instance() -> Team:
 func get_fighter(idx : int) -> Fighter:
 	var ret : Fighter
 	curr_idx = idx
-	ret = components[idx]
+	ret = components[curr_idx]
+	ret = ret.create_instance()
 	return ret
 
 func fighter_died(fighter : Fighter) -> void:
