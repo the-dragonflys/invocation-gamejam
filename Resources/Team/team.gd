@@ -17,12 +17,11 @@ func get_fighter(idx : int) -> Fighter:
 	return ret
 
 func fighter_died(fighter : Fighter) -> void:
-	if not fighter in components:
-		return
-	
+	#print("its connecting")
 	match fighter.alliedto:
 		Fighter.AlliedTo.ALLY:
 			GlobalSignals.ally_fighter_died.emit(curr_idx)
+			#print("an ally died")
 		Fighter.AlliedTo.ENEMY:
 			GlobalSignals.enemy_fighter_died.emit()
 		

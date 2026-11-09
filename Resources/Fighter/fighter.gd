@@ -104,6 +104,8 @@ func change_initiative() -> void:
 func check_died() -> void:
 	if life == 0:
 		GlobalSignals.fighter_died.emit(self)
+		print(nome)
+		print("died")
 func can_act() -> bool: 
 	return true
 	#return action_queue.is_there_actions_left()
