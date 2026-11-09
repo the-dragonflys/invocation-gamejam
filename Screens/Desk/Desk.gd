@@ -7,4 +7,4 @@ var manager : RoundManager = RoundManager.new()
 
 func _ready() -> void:
 	manager._preparation(player, entity, arena)
-	#arena._set_fighters(f1, f2)
+	
