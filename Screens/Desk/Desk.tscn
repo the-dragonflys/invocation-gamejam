@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dobuewv7nyada"]
 
 [ext_resource type="Texture2D" uid="uid://cjsrrlj2tbawf" path="res://Assets/Visual/Animations/Desk/Default/0_.png" id="1_k7bhy"]
-[ext_resource type="Script" uid="uid://dvyipgyjtgc36" path="res://Screens/Desk/Desk.gd" id="1_ql0fa"]
+[ext_resource type="Script" uid="uid://dvyipgyjtgc36" path="res://Screens/Desk/desk.gd" id="1_ql0fa"]
 [ext_resource type="Texture2D" uid="uid://skubybsiqvgh" path="res://Assets/Visual/Animations/Desk/Default/10_.png" id="2_bcxvh"]
 [ext_resource type="Script" uid="uid://d1egs8yhw0vcg" path="res://Screens/Desk/camera_2d.gd" id="2_n6b4a"]
 [ext_resource type="Script" uid="uid://bqtbt6is8hi7i" path="res://Screens/Desk/background.gd" id="2_vsru3"]
