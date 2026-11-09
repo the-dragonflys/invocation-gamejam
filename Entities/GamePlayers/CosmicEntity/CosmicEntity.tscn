@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://llfocxje0sml" path="res://Entities/GamePlayers/CosmicEntity/cosmicentity.gd" id="1_8122u"]
 [ext_resource type="Texture2D" uid="uid://blxfjlejjpm21" path="res://Assets/Visual/Animations/CosmicEntity/Default/quadro0000.png" id="1_oplc4"]
-[ext_resource type="Resource" uid="uid://c8fle5fhj5tjq" path="res://Objects/Team/alien_team.tres" id="2_0wvgx"]
 [ext_resource type="Texture2D" uid="uid://b18ydqg2b8qa5" path="res://Assets/Visual/Animations/CosmicEntity/Default/quadro0001.png" id="2_pvs7p"]
 [ext_resource type="Texture2D" uid="uid://dp7g3tw22s5yk" path="res://Assets/Visual/Animations/CosmicEntity/Default/quadro0002.png" id="3_qomeg"]
 [ext_resource type="Texture2D" uid="uid://deu0vcwxidmj" path="res://Assets/Visual/Animations/CosmicEntity/Default/quadro0003.png" id="4_cgk8l"]
@@ -746,7 +745,6 @@ animations = [{
 
 [node name="CosmicEntity" type="Node2D" unique_id=546302893]
 script = ExtResource("1_8122u")
-team = ExtResource("2_0wvgx")
 
 [node name="left_eye" type="AnimatedSprite2D" parent="." unique_id=696995964]
 position = Vector2(640, 536)
